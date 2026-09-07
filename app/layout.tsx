@@ -13,16 +13,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CRM Growth Engine Demo",
+  title: "Growth Agent",
   description: "从目标与预算到实验归因、动态调仓和经营复盘的会员增长投资系统演示。",
   openGraph: {
-    title: "Growth Engine｜会员经营增长引擎",
+    title: "Growth Agent",
     description: "用可信增量回报管理每一笔会员预算。",
     images: [{ url: "/og.png", width: 1748, height: 915 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Growth Engine｜会员经营增长引擎",
+    title: "Growth Agent",
     description: "用可信增量回报管理每一笔会员预算。",
     images: ["/og.png"],
   },

@@ -4,7 +4,7 @@ export default function Home() {
       <iframe
         className="demo-frame"
         src="/demo.html"
-        title="CRM Growth Engine 全流程演示"
+        title="Growth Agent 全流程演示"
       />
     </main>
   );
