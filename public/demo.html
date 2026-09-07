@@ -6,6 +6,17 @@
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src 'self' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <title>Growth Agent</title>
+<meta name="description" content="从目标与预算到实验归因、动态调仓和经营复盘的会员增长投资系统演示。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Growth Agent">
+<meta property="og:description" content="用可信增量回报管理每一笔会员预算。">
+<meta property="og:image" content="/og.png">
+<meta property="og:image:width" content="1748">
+<meta property="og:image:height" content="915">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Growth Agent">
+<meta name="twitter:description" content="用可信增量回报管理每一笔会员预算。">
+<meta name="twitter:image" content="/og.png">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <style>:root{color-scheme:light;background:#f4f5f7}html,body{margin:0;height:100%}body{background:inherit;overflow:hidden}iframe{display:block;width:100%;height:100%;border:0}</style>
 </head>
@@ -16,7 +27,7 @@
 &lt;meta charset=&quot;utf-8&quot;&gt;
 &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
 &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
-&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27;; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
 &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
 &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62.5..125,100..900&amp;display=swap&quot;&gt;
@@ -1213,6 +1224,7 @@ html&gt;body{padding:0}&lt;/style&gt;
     .rg-pos,.rg-neg,.rg-flat{font-size:var(--fs-12);font-weight:var(--fw-semibold);white-space:nowrap}
     .rg-pos{color:var(--pos)}
     .rg-neg{color:var(--neg)}
+    .rg-warn{color:var(--warn)}
     .rg-flat{color:var(--ink-muted)}
     .rg-delta{display:inline-flex;align-items:center;gap:3px;font-size:var(--fs-11);font-weight:var(--fw-semibold);white-space:nowrap}
     .rg-delta.up{color:var(--pos)}
@@ -1419,7 +1431,7 @@ html&gt;body{padding:0}&lt;/style&gt;
     .rg-vbar b{position:absolute;top:-24px;left:0;width:100%;font-size:var(--fs-15);font-weight:var(--fw-semibold)}
     .rg-vbar span{display:block;font-size:var(--fs-11);color:var(--ink-muted);margin-top:var(--sp-8);line-height:1.45}
     .rg-lift{position:absolute;top:6px;left:0;width:100%;text-align:center;color:var(--pos);font-size:var(--fs-13);font-weight:var(--fw-semibold)}
-    .rg-formula{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--border)}
+    .rg-formula{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;border-top:1px solid var(--border)}
     .rg-formula div{padding:var(--sp-12) var(--sp-16);border-left:1px solid var(--border)}
     .rg-formula div:first-child{border-left:0}
     .rg-formula span{display:block;font-size:var(--fs-11);color:var(--ink-muted)}
@@ -1716,7 +1728,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;i class=&quot;rg-ai-icon&quot;&gt;AI&lt;/i&gt;
 &lt;div&gt;
 &lt;b&gt;经营建议：新会员复购策略 ROI 持续高于目标&lt;/b&gt;
-&lt;p&gt;建议增加预算 &lt;strong&gt;¥20万&lt;/strong&gt;，预计新增利润 &lt;strong&gt;¥60万&lt;/strong&gt;；沉睡会员策略建议减少投入。&lt;/p&gt;
+&lt;p&gt;建议增加预算 &lt;strong&gt;¥20万&lt;/strong&gt;，按两个计划的增量ROI 差（2.46 − 1.16）预计新增利润 &lt;strong&gt;¥26万&lt;/strong&gt;；沉睡会员策略建议同额减少投入。&lt;/p&gt;
 &lt;/div&gt;
 &lt;button class=&quot;rg-primary&quot; data-go=&quot;4&quot;&gt;查看建议&lt;/button&gt;
 &lt;/div&gt;
@@ -1735,7 +1747,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;span&gt;利润 ¥128万&lt;/span&gt;
 &lt;span&gt;&lt;b class=&quot;rg-metric&quot;&gt;ROI 2.46&lt;/b&gt;&lt;span class=&quot;rg-delta up&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▲&lt;/i&gt;+0.66&lt;small&gt;较组合 1.80&lt;/small&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;rg-status&quot;&gt;运行中&lt;/span&gt;
-&lt;button class=&quot;rg-link&quot; data-plan=&quot;新会员30天复购提升&quot;&gt;详情 →&lt;/button&gt;
+&lt;button class=&quot;rg-link&quot; data-plan=&quot;new&quot;&gt;详情 →&lt;/button&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-plan&quot; data-series=&quot;2&quot;&gt;
 &lt;div&gt;
@@ -1748,7 +1760,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;span&gt;利润 ¥36万&lt;/span&gt;
 &lt;span&gt;&lt;b class=&quot;rg-metric&quot;&gt;ROI 1.16&lt;/b&gt;&lt;span class=&quot;rg-delta down&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▼&lt;/i&gt;−0.64&lt;small&gt;较组合 1.80&lt;/small&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;rg-status&quot;&gt;运行中&lt;/span&gt;
-&lt;button class=&quot;rg-link&quot; data-plan=&quot;沉睡会员分层召回&quot;&gt;详情 →&lt;/button&gt;
+&lt;button class=&quot;rg-link&quot; data-plan=&quot;sleep&quot;&gt;详情 →&lt;/button&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-plan&quot; data-series=&quot;3&quot;&gt;
 &lt;div&gt;
@@ -1761,7 +1773,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;span&gt;等待归因&lt;/span&gt;
 &lt;span&gt;&lt;b class=&quot;rg-metric&quot;&gt;ROI —&lt;/b&gt;&lt;span class=&quot;rg-delta flat&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;◷&lt;/i&gt;实验窗口内&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;rg-status test&quot;&gt;测试中&lt;/span&gt;
-&lt;button class=&quot;rg-link&quot; data-plan=&quot;高价值会员提升&quot;&gt;详情 →&lt;/button&gt;
+&lt;button class=&quot;rg-link&quot; data-plan=&quot;vip&quot;&gt;详情 →&lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-card&quot;&gt;
@@ -1845,7 +1857,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;td class=&quot;num&quot;&gt;¥52万&lt;/td&gt;
 &lt;td class=&quot;num&quot;&gt;¥128万&lt;/td&gt;
 &lt;td class=&quot;num&quot;&gt;&lt;b class=&quot;rg-metric&quot;&gt;2.46&lt;/b&gt;&lt;span class=&quot;rg-delta up&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▲&lt;/i&gt;+0.66&lt;small&gt;较组合 1.80&lt;/small&gt;&lt;/span&gt;&lt;/td&gt;
-&lt;td class=&quot;act&quot;&gt;&lt;button class=&quot;rg-link&quot; data-plan=&quot;新会员30天复购提升&quot;&gt;进入计划 →&lt;/button&gt;&lt;button class=&quot;rg-rowmenu&quot; type=&quot;button&quot; aria-label=&quot;新会员30天复购提升 的更多操作&quot;&gt;⋯&lt;/button&gt;&lt;/td&gt;
+&lt;td class=&quot;act&quot;&gt;&lt;button class=&quot;rg-link&quot; data-plan=&quot;new&quot;&gt;进入计划 →&lt;/button&gt;&lt;button class=&quot;rg-rowmenu&quot; type=&quot;button&quot; aria-label=&quot;新会员30天复购提升 的更多操作&quot;&gt;⋯&lt;/button&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr data-series=&quot;2&quot; data-status=&quot;run&quot; data-name=&quot;沉睡会员分层召回&quot; data-goal=&quot;目标：90天沉睡唤醒率提升3个百分点&quot; data-budget=&quot;80&quot; data-spend=&quot;31&quot; data-profit=&quot;¥36万&quot; data-roi=&quot;1.16&quot;&gt;
 &lt;td&gt;
@@ -1858,7 +1870,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;td class=&quot;num&quot;&gt;¥31万&lt;/td&gt;
 &lt;td class=&quot;num&quot;&gt;¥36万&lt;/td&gt;
 &lt;td class=&quot;num&quot;&gt;&lt;b class=&quot;rg-metric&quot;&gt;1.16&lt;/b&gt;&lt;span class=&quot;rg-delta down&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▼&lt;/i&gt;−0.64&lt;small&gt;较组合 1.80&lt;/small&gt;&lt;/span&gt;&lt;/td&gt;
-&lt;td class=&quot;act&quot;&gt;&lt;button class=&quot;rg-link&quot; data-plan=&quot;沉睡会员分层召回&quot;&gt;进入计划 →&lt;/button&gt;&lt;button class=&quot;rg-rowmenu&quot; type=&quot;button&quot; aria-label=&quot;沉睡会员分层召回 的更多操作&quot;&gt;⋯&lt;/button&gt;&lt;/td&gt;
+&lt;td class=&quot;act&quot;&gt;&lt;button class=&quot;rg-link&quot; data-plan=&quot;sleep&quot;&gt;进入计划 →&lt;/button&gt;&lt;button class=&quot;rg-rowmenu&quot; type=&quot;button&quot; aria-label=&quot;沉睡会员分层召回 的更多操作&quot;&gt;⋯&lt;/button&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr data-series=&quot;3&quot; data-status=&quot;test&quot; data-name=&quot;高价值会员提升&quot; data-goal=&quot;目标：高价值会员客单提升8%&quot; data-budget=&quot;48&quot; data-spend=&quot;8&quot; data-profit=&quot;等待归因&quot; data-roi=&quot;-1&quot;&gt;
 &lt;td&gt;
@@ -1871,7 +1883,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;td class=&quot;num&quot;&gt;¥8万&lt;/td&gt;
 &lt;td class=&quot;num&quot;&gt;等待归因&lt;/td&gt;
 &lt;td class=&quot;num&quot;&gt;&lt;b class=&quot;rg-metric&quot;&gt;—&lt;/b&gt;&lt;span class=&quot;rg-delta flat&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;◷&lt;/i&gt;实验窗口内&lt;/span&gt;&lt;/td&gt;
-&lt;td class=&quot;act&quot;&gt;&lt;button class=&quot;rg-link&quot; data-plan=&quot;高价值会员提升&quot;&gt;进入计划 →&lt;/button&gt;&lt;button class=&quot;rg-rowmenu&quot; type=&quot;button&quot; aria-label=&quot;高价值会员提升 的更多操作&quot;&gt;⋯&lt;/button&gt;&lt;/td&gt;
+&lt;td class=&quot;act&quot;&gt;&lt;button class=&quot;rg-link&quot; data-plan=&quot;vip&quot;&gt;进入计划 →&lt;/button&gt;&lt;button class=&quot;rg-rowmenu&quot; type=&quot;button&quot; aria-label=&quot;高价值会员提升 的更多操作&quot;&gt;⋯&lt;/button&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1897,7 +1909,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;b&gt;计划组合建议&lt;/b&gt;
 &lt;p&gt;当前预算过度集中于沉睡召回。新会员复购机会更大、反馈更快，建议将下一周期预算优先配置到该目标。&lt;/p&gt;
 &lt;/div&gt;
-&lt;button class=&quot;rg-secondary&quot; data-plan=&quot;新会员30天复购提升&quot;&gt;查看分析&lt;/button&gt;
+&lt;button class=&quot;rg-secondary&quot; data-plan=&quot;new&quot;&gt;查看分析&lt;/button&gt;
 &lt;/div&gt;
 &lt;/section&gt;
 
@@ -1938,12 +1950,12 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-card&quot; style=&quot;margin-top:16px&quot;&gt;
-&lt;div class=&quot;rg-card-title&quot;&gt;AI 增长投资方案 &lt;span class=&quot;rg-badge&quot;&gt;预计组合 ROI 2.8&lt;/span&gt;
+&lt;div class=&quot;rg-card-title&quot;&gt;AI 增长投资方案 &lt;span class=&quot;rg-badge&quot; id=&quot;rg-scheme-blend&quot;&gt;预计组合 ROI 2.8&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-toolbar&quot;&gt;
-&lt;button class=&quot;rg-chip on&quot; type=&quot;button&quot;&gt;全部方案 &lt;small&gt;3&lt;/small&gt;&lt;/button&gt;
-&lt;button class=&quot;rg-chip&quot; type=&quot;button&quot;&gt;仅运行中 &lt;small&gt;2&lt;/small&gt;&lt;/button&gt;
-&lt;span class=&quot;rg-count&quot;&gt;3 条方案 · 按预算降序 · 口径：预计ROI = 预计增量利润 ÷ 方案预算&lt;/span&gt;
+&lt;button class=&quot;rg-chip on&quot; type=&quot;button&quot; data-scheme=&quot;all&quot; aria-pressed=&quot;true&quot;&gt;全部方案 &lt;small&gt;3&lt;/small&gt;&lt;/button&gt;
+&lt;button class=&quot;rg-chip&quot; type=&quot;button&quot; data-scheme=&quot;run&quot; aria-pressed=&quot;false&quot;&gt;仅运行中 &lt;small&gt;2&lt;/small&gt;&lt;/button&gt;
+&lt;span class=&quot;rg-count&quot; id=&quot;rg-scheme-caption&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-tablewrap&quot;&gt;
 &lt;table class=&quot;rg-table&quot;&gt;
@@ -1958,48 +1970,11 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;th scope=&quot;col&quot; class=&quot;act&quot;&gt;操作&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;
-&lt;b&gt;7天二次消费激励&lt;/b&gt;
-&lt;span class=&quot;rg-provider&quot;&gt;首购后7天未复购&lt;/span&gt;
-&lt;/td&gt;
-&lt;td&gt;EDM + 会员权益&lt;/td&gt;
-&lt;td&gt;Mailchimp + CRM券中心&lt;/td&gt;
-&lt;td class=&quot;num&quot;&gt;¥50万&lt;/td&gt;
-&lt;td class=&quot;num&quot;&gt;&lt;b class=&quot;rg-metric&quot;&gt;3.5&lt;/b&gt;&lt;span class=&quot;rg-delta up&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▲&lt;/i&gt;+0.7&lt;small&gt;较组合 2.8&lt;/small&gt;&lt;/span&gt;&lt;/td&gt;
-&lt;td&gt;&lt;span class=&quot;rg-status&quot;&gt;运行&lt;/span&gt;&lt;/td&gt;
-&lt;td class=&quot;act&quot;&gt;&lt;button class=&quot;rg-rowmenu&quot; type=&quot;button&quot; aria-label=&quot;7天二次消费激励 的更多操作&quot;&gt;⋯&lt;/button&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;
-&lt;b&gt;14天召回&lt;/b&gt;
-&lt;span class=&quot;rg-provider&quot;&gt;低响应新会员&lt;/span&gt;
-&lt;/td&gt;
-&lt;td&gt;短信 + 会员权益&lt;/td&gt;
-&lt;td&gt;服务商A + CRM券中心&lt;/td&gt;
-&lt;td class=&quot;num&quot;&gt;¥30万&lt;/td&gt;
-&lt;td class=&quot;num&quot;&gt;&lt;b class=&quot;rg-metric&quot;&gt;2.1&lt;/b&gt;&lt;span class=&quot;rg-delta down&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▼&lt;/i&gt;−0.7&lt;small&gt;较组合 2.8&lt;/small&gt;&lt;/span&gt;&lt;/td&gt;
-&lt;td&gt;&lt;span class=&quot;rg-status&quot;&gt;运行&lt;/span&gt;&lt;/td&gt;
-&lt;td class=&quot;act&quot;&gt;&lt;button class=&quot;rg-rowmenu&quot; type=&quot;button&quot; aria-label=&quot;14天召回 的更多操作&quot;&gt;⋯&lt;/button&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;
-&lt;b&gt;探索策略&lt;/b&gt;
-&lt;span class=&quot;rg-provider&quot;&gt;AI发现机会&lt;/span&gt;
-&lt;/td&gt;
-&lt;td&gt;WhatsApp互动&lt;/td&gt;
-&lt;td&gt;三方服务商B&lt;/td&gt;
-&lt;td class=&quot;num&quot;&gt;¥20万&lt;/td&gt;
-&lt;td class=&quot;num&quot;&gt;&lt;b class=&quot;rg-metric&quot;&gt;待验证&lt;/b&gt;&lt;span class=&quot;rg-delta flat&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;◷&lt;/i&gt;实验窗口内&lt;/span&gt;&lt;/td&gt;
-&lt;td&gt;&lt;span class=&quot;rg-status test&quot;&gt;测试&lt;/span&gt;&lt;/td&gt;
-&lt;td class=&quot;act&quot;&gt;&lt;button class=&quot;rg-rowmenu&quot; type=&quot;button&quot; aria-label=&quot;探索策略 的更多操作&quot;&gt;⋯&lt;/button&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+&lt;tbody id=&quot;rg-scheme-rows&quot;&gt;&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-tablefoot&quot;&gt;
-&lt;span&gt;显示 &lt;b&gt;3&lt;/b&gt; / &lt;b&gt;3&lt;/b&gt; 条方案 · 预算合计 ¥100万&lt;/span&gt;
+&lt;span id=&quot;rg-scheme-foot&quot;&gt;&lt;/span&gt;
 &lt;div class=&quot;rg-pager&quot;&gt;
 &lt;button type=&quot;button&quot; disabled aria-label=&quot;上一页&quot;&gt;‹&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;on&quot; aria-current=&quot;page&quot;&gt;1&lt;/button&gt;
@@ -2010,7 +1985,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;div class=&quot;rg-card rg-tool-matrix&quot;&gt;
 &lt;div class=&quot;rg-card-title&quot;&gt;工具竞争与预算调度 &lt;span class=&quot;rg-muted&quot;&gt;同一增长目标下按真实增量效果竞争预算&lt;/span&gt;&lt;/div&gt;
 &lt;div class=&quot;rg-toolbar&quot;&gt;
-&lt;span class=&quot;rg-count&quot;&gt;3 个执行工具 · 按增量ROI 降序 · 口径：增量ROI = 增量利润 ÷ 已投入&lt;/span&gt;
+&lt;span class=&quot;rg-count&quot; id=&quot;rg-matrix-caption&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-tablewrap&quot;&gt;
 &lt;table class=&quot;rg-table&quot;&gt;
@@ -2022,20 +1997,16 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;th scope=&quot;col&quot; class=&quot;num&quot; aria-sort=&quot;descending&quot;&gt;&lt;button class=&quot;rg-sort&quot; type=&quot;button&quot;&gt;增量ROI&lt;i aria-hidden=&quot;true&quot;&gt;↓&lt;/i&gt;&lt;/button&gt;&lt;/th&gt;
 &lt;th scope=&quot;col&quot;&gt;系统决策&lt;/th&gt;
 &lt;/tr&gt;&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;&lt;td&gt;&lt;b&gt;EDM + 会员权益&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Mailchimp + CRM券中心&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;¥8万&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;¥24万&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;&lt;b class=&quot;rg-metric&quot;&gt;3.00&lt;/b&gt;&lt;span class=&quot;rg-delta up&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▲&lt;/i&gt;+0.20&lt;small&gt;较组合 2.8&lt;/small&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;rg-decision up&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▲&lt;/i&gt;加仓 +¥5万&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;&lt;b&gt;短信 + 会员权益&lt;/b&gt;&lt;/td&gt;&lt;td&gt;服务商A + CRM券中心&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;¥12万&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;¥18万&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;&lt;b class=&quot;rg-metric&quot;&gt;1.50&lt;/b&gt;&lt;span class=&quot;rg-delta down&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▼&lt;/i&gt;−1.30&lt;small&gt;较组合 2.8&lt;/small&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;rg-decision down&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▼&lt;/i&gt;减仓 −¥3万&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr id=&quot;rg-wa-result&quot;&gt;&lt;td&gt;&lt;b&gt;WhatsApp互动召回&lt;/b&gt;&lt;/td&gt;&lt;td&gt;三方服务商B&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;¥3万&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;等待归因&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;&lt;b class=&quot;rg-metric&quot;&gt;—&lt;/b&gt;&lt;span class=&quot;rg-delta flat&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;◷&lt;/i&gt;实验窗口内&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;rg-decision test&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;◷&lt;/i&gt;探索 ¥2万&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
+&lt;tbody id=&quot;rg-matrix-rows&quot;&gt;&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-opportunity&quot;&gt;&lt;b&gt;AI建议：&lt;/b&gt;EDM边际ROI更高，下一批会员预算增加5万元；短信减少3万元；保留2万元探索WhatsApp。预算只在商家已授权工具之间流动。&lt;/div&gt;
+&lt;div class=&quot;rg-opportunity&quot; id=&quot;rg-matrix-note&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-ai&quot;&gt;
 &lt;i class=&quot;rg-ai-icon&quot;&gt;AI&lt;/i&gt;
 &lt;div&gt;
-&lt;b&gt;为什么选择这个机会？&lt;/b&gt;
-&lt;p&gt;首购后7～14天是复购响应最高的窗口；38万目标会员中，约22万人具备明确商品偏好，预计36天回本。&lt;/p&gt;
+&lt;b id=&quot;rg-why-title&quot;&gt;为什么选择这个机会？&lt;/b&gt;
+&lt;p id=&quot;rg-why-copy&quot;&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;button class=&quot;rg-secondary&quot; data-go=&quot;3&quot;&gt;查看验证&lt;/button&gt;
 &lt;/div&gt;
@@ -2053,103 +2024,30 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;p id=&quot;validation-plan-name&quot;&gt;新会员30天复购提升 · 通过随机控制实验判断增长是否真正由方案带来&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-headactions&quot;&gt;
-&lt;span class=&quot;rg-badge&quot;&gt;可信度 94%&lt;/span&gt;
+&lt;span class=&quot;rg-badge&quot; id=&quot;rg-val-confidence&quot;&gt;&lt;/span&gt;
 &lt;button class=&quot;rg-secondary&quot; type=&quot;button&quot;&gt;导出&lt;/button&gt;
 &lt;button class=&quot;rg-primary&quot; data-go=&quot;4&quot;&gt;基于结果优化预算&lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-subnav&quot;&gt;&lt;button data-go=&quot;2&quot;&gt;计划概览&lt;/button&gt;&lt;button class=&quot;on&quot; data-go=&quot;3&quot;&gt;效果验证&lt;/button&gt;&lt;button data-go=&quot;4&quot;&gt;预算优化&lt;/button&gt;&lt;/div&gt;
-&lt;div class=&quot;rg-grid4&quot;&gt;
-&lt;div class=&quot;rg-card rg-kpi&quot;&gt;
-&lt;span&gt;真实增量&lt;/span&gt;
-&lt;b&gt;+5.0%&lt;/b&gt;
-&lt;small class=&quot;rg-muted&quot;&gt;实验组 28% − 控制组 23%&lt;/small&gt;
+&lt;div class=&quot;rg-empty&quot; id=&quot;rg-val-empty&quot;&gt;
+&lt;i aria-hidden=&quot;true&quot;&gt;◷&lt;/i&gt;
+&lt;b&gt;还没有可归因的数&lt;/b&gt;
+&lt;p id=&quot;rg-val-empty-copy&quot;&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-card rg-kpi&quot;&gt;
-&lt;span&gt;新增订单&lt;/span&gt;
-&lt;b&gt;2,500&lt;/b&gt;
-&lt;small class=&quot;rg-muted&quot;&gt;排除自然复购&lt;/small&gt;
-&lt;/div&gt;
-&lt;div class=&quot;rg-card rg-kpi&quot;&gt;
-&lt;span&gt;增量利润&lt;/span&gt;
-&lt;b&gt;¥80万&lt;/b&gt;
-&lt;small class=&quot;rg-muted&quot;&gt;已扣除投资成本&lt;/small&gt;
-&lt;/div&gt;
-&lt;div class=&quot;rg-card rg-kpi&quot;&gt;
-&lt;span&gt;增量 ROI&lt;/span&gt;
-&lt;b&gt;3.20&lt;/b&gt;
-&lt;small class=&quot;rg-muted&quot;&gt;p = 0.003 · 结果显著&lt;/small&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;rg-split&quot; style=&quot;margin-top:16px&quot;&gt;
+&lt;div class=&quot;rg-grid4&quot; id=&quot;rg-val-kpis&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;rg-split&quot; id=&quot;rg-val-split&quot; style=&quot;margin-top:16px&quot;&gt;
 &lt;div class=&quot;rg-card&quot;&gt;
-&lt;div class=&quot;rg-card-title&quot;&gt;实验组 vs 控制组 &lt;span class=&quot;rg-muted&quot;&gt;30天复购率&lt;/span&gt;
+&lt;div class=&quot;rg-card-title&quot;&gt;实验组 vs 控制组 &lt;span class=&quot;rg-muted&quot; id=&quot;rg-val-metric&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-bars&quot;&gt;
-&lt;span class=&quot;rg-lift&quot;&gt;真实增量 +5个百分点&lt;/span&gt;
-&lt;div class=&quot;rg-vbar&quot;&gt;
-&lt;b&gt;23%&lt;/b&gt;
-&lt;i style=&quot;height:118px&quot;&gt;
-&lt;/i&gt;
-&lt;span&gt;控制组 · 未接受方案&lt;/span&gt;
-&lt;/div&gt;
-&lt;div class=&quot;rg-vbar test&quot;&gt;
-&lt;b&gt;28%&lt;/b&gt;
-&lt;i style=&quot;height:144px&quot;&gt;
-&lt;/i&gt;
-&lt;span&gt;实验组 · 执行方案&lt;/span&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;rg-formula&quot;&gt;
-&lt;div&gt;
-&lt;span&gt;增量订单&lt;/span&gt;
-&lt;b&gt;2,500单&lt;/b&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;span&gt;增量收入&lt;/span&gt;
-&lt;b&gt;¥260万&lt;/b&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;span&gt;投资成本&lt;/span&gt;
-&lt;b&gt;−¥25万&lt;/b&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;span&gt;增量利润&lt;/span&gt;
-&lt;b&gt;¥80万&lt;/b&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;rg-bars&quot; id=&quot;rg-val-bars&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;rg-formula&quot; id=&quot;rg-val-formula&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-card&quot;&gt;
-&lt;div class=&quot;rg-card-title&quot;&gt;归因依据 &lt;span class=&quot;rg-status done&quot;&gt;验证通过&lt;/span&gt;
+&lt;div class=&quot;rg-card-title&quot;&gt;归因依据 &lt;span class=&quot;rg-status done&quot; id=&quot;rg-val-verdict&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-audit&quot;&gt;
-&lt;div&gt;
-&lt;span&gt;分组方式&lt;/span&gt;
-&lt;b&gt;会员ID随机分流&lt;/b&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;span&gt;控制组比例&lt;/span&gt;
-&lt;b&gt;10%&lt;/b&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;span&gt;观察窗口&lt;/span&gt;
-&lt;b&gt;首购后30天&lt;/b&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;span&gt;收入口径&lt;/span&gt;
-&lt;b&gt;实付 − 退款&lt;/b&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;span&gt;统计显著性&lt;/span&gt;
-&lt;b&gt;p = 0.003&lt;/b&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;span&gt;实验污染&lt;/span&gt;
-&lt;b class=&quot;rg-pos&quot;&gt;✓ 未发现&lt;/b&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;rg-opportunity&quot;&gt;
-&lt;b&gt;结论：&lt;/b&gt;复购提升并非自然回流，可以作为下一轮预算调整依据。&lt;/div&gt;
+&lt;div class=&quot;rg-audit&quot; id=&quot;rg-val-audit&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;rg-opportunity&quot; id=&quot;rg-val-conclusion&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-actions&quot;&gt;
@@ -2171,112 +2069,31 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-subnav&quot;&gt;&lt;button data-go=&quot;2&quot;&gt;计划概览&lt;/button&gt;&lt;button data-go=&quot;3&quot;&gt;效果验证&lt;/button&gt;&lt;button class=&quot;on&quot; data-go=&quot;4&quot;&gt;预算优化&lt;/button&gt;&lt;/div&gt;
-&lt;div class=&quot;rg-grid4&quot;&gt;
-&lt;div class=&quot;rg-card rg-kpi rg-kpi-lead&quot;&gt;
-&lt;span&gt;总预算&lt;/span&gt;
-&lt;b&gt;¥100万&lt;/b&gt;
-&lt;small class=&quot;rg-muted&quot;&gt;本季度&lt;/small&gt;
-&lt;/div&gt;
-&lt;div class=&quot;rg-card rg-kpi&quot;&gt;
-&lt;span&gt;已投入&lt;/span&gt;
-&lt;b&gt;¥52万&lt;/b&gt;
-&lt;small class=&quot;rg-muted&quot;&gt;剩余 ¥48万&lt;/small&gt;
-&lt;/div&gt;
-&lt;div class=&quot;rg-card rg-kpi&quot;&gt;
-&lt;span&gt;优化后预计利润&lt;/span&gt;
-&lt;b&gt;¥188万&lt;/b&gt;
-&lt;span class=&quot;rg-delta up&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▲&lt;/i&gt;+¥60万&lt;small&gt;较当前预计 ¥128万&lt;/small&gt;&lt;/span&gt;
-&lt;/div&gt;
-&lt;div class=&quot;rg-card rg-kpi&quot;&gt;
-&lt;span&gt;预计最终ROI&lt;/span&gt;
-&lt;b&gt;2.68&lt;/b&gt;
-&lt;span class=&quot;rg-delta up&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▲&lt;/i&gt;+0.37&lt;small&gt;原计划 2.31&lt;/small&gt;&lt;/span&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;rg-grid4&quot; id=&quot;rg-opt-kpis&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;rg-ai&quot;&gt;
 &lt;i class=&quot;rg-ai-icon&quot;&gt;AI&lt;/i&gt;
 &lt;div&gt;
-&lt;b&gt;预算调整建议&lt;/b&gt;
-&lt;p&gt;新会员复购方案增量ROI持续高于目标，建议增加 &lt;strong&gt;¥20万&lt;/strong&gt;；沉睡召回ROI下降，建议减少 &lt;strong&gt;¥10万&lt;/strong&gt;。&lt;/p&gt;
+&lt;b id=&quot;rg-opt-ai-title&quot;&gt;&lt;/b&gt;
+&lt;p id=&quot;rg-opt-ai-copy&quot;&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;span class=&quot;rg-badge&quot;&gt;预计多赚 ¥60万&lt;/span&gt;
+&lt;span class=&quot;rg-badge&quot; id=&quot;rg-opt-badge&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-allocate&quot; style=&quot;margin-top:16px&quot;&gt;
+&lt;div class=&quot;rg-empty&quot; id=&quot;rg-opt-empty&quot;&gt;
+&lt;i aria-hidden=&quot;true&quot;&gt;◷&lt;/i&gt;
+&lt;b&gt;还不能调仓&lt;/b&gt;
+&lt;p id=&quot;rg-opt-empty-copy&quot;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;rg-allocate&quot; id=&quot;rg-opt-allocate&quot; style=&quot;margin-top:16px&quot;&gt;
 &lt;div class=&quot;rg-card&quot;&gt;
-&lt;div class=&quot;rg-card-title&quot;&gt;预算调整 &lt;span class=&quot;rg-muted&quot;&gt;未来30天&lt;/span&gt;
+&lt;div class=&quot;rg-card-title&quot;&gt;预算调整 &lt;span class=&quot;rg-muted&quot; id=&quot;rg-opt-alloc-caption&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-budget-row&quot; data-series=&quot;1&quot;&gt;
-&lt;div&gt;
-&lt;b&gt;新会员复购&lt;/b&gt;
-&lt;div class=&quot;rg-reason&quot;&gt;ROI 3.2，持续显著&lt;/div&gt;
-&lt;/div&gt;
-&lt;span&gt;¥30万 → ¥50万&lt;/span&gt;
-&lt;div class=&quot;rg-budget-bar&quot;&gt;
-&lt;i style=&quot;width:82%&quot;&gt;
-&lt;/i&gt;
-&lt;/div&gt;
-&lt;b class=&quot;rg-pos&quot;&gt;+¥20万&lt;/b&gt;
-&lt;/div&gt;
-&lt;div class=&quot;rg-budget-row&quot; data-series=&quot;2&quot;&gt;
-&lt;div&gt;
-&lt;b&gt;沉睡会员召回&lt;/b&gt;
-&lt;div class=&quot;rg-reason&quot;&gt;ROI降至0.8&lt;/div&gt;
-&lt;/div&gt;
-&lt;span&gt;¥20万 → ¥10万&lt;/span&gt;
-&lt;div class=&quot;rg-budget-bar&quot;&gt;
-&lt;i style=&quot;width:25%&quot;&gt;
-&lt;/i&gt;
-&lt;/div&gt;
-&lt;b class=&quot;rg-neg&quot;&gt;−¥10万&lt;/b&gt;
-&lt;/div&gt;
-&lt;div class=&quot;rg-budget-row&quot; data-series=&quot;3&quot;&gt;
-&lt;div&gt;
-&lt;b&gt;探索预算&lt;/b&gt;
-&lt;div class=&quot;rg-reason&quot;&gt;验证新品与低峰场景&lt;/div&gt;
-&lt;/div&gt;
-&lt;span&gt;¥10万 → ¥20万&lt;/span&gt;
-&lt;div class=&quot;rg-budget-bar&quot;&gt;
-&lt;i style=&quot;width:40%&quot;&gt;
-&lt;/i&gt;
-&lt;/div&gt;
-&lt;b class=&quot;rg-pos&quot;&gt;+¥10万&lt;/b&gt;
-&lt;/div&gt;
+&lt;div id=&quot;rg-opt-rows&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;rg-opportunity&quot; id=&quot;rg-opt-derivation&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-card&quot;&gt;
 &lt;div class=&quot;rg-card-title&quot;&gt;经营动作变化 &lt;span class=&quot;rg-muted&quot;&gt;系统自动编排&lt;/span&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-tool&quot;&gt;
-&lt;i class=&quot;rg-tool-icon&quot;&gt;人&lt;/i&gt;
-&lt;div&gt;
-&lt;b&gt;扩大目标人群&lt;/b&gt;
-&lt;span&gt;新增高潜新会员18,600人&lt;/span&gt;
-&lt;/div&gt;
-&lt;span class=&quot;rg-decision up&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▲&lt;/i&gt;扩量&lt;/span&gt;
-&lt;/div&gt;
-&lt;div class=&quot;rg-tool&quot;&gt;
-&lt;i class=&quot;rg-tool-icon&quot;&gt;券&lt;/i&gt;
-&lt;div&gt;
-&lt;b&gt;优化投资方式&lt;/b&gt;
-&lt;span&gt;偏好权益替代通用折扣&lt;/span&gt;
-&lt;/div&gt;
-&lt;span class=&quot;rg-decision&quot;&gt;替换&lt;/span&gt;
-&lt;/div&gt;
-&lt;div class=&quot;rg-tool&quot;&gt;
-&lt;i class=&quot;rg-tool-icon&quot;&gt;时&lt;/i&gt;
-&lt;div&gt;
-&lt;b&gt;调整经营时机&lt;/b&gt;
-&lt;span&gt;触发窗口前移至首购后7天&lt;/span&gt;
-&lt;/div&gt;
-&lt;span class=&quot;rg-decision&quot;&gt;提前&lt;/span&gt;
-&lt;/div&gt;
-&lt;div class=&quot;rg-tool&quot;&gt;
-&lt;i class=&quot;rg-tool-icon&quot;&gt;验&lt;/i&gt;
-&lt;div&gt;
-&lt;b&gt;持续效果验证&lt;/b&gt;
-&lt;span&gt;保留10%随机控制组&lt;/span&gt;
-&lt;/div&gt;
-&lt;span class=&quot;rg-decision&quot;&gt;保持&lt;/span&gt;
-&lt;/div&gt;
+&lt;div id=&quot;rg-opt-actions&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-actions&quot;&gt;
@@ -2290,15 +2107,22 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;div&gt;
 &lt;p class=&quot;rg-breadcrumb&quot; aria-hidden=&quot;true&quot;&gt;会员营销 › 复盘 › 投资报告&lt;/p&gt;
 &lt;h2&gt;会员增长投资报告&lt;/h2&gt;
-&lt;p&gt;新会员30天复购提升计划 · 口径：增量利润 = 增量收入 − 商品成本 − 权益成本 − 触达成本&lt;/p&gt;
+&lt;p id=&quot;rg-report-caption&quot;&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-headactions&quot;&gt;
-&lt;span class=&quot;rg-badge&quot;&gt;目标达成 121%&lt;/span&gt;
+&lt;span class=&quot;rg-status done&quot; id=&quot;rg-report-state&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;rg-badge&quot; id=&quot;rg-report-goal&quot;&gt;目标达成 121%&lt;/span&gt;
 &lt;button class=&quot;rg-daterange&quot; type=&quot;button&quot;&gt;&lt;span&gt;期间&lt;/span&gt;2026 Q3 · 7/1–9/30&lt;span aria-hidden=&quot;true&quot;&gt;▾&lt;/span&gt;&lt;/button&gt;
 &lt;button class=&quot;rg-secondary&quot; type=&quot;button&quot;&gt;导出&lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-grid4&quot;&gt;
+&lt;div class=&quot;rg-empty&quot; id=&quot;rg-report-empty&quot;&gt;
+&lt;i aria-hidden=&quot;true&quot;&gt;◷&lt;/i&gt;
+&lt;b&gt;本计划尚未结算&lt;/b&gt;
+&lt;p id=&quot;rg-report-empty-copy&quot;&gt;&lt;/p&gt;
+&lt;button class=&quot;rg-secondary&quot; type=&quot;button&quot; data-go=&quot;4&quot;&gt;回到预算优化&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;rg-grid4&quot; id=&quot;rg-report-kpis&quot;&gt;
 &lt;div class=&quot;rg-card rg-kpi&quot;&gt;
 &lt;span&gt;总投入&lt;/span&gt;
 &lt;b&gt;¥100万&lt;/b&gt;
@@ -2320,7 +2144,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;span class=&quot;rg-delta up&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▲&lt;/i&gt;+41%&lt;small&gt;较人工方案&lt;/small&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-split&quot; style=&quot;margin-top:16px&quot;&gt;
+&lt;div class=&quot;rg-split&quot; id=&quot;rg-report-split&quot; style=&quot;margin-top:16px&quot;&gt;
 &lt;div class=&quot;rg-card&quot;&gt;
 &lt;div class=&quot;rg-card-title&quot;&gt;增量价值构成&lt;/div&gt;
 &lt;div class=&quot;rg-waterfall&quot;&gt;
@@ -2360,7 +2184,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-actions&quot;&gt;
+&lt;div class=&quot;rg-actions&quot; id=&quot;rg-report-actions&quot;&gt;
 &lt;button class=&quot;rg-secondary&quot; data-go=&quot;0&quot;&gt;返回经营总览&lt;/button&gt;
 &lt;button class=&quot;rg-primary&quot; data-create&gt;创建下一季度计划&lt;/button&gt;
 &lt;/div&gt;
@@ -2584,10 +2408,122 @@ html&gt;body{padding:0}&lt;/style&gt;
     (()=&gt;{
       const root=document.getElementById(&#x27;growth-engine&#x27;);if(!root)return;
       const pages=[...root.querySelectorAll(&#x27;.rg-page&#x27;)],nav=[...root.querySelectorAll(&#x27;.rg-side button[data-page]&#x27;)],modal=root.querySelector(&#x27;#rg-create-modal&#x27;),wizardPanes=[...root.querySelectorAll(&#x27;.rg-wizard-pane&#x27;)],wizardSteps=[...root.querySelectorAll(&#x27;.rg-wizard-step&#x27;)];
-      const goals={
-        new:{label:&#x27;新会员复购&#x27;,name:&#x27;新会员30天复购提升&#x27;,members:&#x27;38万&#x27;,baseline:&#x27;21%&#x27;,benchmark:&#x27;30%&#x27;,space:&#x27;+9%&#x27;,copy:&#x27;近90天首购会员&#x27;,strategies:[&#x27;7天二次消费激励&#x27;,&#x27;14天召回&#x27;,&#x27;探索策略池&#x27;],baseRoi:1.78,feasibility:&#x27;基于近90天38万新会员数据，预计30天复购可提升目标区间；历史基线与随机控制组均已就绪。&#x27;},
-        sleep:{label:&#x27;沉睡会员召回&#x27;,name:&#x27;90天沉睡会员分层召回&#x27;,members:&#x27;16万&#x27;,baseline:&#x27;7%&#x27;,benchmark:&#x27;13%&#x27;,space:&#x27;+6%&#x27;,copy:&#x27;90天未消费会员&#x27;,strategies:[&#x27;高意向会员定向召回&#x27;,&#x27;流失风险权益包&#x27;,&#x27;探索策略池&#x27;],baseRoi:1.32,feasibility:&#x27;基于16万沉睡会员的历史唤醒数据，目标可验证；建议先从高意向分层启动，控制优惠蚕食。&#x27;},
-        vip:{label:&#x27;高价值会员提升&#x27;,name:&#x27;高价值会员LTV提升&#x27;,members:&#x27;4.8万&#x27;,baseline:&#x27;¥286&#x27;,benchmark:&#x27;¥332&#x27;,space:&#x27;+16%&#x27;,copy:&#x27;近180天高价值会员&#x27;,strategies:[&#x27;专属商品组合&#x27;,&#x27;高峰外到店激励&#x27;,&#x27;探索策略池&#x27;],baseRoi:1.55,feasibility:&#x27;高价值会员样本量满足实验要求；建议以增量毛利和90天LTV作为联合判断指标。&#x27;}
+      /* ============================================================================
+         计划数据。第 2/3/4/5 屏全部从这里渲染 —— 以前这四屏的数字是写死的,
+         点进任何一个计划看到的都是「新会员复购」那一份,这是演示里最容易被抓的地方。
+
+         三个计划刻意处在三种状态:
+           new   已归因,可调仓          —— 完整链路
+           sleep 已归因但 ROI 差        —— 归因通过 ≠ 值得加钱
+           vip   实验窗口内,无可归因的数 —— 不编造指标,也不许调仓
+         口径:增量ROI = 增量利润 ÷ 已投入;预计ROI = 预计增量利润 ÷ 预算。
+         ============================================================================ */
+      const plans={
+      new:{
+        label:&#x27;新会员复购&#x27;,name:&#x27;新会员30天复购提升&#x27;,goalLine:&#x27;目标提升5个百分点&#x27;,
+        budget:100,spend:52,verified:128,day:47,cycle:&#x27;90天&#x27;,
+        members:&#x27;38万&#x27;,baseline:&#x27;21%&#x27;,benchmark:&#x27;30%&#x27;,space:&#x27;+9%&#x27;,copy:&#x27;近90天首购会员&#x27;,
+        kpiLabels:[&#x27;目标会员&#x27;,&#x27;当前30天复购&#x27;,&#x27;行业参考&#x27;,&#x27;增长空间&#x27;],
+        kpiNotes:[&#x27;近90天首购会员&#x27;,&#x27;自然经营基线&#x27;,&#x27;同类餐饮品牌&#x27;,&#x27;季度机会约 ¥216万&#x27;],
+        blend:&#x27;2.8&#x27;,
+        why:[&#x27;为什么选择这个机会？&#x27;,&#x27;首购后7～14天是复购响应最高的窗口；38万目标会员中，约22万人具备明确商品偏好，预计36天回本。&#x27;],
+        schemes:[
+          {name:&#x27;7天二次消费激励&#x27;,seg:&#x27;首购后7天未复购&#x27;,tools:&#x27;EDM + 会员权益&#x27;,provider:&#x27;Mailchimp + CRM券中心&#x27;,budget:50,roi:&#x27;3.5&#x27;,delta:&#x27;+0.7&#x27;,dir:&#x27;up&#x27;,state:&#x27;运行&#x27;,cls:&#x27;&#x27;,run:true},
+          {name:&#x27;14天召回&#x27;,seg:&#x27;低响应新会员&#x27;,tools:&#x27;短信 + 会员权益&#x27;,provider:&#x27;服务商A + CRM券中心&#x27;,budget:30,roi:&#x27;2.1&#x27;,delta:&#x27;−0.7&#x27;,dir:&#x27;down&#x27;,state:&#x27;运行&#x27;,cls:&#x27;&#x27;,run:true},
+          {name:&#x27;探索策略&#x27;,seg:&#x27;AI发现机会&#x27;,tools:&#x27;WhatsApp互动&#x27;,provider:&#x27;三方服务商B&#x27;,budget:20,roi:null,state:&#x27;测试&#x27;,cls:&#x27;test&#x27;,run:false}],
+        matrix:{window:&#x27;近30天&#x27;,note:&#x27;EDM边际ROI更高，下一批会员预算增加5万元；短信减少3万元；保留2万元探索WhatsApp。预算只在商家已授权工具之间流动。&#x27;,rows:[
+          {tool:&#x27;EDM + 会员权益&#x27;,provider:&#x27;Mailchimp + CRM券中心&#x27;,spend:8,profit:&#x27;¥24万&#x27;,roi:&#x27;3.00&#x27;,delta:&#x27;+0.20&#x27;,dir:&#x27;up&#x27;,decision:&#x27;加仓 +¥5万&#x27;,cls:&#x27;up&#x27;,mark:&#x27;▲&#x27;},
+          {tool:&#x27;短信 + 会员权益&#x27;,provider:&#x27;服务商A + CRM券中心&#x27;,spend:12,profit:&#x27;¥18万&#x27;,roi:&#x27;1.50&#x27;,delta:&#x27;−1.30&#x27;,dir:&#x27;down&#x27;,decision:&#x27;减仓 −¥3万&#x27;,cls:&#x27;down&#x27;,mark:&#x27;▼&#x27;},
+          {tool:&#x27;WhatsApp互动召回&#x27;,provider:&#x27;三方服务商B&#x27;,spend:3,profit:null,roi:null,decision:&#x27;探索 ¥2万&#x27;,cls:&#x27;test&#x27;,mark:&#x27;◷&#x27;}]},
+        exp:{metric:&#x27;30天复购率&#x27;,confidence:&#x27;可信度 94%&#x27;,verdict:[&#x27;验证通过&#x27;,&#x27;done&#x27;],
+          ctrl:&#x27;23%&#x27;,treat:&#x27;28%&#x27;,ctrlH:118,treatH:144,lift:&#x27;真实增量 +5个百分点&#x27;,
+          kpis:[[&#x27;真实增量&#x27;,&#x27;+5.0%&#x27;,&#x27;实验组 28% − 控制组 23%&#x27;],
+                [&#x27;新增订单&#x27;,&#x27;17,100&#x27;,&#x27;排除自然复购 · 实验组34.2万人 × 5个百分点&#x27;],
+                [&#x27;增量利润&#x27;,&#x27;¥80万&#x27;,&#x27;已扣除商品与实验期投资成本&#x27;],
+                [&#x27;增量 ROI&#x27;,&#x27;3.20&#x27;,&#x27;p = 0.003 · 结果显著&#x27;]],
+          formula:[[&#x27;增量订单&#x27;,&#x27;17,100单&#x27;],[&#x27;增量收入&#x27;,&#x27;¥180万&#x27;],[&#x27;商品成本&#x27;,&#x27;−¥75万&#x27;],[&#x27;实验期投资成本&#x27;,&#x27;−¥25万&#x27;],[&#x27;增量利润&#x27;,&#x27;¥80万&#x27;]],
+          audit:[[&#x27;分组方式&#x27;,&#x27;会员ID随机分流&#x27;],[&#x27;控制组比例&#x27;,&#x27;10%&#x27;],[&#x27;观察窗口&#x27;,&#x27;首购后30天&#x27;],[&#x27;收入口径&#x27;,&#x27;实付 − 退款&#x27;],[&#x27;统计显著性&#x27;,&#x27;p = 0.003&#x27;],[&#x27;实验污染&#x27;,&#x27;✓ 未发现&#x27;,&#x27;rg-pos&#x27;]],
+          conclusion:&#x27;复购提升并非自然回流，可以作为下一轮预算调整依据。&#x27;},
+        opt:{rows:[
+          {name:&#x27;7天二次消费激励&#x27;,reason:&#x27;增量ROI 3.00，高于计划组合 2.8&#x27;,roi:3,from:18,to:32},
+          {name:&#x27;14天召回&#x27;,reason:&#x27;增量ROI 1.50，低于计划组合 2.8&#x27;,roi:1.5,from:20,to:8},
+          {name:&#x27;探索策略池&#x27;,reason:&#x27;仍在实验窗口内，尚无可归因的数&#x27;,roi:null,from:10,to:8}],
+          actions:[[&#x27;人&#x27;,&#x27;扩大目标人群&#x27;,&#x27;新增高潜新会员18,600人&#x27;,&#x27;up&#x27;,&#x27;▲&#x27;,&#x27;扩量&#x27;],
+                   [&#x27;券&#x27;,&#x27;优化投资方式&#x27;,&#x27;偏好权益替代通用折扣&#x27;,&#x27;&#x27;,&#x27;&#x27;,&#x27;替换&#x27;],
+                   [&#x27;时&#x27;,&#x27;调整经营时机&#x27;,&#x27;触发窗口前移至首购后7天&#x27;,&#x27;&#x27;,&#x27;&#x27;,&#x27;提前&#x27;],
+                   [&#x27;验&#x27;,&#x27;持续效果验证&#x27;,&#x27;保留10%随机控制组&#x27;,&#x27;&#x27;,&#x27;&#x27;,&#x27;保持&#x27;]]},
+        report:true,
+        baseRoi:1.78,strategies:[&#x27;7天二次消费激励&#x27;,&#x27;14天召回&#x27;,&#x27;探索策略池&#x27;],
+        feasibility:&#x27;基于近90天38万新会员数据，预计30天复购可提升目标区间；历史基线与随机控制组均已就绪。&#x27;},
+
+      sleep:{
+        label:&#x27;沉睡会员召回&#x27;,name:&#x27;沉睡会员分层召回&#x27;,goalLine:&#x27;目标唤醒率提升3个百分点&#x27;,
+        budget:80,spend:31,verified:36,day:34,cycle:&#x27;90天&#x27;,
+        members:&#x27;16万&#x27;,baseline:&#x27;7%&#x27;,benchmark:&#x27;13%&#x27;,space:&#x27;+6%&#x27;,copy:&#x27;90天未消费会员&#x27;,
+        kpiLabels:[&#x27;目标会员&#x27;,&#x27;当前90天唤醒&#x27;,&#x27;行业参考&#x27;,&#x27;增长空间&#x27;],
+        kpiNotes:[&#x27;90天未消费会员&#x27;,&#x27;自然回流基线&#x27;,&#x27;同类餐饮品牌&#x27;,&#x27;季度机会约 ¥96万&#x27;],
+        blend:&#x27;1.3&#x27;,
+        why:[&#x27;为什么这个计划要减速？&#x27;,&#x27;16万沉睡会员里只有约6.2万具备明确复购历史；其余人群靠通用折扣唤醒，优惠蚕食明显，边际回报低于组合。&#x27;],
+        schemes:[
+          {name:&#x27;高意向会员定向召回&#x27;,seg:&#x27;90天未消费 · 高历史频次&#x27;,tools:&#x27;短信 + 会员权益&#x27;,provider:&#x27;服务商A + CRM券中心&#x27;,budget:36,roi:&#x27;2.5&#x27;,delta:&#x27;+1.2&#x27;,dir:&#x27;up&#x27;,state:&#x27;运行&#x27;,cls:&#x27;&#x27;,run:true},
+          {name:&#x27;流失风险权益包&#x27;,seg:&#x27;90天未消费 · 低频次&#x27;,tools:&#x27;EDM + 会员权益&#x27;,provider:&#x27;Mailchimp + CRM券中心&#x27;,budget:30,roi:&#x27;0.5&#x27;,delta:&#x27;−0.8&#x27;,dir:&#x27;down&#x27;,state:&#x27;运行&#x27;,cls:&#x27;&#x27;,run:true},
+          {name:&#x27;探索策略&#x27;,seg:&#x27;AI发现机会&#x27;,tools:&#x27;WhatsApp互动&#x27;,provider:&#x27;三方服务商B&#x27;,budget:14,roi:null,state:&#x27;测试&#x27;,cls:&#x27;test&#x27;,run:false}],
+        matrix:{window:&#x27;近30天&#x27;,note:&#x27;短信在高意向分层上边际ROI更高，下一批预算增加4万元；EDM的通用折扣蚕食明显，减少4万元；保留1万元探索WhatsApp。&#x27;,rows:[
+          {tool:&#x27;短信 + 会员权益&#x27;,provider:&#x27;服务商A + CRM券中心&#x27;,spend:6,profit:&#x27;¥15万&#x27;,roi:&#x27;2.50&#x27;,delta:&#x27;+1.20&#x27;,dir:&#x27;up&#x27;,decision:&#x27;加仓 +¥4万&#x27;,cls:&#x27;up&#x27;,mark:&#x27;▲&#x27;},
+          {tool:&#x27;EDM + 会员权益&#x27;,provider:&#x27;Mailchimp + CRM券中心&#x27;,spend:10,profit:&#x27;¥5万&#x27;,roi:&#x27;0.50&#x27;,delta:&#x27;−0.80&#x27;,dir:&#x27;down&#x27;,decision:&#x27;减仓 −¥4万&#x27;,cls:&#x27;down&#x27;,mark:&#x27;▼&#x27;},
+          {tool:&#x27;WhatsApp互动召回&#x27;,provider:&#x27;三方服务商B&#x27;,spend:2,profit:null,roi:null,decision:&#x27;探索 ¥1万&#x27;,cls:&#x27;test&#x27;,mark:&#x27;◷&#x27;}]},
+        exp:{metric:&#x27;90天唤醒率&#x27;,confidence:&#x27;可信度 88%&#x27;,verdict:[&#x27;验证通过&#x27;,&#x27;done&#x27;],
+          ctrl:&#x27;5%&#x27;,treat:&#x27;8%&#x27;,ctrlH:90,treatH:144,lift:&#x27;真实增量 +3个百分点&#x27;,
+          kpis:[[&#x27;真实增量&#x27;,&#x27;+3.0%&#x27;,&#x27;实验组 8% − 控制组 5%&#x27;],
+                [&#x27;新增订单&#x27;,&#x27;4,320&#x27;,&#x27;排除自然回流 · 实验组14.4万人 × 3个百分点&#x27;],
+                [&#x27;增量利润&#x27;,&#x27;¥14万&#x27;,&#x27;已扣除商品与实验期投资成本&#x27;],
+                [&#x27;增量 ROI&#x27;,&#x27;1.17&#x27;,&#x27;p = 0.041 · 结果显著&#x27;]],
+          formula:[[&#x27;增量订单&#x27;,&#x27;4,320单&#x27;],[&#x27;增量收入&#x27;,&#x27;¥45万&#x27;],[&#x27;商品成本&#x27;,&#x27;−¥19万&#x27;],[&#x27;实验期投资成本&#x27;,&#x27;−¥12万&#x27;],[&#x27;增量利润&#x27;,&#x27;¥14万&#x27;]],
+          audit:[[&#x27;分组方式&#x27;,&#x27;会员ID随机分流&#x27;],[&#x27;控制组比例&#x27;,&#x27;10%&#x27;],[&#x27;观察窗口&#x27;,&#x27;触达后90天&#x27;],[&#x27;收入口径&#x27;,&#x27;实付 − 退款&#x27;],[&#x27;统计显著性&#x27;,&#x27;p = 0.041&#x27;],[&#x27;实验污染&#x27;,&#x27;✓ 未发现&#x27;,&#x27;rg-pos&#x27;]],
+          conclusion:&#x27;唤醒确有增量，但权益成本吃掉大半 —— 归因通过不等于值得加钱，预算应收敛到高意向分层。&#x27;},
+        opt:{rows:[
+          {name:&#x27;高意向会员定向召回&#x27;,reason:&#x27;增量ROI 2.50，高于计划组合 1.3&#x27;,roi:2.5,from:16,to:32},
+          {name:&#x27;流失风险权益包&#x27;,reason:&#x27;增量ROI 0.50，通用折扣蚕食明显&#x27;,roi:.5,from:24,to:8},
+          {name:&#x27;探索策略池&#x27;,reason:&#x27;仍在实验窗口内，尚无可归因的数&#x27;,roi:null,from:9,to:9}],
+          actions:[[&#x27;层&#x27;,&#x27;收敛目标分层&#x27;,&#x27;只保留高意向 6.2万人&#x27;,&#x27;down&#x27;,&#x27;▼&#x27;,&#x27;收量&#x27;],
+                   [&#x27;券&#x27;,&#x27;降低优惠力度&#x27;,&#x27;通用折扣改为品类权益&#x27;,&#x27;&#x27;,&#x27;&#x27;,&#x27;替换&#x27;],
+                   [&#x27;停&#x27;,&#x27;止损低效策略&#x27;,&#x27;流失风险权益包减至 ¥8万&#x27;,&#x27;down&#x27;,&#x27;▼&#x27;,&#x27;减仓&#x27;],
+                   [&#x27;验&#x27;,&#x27;持续效果验证&#x27;,&#x27;保留10%随机控制组&#x27;,&#x27;&#x27;,&#x27;&#x27;,&#x27;保持&#x27;]]},
+        report:false,
+        reportCopy:&#x27;沉睡会员分层召回仍在运行（第34天 / 共90天，预算执行 39%）。投资报告在季度结算后生成。&#x27;,
+        baseRoi:1.32,strategies:[&#x27;高意向会员定向召回&#x27;,&#x27;流失风险权益包&#x27;,&#x27;探索策略池&#x27;],
+        feasibility:&#x27;基于16万沉睡会员的历史唤醒数据，目标可验证；建议先从高意向分层启动，控制优惠蚕食。&#x27;},
+
+      vip:{
+        label:&#x27;高价值会员提升&#x27;,name:&#x27;高价值会员提升&#x27;,goalLine:&#x27;目标客单提升8%&#x27;,
+        budget:48,spend:8,verified:null,day:21,cycle:&#x27;90天&#x27;,
+        members:&#x27;4.8万&#x27;,baseline:&#x27;¥286&#x27;,benchmark:&#x27;¥332&#x27;,space:&#x27;+16%&#x27;,copy:&#x27;近180天高价值会员&#x27;,
+        kpiLabels:[&#x27;目标会员&#x27;,&#x27;当前90天客单&#x27;,&#x27;行业参考&#x27;,&#x27;增长空间&#x27;],
+        kpiNotes:[&#x27;近180天高价值会员&#x27;,&#x27;当前客单基线&#x27;,&#x27;同类餐饮品牌&#x27;,&#x27;季度机会约 ¥74万&#x27;],
+        blend:&#x27;待验证&#x27;,
+        why:[&#x27;为什么这个计划还不给钱？&#x27;,&#x27;样本量刚到 62%，观测到的客单差异还没通过显著性检验。在归因完成前，系统不会为它加仓，这 ¥8万 也不计入已验证增量利润。&#x27;],
+        schemes:[
+          {name:&#x27;专属商品组合&#x27;,seg:&#x27;近180天高价值会员&#x27;,tools:&#x27;会员权益&#x27;,provider:&#x27;CRM券中心&#x27;,budget:24,roi:null,state:&#x27;测试&#x27;,cls:&#x27;test&#x27;,run:false},
+          {name:&#x27;高峰外到店激励&#x27;,seg:&#x27;高价值 · 低峰时段&#x27;,tools:&#x27;短信 + 会员权益&#x27;,provider:&#x27;服务商A + CRM券中心&#x27;,budget:16,roi:null,state:&#x27;测试&#x27;,cls:&#x27;test&#x27;,run:false},
+          {name:&#x27;探索策略&#x27;,seg:&#x27;AI发现机会&#x27;,tools:&#x27;EDM&#x27;,provider:&#x27;Mailchimp&#x27;,budget:8,roi:null,state:&#x27;测试&#x27;,cls:&#x27;test&#x27;,run:false}],
+        matrix:{window:&#x27;近30天&#x27;,note:&#x27;两个工具都还在实验窗口内。在任何一个工具拿到可归因的增量之前，系统不会移动预算。&#x27;,rows:[
+          {tool:&#x27;会员权益&#x27;,provider:&#x27;CRM券中心&#x27;,spend:5,profit:null,roi:null,decision:&#x27;探索 ¥3万&#x27;,cls:&#x27;test&#x27;,mark:&#x27;◷&#x27;},
+          {tool:&#x27;短信 + 会员权益&#x27;,provider:&#x27;服务商A + CRM券中心&#x27;,spend:3,profit:null,roi:null,decision:&#x27;探索 ¥2万&#x27;,cls:&#x27;test&#x27;,mark:&#x27;◷&#x27;}]},
+        exp:{metric:&#x27;90天客单价&#x27;,confidence:&#x27;归因未完成&#x27;,verdict:[&#x27;学习中&#x27;,&#x27;test&#x27;],
+          ctrl:&#x27;¥286&#x27;,treat:&#x27;¥301&#x27;,ctrlH:128,treatH:135,lift:&#x27;观测差异 +¥15 · 未达显著性&#x27;,
+          kpis:[[&#x27;真实增量&#x27;,&#x27;—&#x27;,&#x27;实验窗口内 · 还剩13天&#x27;,&#x27;flat&#x27;],
+                [&#x27;新增订单&#x27;,&#x27;—&#x27;,&#x27;样本量 62% · 需 ≥80%&#x27;,&#x27;flat&#x27;],
+                [&#x27;增量利润&#x27;,&#x27;—&#x27;,&#x27;等待归因&#x27;,&#x27;flat&#x27;],
+                [&#x27;增量 ROI&#x27;,&#x27;—&#x27;,&#x27;p = 0.21 · 未达显著&#x27;,&#x27;flat&#x27;]],
+          formula:[[&#x27;观测订单&#x27;,&#x27;—&#x27;],[&#x27;观测收入&#x27;,&#x27;—&#x27;],[&#x27;商品成本&#x27;,&#x27;—&#x27;],[&#x27;实验期投资成本&#x27;,&#x27;−¥8万&#x27;],[&#x27;增量利润&#x27;,&#x27;—&#x27;]],
+          audit:[[&#x27;分组方式&#x27;,&#x27;会员ID随机分流&#x27;],[&#x27;控制组比例&#x27;,&#x27;10%&#x27;],[&#x27;观察窗口&#x27;,&#x27;触达后90天&#x27;],[&#x27;收入口径&#x27;,&#x27;实付 − 退款&#x27;],[&#x27;统计显著性&#x27;,&#x27;p = 0.21 · 未达显著&#x27;,&#x27;rg-warn&#x27;],[&#x27;样本量&#x27;,&#x27;62% · 需 ≥80%&#x27;,&#x27;rg-warn&#x27;],[&#x27;实验污染&#x27;,&#x27;◷ 观测中&#x27;,&#x27;rg-warn&#x27;]],
+          conclusion:&#x27;尚不能判断客单提升是否由方案带来。在归因通过前，本计划不参与预算调仓。&#x27;},
+        opt:null,
+        optCopy:&#x27;高价值会员提升还没有通过归因的增量（p = 0.21，样本量 62%）。系统不会在归因完成前移动预算 —— 这一条不因为&quot;看起来在涨&quot;而让步。&#x27;,
+        report:false,
+        reportCopy:&#x27;高价值会员提升仍在实验窗口内（预算执行 17%），归因尚未完成。投资报告在季度结算后生成。&#x27;,
+        baseRoi:1.55,strategies:[&#x27;专属商品组合&#x27;,&#x27;高峰外到店激励&#x27;,&#x27;探索策略池&#x27;],
+        feasibility:&#x27;高价值会员样本量满足实验要求；建议以增量毛利和90天LTV作为联合判断指标。&#x27;}
       };
       const toolLabels={edm:&#x27;EDM&#x27;,sms:&#x27;短信&#x27;,coupon:&#x27;会员权益&#x27;,wa:&#x27;WhatsApp&#x27;},providerLabels={edm:&#x27;Mailchimp&#x27;,sms:&#x27;服务商A&#x27;,coupon:&#x27;CRM券中心&#x27;,wa:&#x27;三方服务商B&#x27;};
       let wizard=0,selectedGoal=&#x27;new&#x27;,created=false;
@@ -2604,20 +2540,223 @@ html&gt;body{padding:0}&lt;/style&gt;
         if(work)work.scrollTop=0;
       }
       function wizardShow(n){wizard=Math.max(0,Math.min(3,n));wizardPanes.forEach((x,i)=&gt;x.classList.toggle(&#x27;on&#x27;,i===wizard));wizardSteps.forEach((x,i)=&gt;x.classList.toggle(&#x27;on&#x27;,i===wizard));root.querySelector(&#x27;#rg-wizard-back&#x27;).style.visibility=wizard===0?&#x27;hidden&#x27;:&#x27;visible&#x27;;root.querySelector(&#x27;#rg-wizard-next&#x27;).textContent=wizard===3?&#x27;启动计划&#x27;:&#x27;下一步&#x27;;if(wizard&gt;=2)updateInputs();}
-      function openModal(){wizardShow(0);modal.classList.add(&#x27;on&#x27;);}
-      function closeModal(){modal.classList.remove(&#x27;on&#x27;);}
-      function selectGoal(key){selectedGoal=key;const g=goals[key];root.querySelectorAll(&#x27;.rg-choice&#x27;).forEach(x=&gt;x.classList.toggle(&#x27;on&#x27;,x.dataset.goal===key));nameInput.value=g.name;updateInputs();}
+      /* 弹窗的可达性由这一段自己保证:打开时把焦点搬进去、把背景整块 inert,
+         Tab 在弹窗内循环,ESC 关闭,关闭后焦点回到打开它的那个按钮。 */
+      const shellParts=[root.querySelector(&#x27;.rg-top&#x27;),root.querySelector(&#x27;.rg-body&#x27;)];
+      let lastFocus=null;
+      function focusables(){
+        return [...modal.querySelectorAll(&#x27;button,input,select,textarea,[href]&#x27;)]
+          .filter(x=&gt;!x.disabled&amp;&amp;x.offsetParent!==null&amp;&amp;getComputedStyle(x).visibility!==&#x27;hidden&#x27;);
+      }
+      function openModal(){
+        lastFocus=root.ownerDocument.activeElement;
+        wizardShow(0);modal.classList.add(&#x27;on&#x27;);
+        shellParts.forEach(x=&gt;{if(x){x.inert=true;x.setAttribute(&#x27;aria-hidden&#x27;,&#x27;true&#x27;)}});
+        const f=focusables();if(f[0])f[0].focus();
+      }
+      function closeModal(){
+        modal.classList.remove(&#x27;on&#x27;);
+        shellParts.forEach(x=&gt;{if(x){x.inert=false;x.removeAttribute(&#x27;aria-hidden&#x27;)}});
+        if(lastFocus&amp;&amp;lastFocus.focus)lastFocus.focus();
+      }
+      modal.addEventListener(&#x27;keydown&#x27;,e=&gt;{
+        if(e.key!==&#x27;Tab&#x27;)return;
+        const f=focusables();if(!f.length)return;
+        const first=f[0],last=f[f.length-1],now=root.ownerDocument.activeElement;
+        if(e.shiftKey&amp;&amp;now===first){e.preventDefault();last.focus()}
+        else if(!e.shiftKey&amp;&amp;now===last){e.preventDefault();first.focus()}
+      });
+      root.ownerDocument.addEventListener(&#x27;keydown&#x27;,e=&gt;{
+        if(e.key===&#x27;Escape&#x27;&amp;&amp;modal.classList.contains(&#x27;on&#x27;)){e.preventDefault();closeModal()}
+      });
+      function selectGoal(key){selectedGoal=key;const g=plans[key];root.querySelectorAll(&#x27;.rg-choice&#x27;).forEach(x=&gt;x.classList.toggle(&#x27;on&#x27;,x.dataset.goal===key));nameInput.value=g.name;updateInputs();}
       function selectedTools(){return [...root.querySelectorAll(&#x27;[data-tool]:checked&#x27;)].map(x=&gt;x.dataset.tool)}
       function connectWhatsApp(){const input=root.querySelector(&#x27;[data-tool=&quot;wa&quot;]&#x27;),card=root.querySelector(&#x27;#rg-wa-card&#x27;),button=card.querySelector(&#x27;[data-connect-tool]&#x27;);input.hidden=false;input.checked=true;card.classList.remove(&#x27;off&#x27;);root.querySelector(&#x27;#rg-wa-state&#x27;).textContent=&#x27;三方服务商B · 已接入&#x27;;button.remove();updateInputs();toast(&#x27;WhatsApp已引入，可参与本计划的策略编排与效果竞争&#x27;)}
       function updateInputs(){
-        const g=goals[selectedGoal],b=+budget.value,tg=+target.value,tools=selectedTools(),score=Math.max(48,Math.min(94,Math.round(94-tg*3+b*.07))),toolBoost=Math.max(-.18,(tools.length-2)*.04),roi=Math.max(.65,g.baseRoi-(tg-5)*.08+(b-100)*.0015+toolBoost),profit=Math.round(b*roi),parts=[Math.round(b*.5),Math.round(b*.3)];parts.push(b-parts[0]-parts[1]);
+        const g=plans[selectedGoal],b=+budget.value,tg=+target.value,tools=selectedTools(),score=Math.max(48,Math.min(94,Math.round(94-tg*3+b*.07))),toolBoost=Math.max(-.18,(tools.length-2)*.04),roi=Math.max(.65,g.baseRoi-(tg-5)*.08+(b-100)*.0015+toolBoost),profit=Math.round(b*roi),parts=[Math.round(b*.5),Math.round(b*.3)];parts.push(b-parts[0]-parts[1]);
         const primary=tools.includes(&#x27;edm&#x27;)?&#x27;edm&#x27;:tools[0],secondary=tools.includes(&#x27;sms&#x27;)?&#x27;sms&#x27;:tools[1]||primary,incentive=tools.includes(&#x27;coupon&#x27;)?&#x27;coupon&#x27;:null,explore=tools.includes(&#x27;wa&#x27;)?&#x27;wa&#x27;:tools.find(x=&gt;x!==primary&amp;&amp;x!==secondary)||primary;
         const combo=k=&gt;k?(toolLabels[k]+(incentive&amp;&amp;k!==incentive?&#x27; + 会员权益&#x27;:&#x27;&#x27;)):&#x27;无可用工具&#x27;,providers=k=&gt;k?(providerLabels[k]+(incentive&amp;&amp;k!==incentive?&#x27; + CRM券中心&#x27;:&#x27;&#x27;)):&#x27;—&#x27;;
         root.querySelector(&#x27;#rg-budget-out&#x27;).textContent=`¥${b}万`;root.querySelector(&#x27;#rg-target-out&#x27;).textContent=`+${tg.toFixed(1)}%`;root.querySelector(&#x27;#rg-review-budget&#x27;).textContent=`¥${b}万`;root.querySelector(&#x27;#rg-review-target&#x27;).textContent=`+${tg.toFixed(1)}%`;root.querySelector(&#x27;#rg-review-name&#x27;).textContent=nameInput.value||g.name;root.querySelector(&#x27;#rg-review-cycle&#x27;).textContent=cycleInput.value;root.querySelector(&#x27;#rg-review-tools&#x27;).textContent=tools.length?tools.map(x=&gt;toolLabels[x]).join(&#x27;、&#x27;):&#x27;未授权执行工具&#x27;;root.querySelector(&#x27;#rg-score-out&#x27;).textContent=`${score}%`;root.querySelector(&#x27;.rg-score&#x27;).style.background=`conic-gradient(var(--mark-deep) 0%,var(--mark) ${score}%,var(--ink-08) ${score}%)`;root.querySelector(&#x27;#rg-profit-out&#x27;).textContent=`¥${profit}万`;root.querySelector(&#x27;#rg-review-profit&#x27;).textContent=`¥${profit}万`;root.querySelector(&#x27;#rg-roi-out&#x27;).textContent=roi.toFixed(2);root.querySelector(&#x27;#rg-feasibility-copy&#x27;).textContent=g.feasibility;g.strategies.forEach((s,i)=&gt;{root.querySelector(`#rg-strategy-${i+1}`).textContent=s;root.querySelector(`#rg-budget-${i+1}`).textContent=`¥${parts[i]}万`;});[[primary,1],[secondary,2],[explore,3]].forEach(([k,i])=&gt;{root.querySelector(`#rg-tools-${i}`).textContent=combo(k);root.querySelector(`#rg-provider-${i}`).textContent=providers(k)});
       }
-      function openPlan(name){const entry=Object.values(goals).find(x=&gt;x.name===name)||goals.new;root.querySelector(&#x27;#detail-plan-name&#x27;).textContent=name;root.querySelector(&#x27;#detail-plan-meta&#x27;).textContent=`预算 ¥${name===goals.new.name?100:name===goals.sleep.name?80:48}万 · 当前运行中 · 目标由随机控制实验验证`;root.querySelector(&#x27;#validation-plan-name&#x27;).textContent=`${name} · 通过随机控制实验判断增长是否真正由方案带来`;root.querySelector(&#x27;#optimization-plan-name&#x27;).textContent=`${name} · AI根据可信增量ROI重新配置剩余预算`;const vals=root.querySelectorAll(&#x27;[data-screen=&quot;2&quot;] .rg-kpi b&#x27;);[entry.members,entry.baseline,entry.benchmark,entry.space].forEach((v,i)=&gt;vals[i].textContent=v);go(2);}
+      /* ---- 渲染器:第 2/3/4/5 屏全部跟着当前计划走 ---------------------------
+             以前这四屏是死的,从沉睡或高价值计划点进去看到的是新会员的实验数据。 ---- */
+      const q=sel=&gt;root.querySelector(sel);
+      const setText=(sel,v)=&gt;{const e=q(sel);if(e)e.textContent=v};
+      const show=(sel,on)=&gt;{const e=q(sel);if(e)e.style.display=on?&#x27;&#x27;:&#x27;none&#x27;};
+      const roiCell=(roi,delta,dir,blend,blank)=&gt;roi
+        ? `&lt;b class=&quot;rg-metric&quot;&gt;${roi}&lt;/b&gt;&lt;span class=&quot;rg-delta ${dir}&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;${dir===&#x27;up&#x27;?&#x27;▲&#x27;:&#x27;▼&#x27;}&lt;/i&gt;${delta}&lt;small&gt;较组合 ${blend}&lt;/small&gt;&lt;/span&gt;`
+        : `&lt;b class=&quot;rg-metric&quot;&gt;${blank}&lt;/b&gt;&lt;span class=&quot;rg-delta flat&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;◷&lt;/i&gt;实验窗口内&lt;/span&gt;`;
+      let currentPlan=&#x27;new&#x27;,schemeFilter=&#x27;all&#x27;;
+
+      function renderDetail(p){
+        setText(&#x27;#detail-plan-name&#x27;,p.name);
+        setText(&#x27;#detail-plan-meta&#x27;,p.spend
+          ? `预算 ¥${p.budget}万 · 已投入 ¥${p.spend}万（${Math.round(p.spend/p.budget*100)}%） · 运行第${p.day}天 / 共${p.cycle} · ${p.goalLine}`
+          : `预算 ¥${p.budget}万 · 尚未投放 · 计划周期${p.cycle} · ${p.goalLine}`);
+        root.querySelectorAll(&#x27;[data-screen=&quot;2&quot;] .rg-kpi&#x27;).forEach((c,i)=&gt;{
+          c.querySelector(&#x27;span&#x27;).textContent=p.kpiLabels[i];
+          c.querySelector(&#x27;b&#x27;).textContent=[p.members,p.baseline,p.benchmark,p.space][i];
+          c.querySelector(&#x27;small&#x27;).textContent=p.kpiNotes[i];
+        });
+        setText(&#x27;#rg-scheme-blend&#x27;,`预计组合 ROI ${p.blend}`);
+        setText(&#x27;#rg-why-title&#x27;,p.why[0]);
+        setText(&#x27;#rg-why-copy&#x27;,p.why[1]);
+        renderSchemes(p);renderMatrix(p);
+      }
+
+      function renderSchemes(p){
+        const shown=p.schemes.filter(x=&gt;schemeFilter===&#x27;all&#x27;||x.run);
+        q(&#x27;#rg-scheme-rows&#x27;).innerHTML=shown.map(x=&gt;`&lt;tr&gt;
+&lt;td&gt;&lt;b&gt;${x.name}&lt;/b&gt;&lt;span class=&quot;rg-provider&quot;&gt;${x.seg}&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;${x.tools}&lt;/td&gt;&lt;td&gt;${x.provider}&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;¥${x.budget}万&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;${roiCell(x.roi,x.delta,x.dir,p.blend,&#x27;待验证&#x27;)}&lt;/td&gt;
+&lt;td&gt;&lt;span class=&quot;rg-status ${x.cls}&quot;&gt;${x.state}&lt;/span&gt;&lt;/td&gt;
+&lt;td class=&quot;act&quot;&gt;&lt;button class=&quot;rg-rowmenu&quot; type=&quot;button&quot; aria-label=&quot;${x.name} 的更多操作&quot;&gt;⋯&lt;/button&gt;&lt;/td&gt;&lt;/tr&gt;`).join(&#x27;&#x27;);
+        setText(&#x27;#rg-scheme-caption&#x27;,`${p.schemes.length} 条方案 · 按预算降序 · 口径：预计ROI = 预计增量利润 ÷ 方案预算`);
+        const total=p.schemes.reduce((a,x)=&gt;a+x.budget,0);
+        q(&#x27;#rg-scheme-foot&#x27;).innerHTML=`显示 &lt;b&gt;${shown.length}&lt;/b&gt; / &lt;b&gt;${p.schemes.length}&lt;/b&gt; 条方案 · 预算合计 ¥${total}万`;
+        root.querySelectorAll(&#x27;.rg-chip[data-scheme]&#x27;).forEach(c=&gt;{
+          const f=c.dataset.scheme,n=f===&#x27;all&#x27;?p.schemes.length:p.schemes.filter(x=&gt;x.run).length;
+          c.querySelector(&#x27;small&#x27;).textContent=n;
+          c.classList.toggle(&#x27;on&#x27;,f===schemeFilter);
+          c.setAttribute(&#x27;aria-pressed&#x27;,String(f===schemeFilter));
+        });
+      }
+
+      function renderMatrix(p){
+        const m=p.matrix,spent=m.rows.reduce((a,x)=&gt;a+x.spend,0);
+        setText(&#x27;#rg-matrix-caption&#x27;,m.rows.length
+          ? `${m.rows.length} 个执行工具 · 按增量ROI 降序 · 口径：增量ROI = 增量利润 ÷ 已投入，两者均取${m.window}归因窗口（窗口内合计 ¥${spent}万 · 计划累计已投入 ¥${p.spend}万）`
+          : &#x27;尚未投放 · 工具之间还没有可比较的增量&#x27;);
+        q(&#x27;#rg-matrix-rows&#x27;).innerHTML=m.rows.map(x=&gt;`&lt;tr&gt;
+&lt;td&gt;&lt;b&gt;${x.tool}&lt;/b&gt;&lt;/td&gt;&lt;td&gt;${x.provider}&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;¥${x.spend}万&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;${x.profit||&#x27;等待归因&#x27;}&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;${roiCell(x.roi,x.delta,x.dir,p.blend,&#x27;—&#x27;)}&lt;/td&gt;
+&lt;td&gt;&lt;span class=&quot;rg-decision ${x.cls}&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;${x.mark}&lt;/i&gt;${x.decision}&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;`).join(&#x27;&#x27;);
+        q(&#x27;#rg-matrix-note&#x27;).innerHTML=`&lt;b&gt;AI建议：&lt;/b&gt;${m.note}`;
+      }
+
+      function renderValidation(p){
+        setText(&#x27;#validation-plan-name&#x27;,`${p.name} · 通过随机控制实验判断增长是否真正由方案带来`);
+        const e=p.exp;
+        q(&#x27;#rg-val-empty&#x27;).classList.toggle(&#x27;on&#x27;,!e);
+        show(&#x27;#rg-val-kpis&#x27;,!!e);show(&#x27;#rg-val-split&#x27;,!!e);
+        if(!e){setText(&#x27;#rg-val-empty-copy&#x27;,p.expCopy||&#x27;首批实验还没有产生数据。&#x27;);setText(&#x27;#rg-val-confidence&#x27;,&#x27;归因未开始&#x27;);return}
+        setText(&#x27;#rg-val-confidence&#x27;,e.confidence);
+        q(&#x27;#rg-val-kpis&#x27;).innerHTML=e.kpis.map(([l,v,n,k])=&gt;`&lt;div class=&quot;rg-card rg-kpi&quot;&gt;&lt;span&gt;${l}&lt;/span&gt;&lt;b&gt;${v}&lt;/b&gt;${
+          k?`&lt;span class=&quot;rg-delta ${k}&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;◷&lt;/i&gt;${n}&lt;/span&gt;`:`&lt;small class=&quot;rg-muted&quot;&gt;${n}&lt;/small&gt;`}&lt;/div&gt;`).join(&#x27;&#x27;);
+        setText(&#x27;#rg-val-metric&#x27;,e.metric);
+        q(&#x27;#rg-val-bars&#x27;).innerHTML=`&lt;span class=&quot;rg-lift&quot;&gt;${e.lift}&lt;/span&gt;
+&lt;div class=&quot;rg-vbar&quot;&gt;&lt;b&gt;${e.ctrl}&lt;/b&gt;&lt;i style=&quot;height:${e.ctrlH}px&quot;&gt;&lt;/i&gt;&lt;span&gt;控制组 · 未接受方案&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;rg-vbar test&quot;&gt;&lt;b&gt;${e.treat}&lt;/b&gt;&lt;i style=&quot;height:${e.treatH}px&quot;&gt;&lt;/i&gt;&lt;span&gt;实验组 · 执行方案&lt;/span&gt;&lt;/div&gt;`;
+        q(&#x27;#rg-val-formula&#x27;).innerHTML=e.formula.map(([l,v])=&gt;`&lt;div&gt;&lt;span&gt;${l}&lt;/span&gt;&lt;b&gt;${v}&lt;/b&gt;&lt;/div&gt;`).join(&#x27;&#x27;);
+        const verdict=q(&#x27;#rg-val-verdict&#x27;);
+        verdict.textContent=e.verdict[0];verdict.className=`rg-status ${e.verdict[1]}`;
+        q(&#x27;#rg-val-audit&#x27;).innerHTML=e.audit.map(([l,v,c])=&gt;`&lt;div&gt;&lt;span&gt;${l}&lt;/span&gt;&lt;b${c?` class=&quot;${c}&quot;`:&#x27;&#x27;}&gt;${v}&lt;/b&gt;&lt;/div&gt;`).join(&#x27;&#x27;);
+        q(&#x27;#rg-val-conclusion&#x27;).innerHTML=`&lt;b&gt;结论：&lt;/b&gt;${e.conclusion}`;
+      }
+
+      function renderOptimization(p){
+        setText(&#x27;#optimization-plan-name&#x27;,`${p.name} · AI根据可信增量ROI重新配置剩余预算`);
+        const o=p.opt,left=p.budget-p.spend,approve=q(&#x27;#approve&#x27;),kpi=(l,v,n,k)=&gt;
+          `&lt;div class=&quot;rg-card rg-kpi&quot;&gt;&lt;span&gt;${l}&lt;/span&gt;&lt;b&gt;${v}&lt;/b&gt;${
+            k?`&lt;span class=&quot;rg-delta ${k[0]}&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;${k[1]}&lt;/i&gt;${n}&lt;/span&gt;`:`&lt;small class=&quot;rg-muted&quot;&gt;${n}&lt;/small&gt;`}&lt;/div&gt;`;
+        q(&#x27;#rg-opt-empty&#x27;).classList.toggle(&#x27;on&#x27;,!o);
+        show(&#x27;#rg-opt-allocate&#x27;,!!o);
+        if(!o){
+          q(&#x27;#rg-opt-kpis&#x27;).innerHTML=kpi(&#x27;总预算&#x27;,`¥${p.budget}万`,&#x27;本季度&#x27;)+kpi(&#x27;已投入&#x27;,`¥${p.spend}万`,`剩余 ¥${left}万`)
+            +kpi(&#x27;优化后预计利润&#x27;,&#x27;—&#x27;,&#x27;等待归因&#x27;,[&#x27;flat&#x27;,&#x27;◷&#x27;])+kpi(&#x27;预计最终ROI&#x27;,&#x27;—&#x27;,&#x27;等待归因&#x27;,[&#x27;flat&#x27;,&#x27;◷&#x27;]);
+          q(&#x27;#rg-opt-rows&#x27;).innerHTML=&#x27;&#x27;;q(&#x27;#rg-opt-actions&#x27;).innerHTML=&#x27;&#x27;;
+          setText(&#x27;#rg-opt-derivation&#x27;,&#x27;&#x27;);setText(&#x27;#rg-opt-alloc-caption&#x27;,&#x27;&#x27;);
+          setText(&#x27;#rg-opt-empty-copy&#x27;,p.optCopy);
+          setText(&#x27;#rg-opt-ai-title&#x27;,&#x27;暂不生成调仓建议&#x27;);
+          setText(&#x27;#rg-opt-ai-copy&#x27;,p.optCopy);
+          setText(&#x27;#rg-opt-badge&#x27;,&#x27;归因未完成&#x27;);
+          approve.disabled=true;approve.textContent=&#x27;等待归因&#x27;;
+          return;
+        }
+        const yields=k=&gt;o.rows.reduce((a,x)=&gt;a+(x.roi?x[k]*x.roi:0),0);
+        const before=Math.round(yields(&#x27;from&#x27;)),after=Math.round(yields(&#x27;to&#x27;)),gain=after-before;
+        const profitBefore=p.verified+before,profitAfter=p.verified+after;
+        const roiBefore=profitBefore/p.budget,roiAfter=profitAfter/p.budget;
+        const done=!!p.approved;
+        q(&#x27;#rg-opt-kpis&#x27;).innerHTML=kpi(&#x27;总预算&#x27;,`¥${p.budget}万`,&#x27;本季度&#x27;)+kpi(&#x27;已投入&#x27;,`¥${p.spend}万`,`剩余 ¥${left}万`)
+          +kpi(&#x27;优化后预计利润&#x27;,`¥${profitAfter}万`,done?&#x27;已采纳 · 生效中&#x27;:`+¥${gain}万&lt;small&gt;较原分配 ¥${profitBefore}万&lt;/small&gt;`,done?null:[&#x27;up&#x27;,&#x27;▲&#x27;])
+          +kpi(&#x27;预计最终ROI&#x27;,roiAfter.toFixed(2),done?&#x27;已采纳 · 生效中&#x27;:`+${(roiAfter-roiBefore).toFixed(2)}&lt;small&gt;原分配 ${roiBefore.toFixed(2)}&lt;/small&gt;`,done?null:[&#x27;up&#x27;,&#x27;▲&#x27;]);
+        setText(&#x27;#rg-opt-alloc-caption&#x27;,`本计划剩余 ¥${left}万 · ${done?&#x27;已生效&#x27;:&#x27;未来30天&#x27;}`);
+        q(&#x27;#rg-opt-rows&#x27;).innerHTML=o.rows.map(x=&gt;{
+          const d=x.to-x.from,pct=Math.round(x.to/left*100);
+          return `&lt;div class=&quot;rg-budget-row&quot;&gt;
+&lt;div&gt;&lt;b&gt;${x.name}&lt;/b&gt;&lt;div class=&quot;rg-reason&quot;&gt;${x.reason}&lt;/div&gt;&lt;/div&gt;
+&lt;span&gt;${done?`当前 ¥${x.to}万`:`¥${x.from}万 → ¥${x.to}万`}&lt;/span&gt;
+&lt;div class=&quot;rg-budget-bar&quot;&gt;&lt;i style=&quot;width:${pct}%&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+${done?&#x27;&lt;span class=&quot;rg-status done&quot;&gt;已生效&lt;/span&gt;&#x27;
+      :d&gt;0?`&lt;b class=&quot;rg-pos&quot;&gt;+¥${d}万&lt;/b&gt;`:d&lt;0?`&lt;b class=&quot;rg-neg&quot;&gt;−¥${-d}万&lt;/b&gt;`:&#x27;&lt;b class=&quot;rg-muted&quot;&gt;持平&lt;/b&gt;&#x27;}&lt;/div&gt;`;
+        }).join(&#x27;&#x27;);
+        const terms=o.rows.map(x=&gt;x.roi?`${x.to}万×${x.roi.toFixed(2)}`:`${x.to}万×未归因`).join(&#x27; ＋ &#x27;);
+        q(&#x27;#rg-opt-derivation&#x27;).innerHTML=`&lt;b&gt;推导：&lt;/b&gt;调整后预期产出 = ${terms} = ¥${after}万，较原分配的 ¥${before}万 多 ¥${gain}万。探索预算不计入预期产出。`;
+        setText(&#x27;#rg-opt-ai-title&#x27;,done?`预算调整已生效 · 本计划剩余 ¥${left}万`:`预算调整建议 · 本计划剩余 ¥${left}万 的再分配`);
+        setText(&#x27;#rg-opt-ai-copy&#x27;,done
+          ?&#x27;新分配从下一批会员开始执行；本计划继续保留10%随机控制组，下一轮归因通过后再评估。&#x27;
+          :o.rows.map(x=&gt;{const d=x.to-x.from;return `${x.name}（${x.roi?`增量ROI ${x.roi.toFixed(2)}`:&#x27;尚未归因&#x27;}）${d&gt;0?`增加 ¥${d}万`:d&lt;0?`减少 ¥${-d}万`:`维持 ¥${x.to}万`}`}).join(&#x27;；&#x27;)+&#x27;。&#x27;);
+        setText(&#x27;#rg-opt-badge&#x27;,done?`已采纳 · 预计多赚 ¥${gain}万`:`预计多赚 ¥${gain}万`);
+        q(&#x27;#rg-opt-actions&#x27;).innerHTML=o.actions.map(([icon,title,sub,cls,mark,tag])=&gt;
+          `&lt;div class=&quot;rg-tool&quot;&gt;&lt;i class=&quot;rg-tool-icon&quot;&gt;${icon}&lt;/i&gt;&lt;div&gt;&lt;b&gt;${title}&lt;/b&gt;&lt;span&gt;${sub}&lt;/span&gt;&lt;/div&gt;
+&lt;span class=&quot;rg-decision ${cls}&quot;&gt;${mark?`&lt;i aria-hidden=&quot;true&quot;&gt;${mark}&lt;/i&gt;`:&#x27;&#x27;}${tag}&lt;/span&gt;&lt;/div&gt;`).join(&#x27;&#x27;);
+        approve.disabled=done;approve.textContent=done?&#x27;已批准&#x27;:&#x27;批准执行建议&#x27;;
+      }
+
+      function renderReport(p){
+        const has=!!p.report,state=q(&#x27;#rg-report-state&#x27;);
+        q(&#x27;#rg-report-empty&#x27;).classList.toggle(&#x27;on&#x27;,!has);
+        [&#x27;#rg-report-kpis&#x27;,&#x27;#rg-report-split&#x27;,&#x27;#rg-report-actions&#x27;,&#x27;#rg-report-goal&#x27;].forEach(sel=&gt;show(sel,has));
+        state.textContent=has?&#x27;已结束 · 全周期结算&#x27;:&#x27;运行中 · 未结算&#x27;;
+        state.className=has?&#x27;rg-status done&#x27;:&#x27;rg-status&#x27;;
+        setText(&#x27;#rg-report-caption&#x27;,has
+          ?`${p.name}计划 · 2026 Q3 已于 9/30 结算 · 口径：增量利润 = 增量收入 − 商品成本 − 权益成本 − 触达成本`
+          :`${p.name}计划 · 本季度仍在运行，尚未结算`);
+        setText(&#x27;#rg-report-empty-copy&#x27;,has?&#x27;&#x27;:p.reportCopy);
+      }
+
+      function selectPlan(key){
+        const p=plans[key]||plans.new;
+        currentPlan=plans[key]?key:&#x27;new&#x27;;schemeFilter=&#x27;all&#x27;;
+        renderDetail(p);renderValidation(p);renderOptimization(p);renderReport(p);
+      }
+      function openPlan(key){selectPlan(key);go(2);}
+
+      /* 批准之后要留下痕迹:调仓表切成已生效、建议卡改口、计划表那一行打上「已调仓」 */
+      function markAdjusted(key){
+        const btn=root.querySelector(`#rg-plan-table [data-plan=&quot;${key}&quot;]`),row=btn&amp;&amp;btn.closest(&#x27;tr&#x27;);
+        if(!row||row.querySelector(&#x27;.rg-adjusted&#x27;))return;
+        row.children[1].insertAdjacentHTML(&#x27;beforeend&#x27;,&#x27; &lt;span class=&quot;rg-status done rg-adjusted&quot;&gt;已调仓&lt;/span&gt;&#x27;);
+      }
+      function approvePlan(){
+        const p=plans[currentPlan];if(!p||!p.opt||p.approved)return;
+        p.approved=true;renderOptimization(p);markAdjusted(currentPlan);
+        toast(`${p.name}：预算调整已批准，将从下一批会员开始执行`);
+      }
       function createPlan(){
-        const g=goals[selectedGoal],b=+budget.value,tg=+target.value,name=nameInput.value||g.name,toolCount=selectedTools().length,slot=root.querySelector(&#x27;#created-plan-slot&#x27;);slot.innerHTML=`&lt;tr class=&quot;rg-new-plan&quot; data-status=&quot;test&quot; data-name=&quot;${name}&quot; data-goal=&quot;核心指标提升${tg.toFixed(1)}个百分点&quot; data-budget=&quot;${b}&quot; data-spend=&quot;0&quot; data-profit=&quot;0&quot; data-roi=&quot;-1&quot;&gt;&lt;td&gt;&lt;b&gt;${name}&lt;/b&gt;&lt;span class=&quot;rg-provider&quot;&gt;目标：核心指标提升${tg.toFixed(1)}个百分点 · 已授权${toolCount}个工具&lt;/span&gt;&lt;div class=&quot;rg-progress&quot;&gt;&lt;i style=&quot;width:4%&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;rg-status test&quot;&gt;准备实验&lt;/span&gt;&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;¥${b}万&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;¥0万&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;等待首批数据&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;&lt;b class=&quot;rg-metric&quot;&gt;—&lt;/b&gt;&lt;span class=&quot;rg-delta flat&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;◷&lt;/i&gt;未开始&lt;/span&gt;&lt;/td&gt;&lt;td class=&quot;act&quot;&gt;&lt;button class=&quot;rg-link&quot; data-plan=&quot;${name}&quot;&gt;进入计划 →&lt;/button&gt;&lt;button class=&quot;rg-rowmenu&quot; type=&quot;button&quot; aria-label=&quot;${name} 的更多操作&quot;&gt;⋯&lt;/button&gt;&lt;/td&gt;&lt;/tr&gt;`;created=true;applyPlanFilter();closeModal();go(1);toast(&#x27;增长计划已创建，正在编排工具并准备首批实验&#x27;);
+        const g=plans[selectedGoal],b=+budget.value,tg=+target.value,name=nameInput.value||g.name,
+              tools=selectedTools(),parts=[Math.round(b*.5),Math.round(b*.3)];
+        parts.push(b-parts[0]-parts[1]);
+        plans.created={
+          label:g.label,name,goalLine:`目标提升${tg.toFixed(1)}个百分点`,
+          budget:b,spend:0,verified:0,day:0,cycle:cycleInput.value,
+          members:g.members,baseline:g.baseline,benchmark:g.benchmark,space:g.space,
+          kpiLabels:g.kpiLabels,kpiNotes:g.kpiNotes,blend:&#x27;待验证&#x27;,
+          why:[&#x27;这个计划接下来会做什么？&#x27;,`先用10%预算探索；${tools.length}个已授权工具在同一目标下按真实增量竞争预算，归因可信之后才会加仓。`],
+          schemes:g.strategies.map((x,i)=&gt;({name:x,seg:&#x27;等待首批数据&#x27;,tools:&#x27;待编排&#x27;,provider:&#x27;待编排&#x27;,budget:parts[i],roi:null,state:&#x27;准备&#x27;,cls:&#x27;test&#x27;,run:false})),
+          matrix:{window:&#x27;近30天&#x27;,note:&#x27;计划尚未投放，工具之间还没有可比较的增量。&#x27;,rows:[]},
+          exp:null,expCopy:`${name}刚创建，首批实验还没有产生数据。归因窗口结束之前，这一屏不会出现任何增量数字。`,
+          opt:null,optCopy:&#x27;计划尚未投放，没有可归因的增量，系统不会移动预算。&#x27;,
+          report:false,reportCopy:`${name}刚创建（预算执行 0%）。投资报告在季度结算后生成。`
+        };
+        root.querySelector(&#x27;#created-plan-slot&#x27;).innerHTML=`&lt;tr class=&quot;rg-new-plan&quot; data-status=&quot;test&quot; data-name=&quot;${name}&quot; data-goal=&quot;核心指标提升${tg.toFixed(1)}个百分点&quot; data-budget=&quot;${b}&quot; data-spend=&quot;0&quot; data-profit=&quot;0&quot; data-roi=&quot;-1&quot;&gt;&lt;td&gt;&lt;b&gt;${name}&lt;/b&gt;&lt;span class=&quot;rg-provider&quot;&gt;目标：核心指标提升${tg.toFixed(1)}个百分点 · 已授权${tools.length}个工具&lt;/span&gt;&lt;div class=&quot;rg-progress&quot;&gt;&lt;i style=&quot;width:4%&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;rg-status test&quot;&gt;准备实验&lt;/span&gt;&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;¥${b}万&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;¥0万&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;等待首批数据&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;&lt;b class=&quot;rg-metric&quot;&gt;—&lt;/b&gt;&lt;span class=&quot;rg-delta flat&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;◷&lt;/i&gt;未开始&lt;/span&gt;&lt;/td&gt;&lt;td class=&quot;act&quot;&gt;&lt;button class=&quot;rg-link&quot; data-plan=&quot;created&quot;&gt;进入计划 →&lt;/button&gt;&lt;button class=&quot;rg-rowmenu&quot; type=&quot;button&quot; aria-label=&quot;${name} 的更多操作&quot;&gt;⋯&lt;/button&gt;&lt;/td&gt;&lt;/tr&gt;`;
+        created=true;applyPlanFilter();closeModal();selectPlan(&#x27;created&#x27;);go(1);
+        toast(&#x27;增长计划已创建，正在编排工具并准备首批实验&#x27;);
       }
       /* ---- 表格排序:对任何一张 .rg-table 通用。读单元格里的 .rg-metric,没有就读整格。
              读不出数值的行(「等待归因」「—」)恒排末尾,不跟着方向翻 —— 空值不是最小值。 ---- */
@@ -2705,252 +2844,18 @@ html&gt;body{padding:0}&lt;/style&gt;
               reset=e.target.closest(&#x27;[data-reset-plans]&#x27;),rowMenu=e.target.closest(&#x27;.rg-rowmenu&#x27;);
         if(sortBtn){sortTable(sortBtn);return}
         if(chip){planFilter=chip.dataset.filter;applyPlanFilter();return}
+        const scheme=e.target.closest(&#x27;.rg-chip[data-scheme]&#x27;);
+        if(scheme){schemeFilter=scheme.dataset.scheme;renderSchemes(plans[currentPlan]);return}
         if(reset){resetPlanFilter();return}
         if(rail){toggleRail(rail);return}
         if(rowMenu){const tr=rowMenu.closest(&#x27;tr&#x27;);toast(`${(tr&amp;&amp;tr.dataset.name)||&#x27;该行&#x27;}：复制、归档、导出口径`);return}
-        if(goBtn)go(goBtn.dataset.go);if(planBtn)openPlan(planBtn.dataset.plan);if(createBtn)openModal();if(connectBtn)connectWhatsApp();});root.querySelectorAll(&#x27;[data-close]&#x27;).forEach(b=&gt;b.addEventListener(&#x27;click&#x27;,closeModal));root.querySelectorAll(&#x27;.rg-choice&#x27;).forEach(b=&gt;b.addEventListener(&#x27;click&#x27;,()=&gt;selectGoal(b.dataset.goal)));root.querySelector(&#x27;#rg-wizard-back&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;wizardShow(wizard-1));root.querySelector(&#x27;#rg-wizard-next&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;wizard&lt;3?wizardShow(wizard+1):createPlan());[budget,target].forEach(x=&gt;x.addEventListener(&#x27;input&#x27;,updateInputs));[nameInput,cycleInput].forEach(x=&gt;x.addEventListener(&#x27;input&#x27;,updateInputs));root.querySelectorAll(&#x27;[data-tool]&#x27;).forEach(x=&gt;x.addEventListener(&#x27;change&#x27;,updateInputs));root.querySelector(&#x27;#approve&#x27;).addEventListener(&#x27;click&#x27;,e=&gt;{e.currentTarget.textContent=&#x27;已批准&#x27;;e.currentTarget.disabled=true;toast(&#x27;预算调整已批准，将从下一批会员开始执行&#x27;)});selectGoal(&#x27;new&#x27;);wizardShow(0);applyPlanFilter();go(0);
+        if(goBtn)go(goBtn.dataset.go);if(planBtn)openPlan(planBtn.dataset.plan);if(createBtn)openModal();if(connectBtn)connectWhatsApp();});root.querySelectorAll(&#x27;[data-close]&#x27;).forEach(b=&gt;b.addEventListener(&#x27;click&#x27;,closeModal));root.querySelectorAll(&#x27;.rg-choice&#x27;).forEach(b=&gt;b.addEventListener(&#x27;click&#x27;,()=&gt;selectGoal(b.dataset.goal)));root.querySelector(&#x27;#rg-wizard-back&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;wizardShow(wizard-1));root.querySelector(&#x27;#rg-wizard-next&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;wizard&lt;3?wizardShow(wizard+1):createPlan());[budget,target].forEach(x=&gt;x.addEventListener(&#x27;input&#x27;,updateInputs));[nameInput,cycleInput].forEach(x=&gt;x.addEventListener(&#x27;input&#x27;,updateInputs));root.querySelectorAll(&#x27;[data-tool]&#x27;).forEach(x=&gt;x.addEventListener(&#x27;change&#x27;,updateInputs));root.querySelector(&#x27;#approve&#x27;).addEventListener(&#x27;click&#x27;,approvePlan);
+      selectGoal(&#x27;new&#x27;);wizardShow(0);applyPlanFilter();selectPlan(&#x27;new&#x27;);go(0);
     })();
   &lt;/script&gt;
 &lt;/div&gt;
 
-&lt;script src=&quot;https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;
-(() =&gt; {
-  if (window.FloatingUIDOM == null) {
-    return;
-  }
-  const { autoUpdate, computePosition, flip, offset, shift, size } =
-    window.FloatingUIDOM;
-  const tooltipPlacements = new Set([&quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;left&quot;]);
-  const tooltipId = `codex-visualization-tooltip-${
-    window.crypto?.randomUUID?.() ?? Date.now().toString(36)
-  }`;
-  const tooltipGap = 5;
-  const hoverDelay = 700;
-  const skipDelay = 300;
-  let activeTrigger = null;
-  let pendingTrigger = null;
-  let tooltip = null;
-  let openTimeout = null;
-  let autoUpdateCleanup = null;
-  let positionRequest = 0;
-  let skipDelayUntil = 0;
-
-  const getTrigger = (target) =&gt;
-    target?.nodeType === Node.ELEMENT_NODE
-      ? target.closest(&quot;[data-tooltip]&quot;)
-      : null;
-  const containsTarget = (trigger, target) =&gt;
-    target?.nodeType != null &amp;&amp; trigger.contains(target);
-  const getContent = (trigger) =&gt;
-    trigger.getAttribute(&quot;data-tooltip&quot;)?.trim() ?? &quot;&quot;;
-  const getPlacement = (trigger) =&gt; {
-    const placement = trigger.getAttribute(&quot;data-tooltip-placement&quot;);
-    return tooltipPlacements.has(placement) ? placement : &quot;top&quot;;
-  };
-  const getTooltip = () =&gt; {
-    if (tooltip == null) {
-      tooltip = document.createElement(&quot;div&quot;);
-      tooltip.id = tooltipId;
-      tooltip.className = &quot;tooltip&quot;;
-      tooltip.setAttribute(&quot;role&quot;, &quot;tooltip&quot;);
-    }
-    return tooltip;
-  };
-  const setDescribedBy = (trigger, described) =&gt; {
-    const ids = new Set(
-      (trigger.getAttribute(&quot;aria-describedby&quot;) ?? &quot;&quot;)
-        .split(/\s+/)
-        .filter(Boolean),
-    );
-    if (described) {
-      ids.add(tooltipId);
-    } else {
-      ids.delete(tooltipId);
-    }
-    if (ids.size === 0) {
-      trigger.removeAttribute(&quot;aria-describedby&quot;);
-    } else {
-      trigger.setAttribute(&quot;aria-describedby&quot;, [...ids].join(&quot; &quot;));
-    }
-  };
-  const clearOpenTimeout = () =&gt; {
-    if (openTimeout != null) {
-      window.clearTimeout(openTimeout);
-      openTimeout = null;
-    }
-    pendingTrigger = null;
-  };
-  const closeTooltip = (activateSkipDelay = true) =&gt; {
-    clearOpenTimeout();
-    positionRequest += 1;
-    autoUpdateCleanup?.();
-    autoUpdateCleanup = null;
-    if (activeTrigger == null) {
-      return;
-    }
-    setDescribedBy(activeTrigger, false);
-    activeTrigger = null;
-    tooltip?.remove();
-    if (activateSkipDelay) {
-      skipDelayUntil = Date.now() + skipDelay;
-    }
-  };
-  const updatePosition = (trigger, floating) =&gt; {
-    const request = ++positionRequest;
-    void computePosition(trigger, floating, {
-      middleware: [
-        offset(tooltipGap),
-        flip({ padding: tooltipGap }),
-        shift({ padding: tooltipGap }),
-        size({
-          padding: tooltipGap,
-          apply({ availableHeight, availableWidth, elements }) {
-            elements.floating.style.setProperty(
-              &quot;--tooltip-available-width&quot;,
-              `${Math.max(0, availableWidth)}px`,
-            );
-            elements.floating.style.setProperty(
-              &quot;--tooltip-available-height&quot;,
-              `${Math.max(0, availableHeight)}px`,
-            );
-          },
-        }),
-      ],
-      placement: getPlacement(trigger),
-      strategy: &quot;fixed&quot;,
-    })
-      .then(({ x, y }) =&gt; {
-        if (activeTrigger !== trigger || request !== positionRequest) {
-          return;
-        }
-        const scale = window.devicePixelRatio || 1;
-        floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
-        floating.style.visibility = &quot;visible&quot;;
-      })
-      .catch(() =&gt; {
-        if (activeTrigger === trigger &amp;&amp; request === positionRequest) {
-          closeTooltip(false);
-        }
-      });
-  };
-  const openTooltip = (trigger) =&gt; {
-    const content = getContent(trigger);
-    if (!trigger.isConnected || content.length === 0) {
-      return;
-    }
-    clearOpenTimeout();
-    if (activeTrigger === trigger) {
-      return;
-    }
-    closeTooltip();
-    const floating = getTooltip();
-    floating.textContent = content;
-    floating.style.visibility = &quot;hidden&quot;;
-    floating.style.transform = &quot;translate(0, 0)&quot;;
-    document.body.appendChild(floating);
-    activeTrigger = trigger;
-    setDescribedBy(trigger, true);
-    autoUpdateCleanup = autoUpdate(trigger, floating, () =&gt; {
-      updatePosition(trigger, floating);
-    });
-  };
-  const requestOpen = (trigger, immediate = false) =&gt; {
-    if (
-      getContent(trigger).length === 0 ||
-      activeTrigger === trigger ||
-      pendingTrigger === trigger
-    ) {
-      return;
-    }
-    clearOpenTimeout();
-    pendingTrigger = trigger;
-    const delay =
-      immediate || activeTrigger != null || Date.now() &lt; skipDelayUntil
-        ? 0
-        : hoverDelay;
-    if (delay === 0) {
-      openTooltip(trigger);
-      return;
-    }
-    openTimeout = window.setTimeout(() =&gt; {
-      openTimeout = null;
-      pendingTrigger = null;
-      openTooltip(trigger);
-    }, delay);
-  };
-  const handlePointerOpen = (event) =&gt; {
-    if (event.pointerType === &quot;touch&quot;) {
-      return;
-    }
-    const trigger = getTrigger(event.target);
-    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
-      return;
-    }
-    requestOpen(trigger);
-  };
-  const handleLeave = (event) =&gt; {
-    const trigger = getTrigger(event.target);
-    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
-      return;
-    }
-    if (activeTrigger === trigger || pendingTrigger === trigger) {
-      closeTooltip();
-    }
-  };
-  const handleFocusIn = (event) =&gt; {
-    const trigger = getTrigger(event.target);
-    if (trigger?.matches(&quot;:focus-visible&quot;)) {
-      requestOpen(trigger, true);
-    }
-  };
-  const handleKeyDown = (event) =&gt; {
-    if (event.key === &quot;Escape&quot;) {
-      closeTooltip();
-    }
-  };
-  const handleContextMenu = (event) =&gt; {
-    const trigger = getTrigger(event.target);
-    if (activeTrigger === trigger || pendingTrigger === trigger) {
-      closeTooltip();
-    }
-  };
-  const destroy = () =&gt; {
-    closeTooltip(false);
-    document.removeEventListener(&quot;pointerover&quot;, handlePointerOpen);
-    document.removeEventListener(&quot;pointerout&quot;, handleLeave);
-    document.removeEventListener(&quot;focusin&quot;, handleFocusIn);
-    document.removeEventListener(&quot;focusout&quot;, handleLeave);
-    document.removeEventListener(&quot;keydown&quot;, handleKeyDown);
-    document.removeEventListener(&quot;contextmenu&quot;, handleContextMenu);
-    tooltip = null;
-  };
-
-  document.addEventListener(&quot;pointerover&quot;, handlePointerOpen);
-  document.addEventListener(&quot;pointerout&quot;, handleLeave);
-  document.addEventListener(&quot;focusin&quot;, handleFocusIn);
-  document.addEventListener(&quot;focusout&quot;, handleLeave);
-  document.addEventListener(&quot;keydown&quot;, handleKeyDown);
-  document.addEventListener(&quot;contextmenu&quot;, handleContextMenu);
-  window.addEventListener(&quot;pagehide&quot;, destroy, { once: true });
-})();
-&lt;/script&gt;
-&lt;script id=&quot;codex-visualization-lucide&quot; async src=&quot;https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;
-(() =&gt; {
-  const initialize = () =&gt; {
-    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
-  };
-  if (globalThis.lucide != null) {
-    initialize();
-    return;
-  }
-  document
-    .getElementById(&quot;codex-visualization-lucide&quot;)
-    ?.addEventListener(&quot;load&quot;, initialize, { once: true });
-})();
-&lt;/script&gt;
+&lt;!-- 全文没有 data-tooltip / data-lucide 元素,floating-ui 与 lucide 是脚手架残留,已移除 --&gt;
 
 &lt;/body&gt;
 &lt;/html&gt;

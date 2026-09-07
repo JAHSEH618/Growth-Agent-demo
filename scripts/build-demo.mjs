@@ -26,10 +26,16 @@ if (!shell.includes("%%SRCDOC%%")) {
   throw new Error("src/demo/shell.html lost its %%SRCDOC%% placeholder");
 }
 
+// og:image 必须是绝对地址,抓取器不解相对路径。Vercel 在构建时给出域名;
+// 本地构建没有域名,留空退回同源相对路径,本地预览照常。
+const host =
+  process.env.VERCEL_PROJECT_PRODUCTION_URL ?? process.env.VERCEL_URL ?? "";
+const origin = host ? `https://${host}` : "";
+
 // Function replacement: the escaped payload may contain `$`, which the string
 // form of String#replace would treat as a substitution pattern.
 const escaped = escapeAttribute(inner);
 await writeFile(
   resolve(root, "public/demo.html"),
-  shell.replace("%%SRCDOC%%", () => escaped),
+  shell.replaceAll("%%ORIGIN%%", origin).replace("%%SRCDOC%%", () => escaped),
 );
