@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "echo 'static demo build needs no dependencies'",
+  "buildCommand": "node scripts/build-demo.mjs",
+  "outputDirectory": "public",
+  "rewrites": [{ "source": "/", "destination": "/demo.html" }]
+}
