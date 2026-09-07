@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  color-scheme: light dark;
-  --background: #eef3ef;
+  /* demo 内部是纯白的一张纸;外层给一层极淡的墨色台面,让那张纸读得出边界 */
+  /* 不跟随系统深浅:这套东西的场景是明亮会议室,且截图要进白底材料 */
+  color-scheme: light;
+  --background: oklch(0.965 0.006 25);
+  --sheet: oklch(1 0 0);
 }
 
 * {
@@ -28,8 +31,8 @@ body {
   height: calc(100vh - 36px);
   min-height: 640px;
   border: 0;
-  border-radius: 18px;
-  background: #f6f8f6;
+  border-radius: 0;
+  background: var(--sheet);
 }
 
 @media (max-width: 680px) {
@@ -44,12 +47,3 @@ body {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #08110d;
-  }
-
-  .demo-frame {
-    background: #0d1511;
-  }
-}

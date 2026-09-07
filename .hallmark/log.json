@@ -1,0 +1,29 @@
+[
+  {
+    "date": "2026-09-07",
+    "macrostructure": "Workbench (admin console — 首次改动版式气质)",
+    "theme": "custom",
+    "theme_axes": "light-canvas / grotesk-sans / cool + semantic",
+    "vibe": "Klaviyo admin console over prospectus voice",
+    "enrichment": "none",
+    "brief": "外壳重做(固定顶栏+分组左栏+可收起+独立滚动工作区);6 页统一页头(面包屑·口径·时间范围·操作);计划列表转真表(粘性表头/排序/搜索/筛选片/计数/分页/空态);采纳语义色红绿琥珀 + 强制 ▲▼ 与圆点冗余编码;PRODUCT.md 原则2 与 Anti-ref#1 按所有者决定改写"
+  },
+  {
+    "date": "2026-09-07",
+    "macrostructure": "Workbench (existing — unchanged)",
+    "theme": "custom",
+    "theme_axes": "light / grotesk-sans / cool",
+    "vibe": "fact-sheet dashboard, Klaviyo system layer",
+    "enrichment": "none",
+    "brief": "系统层:9档字号阶梯 + 4px间距栅格 + 三档字重 + 三色系列色(Klaviyo poppy/fig);版式气质未动"
+  },
+  {
+    "date": "2026-09-07",
+    "macrostructure": "Workbench (existing — unchanged)",
+    "theme": "custom",
+    "theme_axes": "light / grotesk-sans / cool",
+    "vibe": "bright azure fact sheet, Klaviyo-referenced",
+    "enrichment": "none",
+    "brief": "标记墨从 IKB #002FA7 提亮到 #0265B2 (H251),新增 --mark-bright #0E8CF6 图形层"
+  }
+]

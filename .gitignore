@@ -38,3 +38,6 @@ yarn-error.log*
 /.wrangler/
 /outputs/
 /work/
+
+# claude code (插件 id 与 MCP 名是本机的事,不进仓)
+.claude/settings.local.json

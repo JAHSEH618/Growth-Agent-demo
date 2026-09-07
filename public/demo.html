@@ -5,18 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
-<title>Growth Engine Restosuite Demo</title>
-<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
+<title>会员增长经营引擎 · 演示</title>
+<style>:root{color-scheme:light;background:oklch(0.965 0.006 25)}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
 </head>
 <body>
-<iframe sandbox="allow-scripts" referrerpolicy="no-referrer" title="Growth Engine Restosuite Demo" srcdoc="&lt;!doctype html&gt;
+<iframe sandbox="allow-scripts" referrerpolicy="no-referrer" title="会员增长经营引擎 · 演示" srcdoc="&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
 &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
 &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
 &lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
-&lt;title&gt;Growth Engine Restosuite Demo&lt;/title&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62.5..125,100..900&amp;display=swap&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&amp;display=swap&quot;&gt;
+&lt;title&gt;会员增长经营引擎 · 演示&lt;/title&gt;
 &lt;style&gt;:root {
   color-scheme: light dark;
   background-color: var(
@@ -98,7 +102,7 @@
   --blue: light-dark(rgb(51 156 255), rgb(51 156 255));
   --orange: light-dark(rgb(226 85 7), rgb(251 106 34));
   --green: light-dark(rgb(0 162 64), rgb(64 201 119));
-  --red: light-dark(rgb(224 46 42), rgb(255 103 100));
+  --mark: light-dark(rgb(224 46 42), rgb(255 103 100));
   --purple: light-dark(rgb(146 79 247), rgb(173 123 249));
   --yellow: light-dark(rgb(255 195 0), rgb(255 210 64));
   --viz-series-1: var(--primary);
@@ -888,70 +892,801 @@ svg.lucide {
 html&gt;body{padding:0}&lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;div id=&quot;resto-growth-demo&quot;&gt;
+&lt;div id=&quot;growth-engine&quot;&gt;
+&lt;h1 class=&quot;rg-sr&quot;&gt;会员增长经营引擎&lt;/h1&gt;
   &lt;style&gt;
-    #resto-growth-demo{font-family:Inter,&quot;PingFang SC&quot;,&quot;Microsoft YaHei&quot;,sans-serif;color-scheme:light;color:light-dark(#1d2b3f,#e8edf5);background:transparent}
-    #resto-growth-demo *{box-sizing:border-box}#resto-growth-demo button,#resto-growth-demo input,#resto-growth-demo select{font:inherit;color:inherit}
-    #resto-growth-demo .rg-app{min-height:650px;background:light-dark(#f0f2f5,#0c1220);border:1px solid light-dark(#e2e6ec,#273044);border-radius:14px;overflow:hidden;position:relative}
-    #resto-growth-demo .rg-top{height:54px;display:flex;align-items:center;background:light-dark(#fff,#141c2c);border-bottom:1px solid light-dark(#e6e9ef,#293248);padding:0 14px;gap:18px}.rg-logo{display:flex;align-items:center;gap:8px;font-size:17px;font-weight:800;color:light-dark(#171c32,#fff);min-width:170px}.rg-logo-mark{width:28px;height:28px;background:linear-gradient(135deg,#4f74ff 0 55%,#9b8cff 55%);clip-path:polygon(0 0,100% 0,63% 40%,100% 100%,42% 73%,0 100%)}.rg-modules{display:flex;height:100%;align-items:stretch}.rg-module{border:0;background:transparent;padding:0 15px;color:light-dark(#748094,#9ba7bb);font-size:12px}.rg-module.on{color:#1677ff;background:light-dark(#eef6ff,#162a45);border-left:1px solid light-dark(#d8eaff,#29486a);border-right:1px solid light-dark(#d8eaff,#29486a);font-weight:600}.rg-top-tools{margin-left:auto;display:flex;align-items:center;gap:15px;color:light-dark(#6e7a8d,#96a2b6);font-size:11px}.rg-user{display:flex;align-items:center;gap:8px;border-left:1px solid light-dark(#e6e9ef,#293248);padding-left:14px}.rg-avatar{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#3478f6;color:#fff}.rg-user b{display:block;color:light-dark(#344055,#dce4f0)}.rg-user small{display:block;color:light-dark(#8a95a7,#8491a5)}
-    #resto-growth-demo .rg-body{display:grid;grid-template-columns:176px minmax(0,1fr)}.rg-side{background:light-dark(#0e1a31,#0b1427);min-height:596px;color:#9aa7bb;padding:10px 7px;display:flex;flex-direction:column}.rg-side button{border:0;background:transparent;color:inherit;text-align:left;padding:12px;border-radius:8px;margin:3px 0;font-size:12px;cursor:pointer}.rg-side button.on{background:#122f5e;color:#fff;border-left:3px solid #1d7cff}.rg-side button span{display:inline-block;width:20px}.rg-side-foot{margin-top:auto;font-size:10px;padding:10px 11px}.rg-work{min-width:0}.rg-content{padding:14px 16px 18px;min-width:0}.rg-page{display:none}.rg-page.on{display:block}.rg-heading{min-height:58px;background:light-dark(#fff,#162031);border:1px solid light-dark(#e0e5eb,#293448);border-radius:8px;padding:8px 14px;display:flex;align-items:center;justify-content:space-between;margin-bottom:11px}.rg-heading h1{font-size:16px;margin:0;border-left:4px solid #1677ff;padding-left:9px}.rg-heading p{margin:3px 0 0 13px;font-size:10px;color:light-dark(#8a95a7,#8f9caf)}.rg-badge{font-size:10px;padding:4px 7px;border-radius:999px;background:light-dark(#eaf3ff,#153150);color:#1677ff}.rg-primary,.rg-secondary{border-radius:6px;padding:8px 12px;font-size:11px;cursor:pointer}.rg-primary{border:0;background:#1677ff;color:#fff}.rg-secondary{border:1px solid light-dark(#d8dee7,#39465b);background:light-dark(#fff,#1b2638)}.rg-subnav{display:flex;gap:4px;margin:-2px 0 10px;padding:5px;background:#fff;border:1px solid #e0e5eb;border-radius:8px}.rg-subnav button{border:0;background:transparent;color:#6f7b8e;padding:7px 12px;border-radius:6px;font-size:10px;cursor:pointer}.rg-subnav button.on{background:#eaf3ff;color:#1677ff;font-weight:600}.rg-breadcrumb{border:0;background:transparent;color:#6f7b8e;font-size:10px;cursor:pointer;margin-right:8px}.rg-new-plan{background:#f3f8ff}.rg-new-plan .rg-status{background:#eaf3ff;color:#1677ff}
-    #resto-growth-demo .rg-grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.rg-grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.rg-grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.rg-split{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(245px,.75fr);gap:10px}.rg-card{background:light-dark(#fff,#162031);border:1px solid light-dark(#dee3ea,#293448);border-radius:8px;padding:12px}.rg-card-title{font-size:11px;font-weight:600;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;gap:8px}.rg-muted{font-size:9px;color:light-dark(#8994a5,#8d9aaf)}.rg-kpi span{font-size:9px;color:light-dark(#7d889b,#8d9aaf)}.rg-kpi b{display:block;font-size:20px;margin:7px 0 3px}.rg-pos{font-size:9px;color:#24a36a}.rg-neg{font-size:9px;color:#e45e5e}.rg-ai{margin-top:10px;border:1px solid light-dark(#cfe2ff,#28486c);background:light-dark(#eef6ff,#142a44);border-radius:8px;padding:11px;display:grid;grid-template-columns:28px 1fr auto;gap:10px;align-items:center}.rg-ai-icon{width:28px;height:28px;border-radius:8px;background:#1677ff;color:#fff;display:grid;place-items:center;font-size:11px;font-weight:700}.rg-ai b{font-size:10px}.rg-ai p{font-size:9px;color:light-dark(#66748a,#a4b1c4);margin:3px 0 0}.rg-ai strong{color:#1677ff}
-    #resto-growth-demo .rg-plan{display:grid;grid-template-columns:1.2fr .65fr .7fr .6fr .6fr auto;align-items:center;gap:8px;padding:10px 2px;border-bottom:1px solid light-dark(#edf0f4,#293448);font-size:9px}.rg-plan:last-child{border:0}.rg-plan b{font-size:10px;display:block}.rg-progress{height:5px;background:light-dark(#e9edf2,#2b3648);border-radius:8px;margin-top:5px;overflow:hidden}.rg-progress i{display:block;height:100%;background:#1677ff}.rg-link{border:0;background:transparent;color:#1677ff;font-size:9px;cursor:pointer}.rg-status{font-size:8px;padding:3px 6px;border-radius:8px;background:light-dark(#e8f7ef,#153528);color:#24a36a}.rg-status.test{background:light-dark(#fff5e6,#3b2d18);color:#d88a1e}
-    #resto-growth-demo .rg-funnel{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.rg-funnel-step{padding:10px;border-radius:7px;background:light-dark(#f6f8fb,#1c2739);position:relative}.rg-funnel-step:not(:last-child):after{content:&quot;→&quot;;position:absolute;right:-9px;top:23px;color:light-dark(#aab3c1,#66748a);z-index:2}.rg-funnel-step span{font-size:8px;color:light-dark(#7c8799,#8d9aaf)}.rg-funnel-step b{display:block;font-size:17px;margin:5px 0}.rg-opportunity{margin-top:9px;padding:10px;border-left:3px solid #1677ff;background:light-dark(#f2f7ff,#152a45);font-size:9px;line-height:1.5}.rg-table{width:100%;border-collapse:collapse;font-size:9px}.rg-table th,.rg-table td{text-align:left;padding:8px 6px;border-bottom:1px solid light-dark(#edf0f4,#293448)}.rg-table th{font-weight:500;color:light-dark(#7c8799,#8d9aaf);background:light-dark(#fafbfc,#1b2638)}.rg-table td:last-child,.rg-table th:last-child{text-align:right}.rg-actions{display:flex;justify-content:flex-end;gap:7px;margin-top:10px}
-    #resto-growth-demo .rg-bars{height:230px;display:flex;align-items:flex-end;justify-content:center;gap:55px;padding:28px 20px 0;border-bottom:1px solid light-dark(#dfe4eb,#354157);position:relative}.rg-vbar{width:96px;text-align:center;position:relative}.rg-vbar i{display:block;background:light-dark(#dfe5ec,#354157);border-radius:5px 5px 0 0}.rg-vbar.test i{background:#1677ff}.rg-vbar b{position:absolute;top:-21px;left:0;width:100%;font-size:12px}.rg-vbar span{display:block;font-size:8px;color:light-dark(#7c8799,#8d9aaf);margin-top:5px}.rg-lift{position:absolute;top:9px;color:#1677ff;font-size:11px;font-weight:600}.rg-formula{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:9px}.rg-formula div{background:light-dark(#f6f8fb,#1c2739);border-radius:6px;padding:8px;text-align:center}.rg-formula span{display:block;font-size:8px;color:light-dark(#7c8799,#8d9aaf)}.rg-formula b{display:block;margin-top:4px;font-size:11px}.rg-audit{display:grid;gap:7px}.rg-audit div{display:flex;justify-content:space-between;border-bottom:1px solid light-dark(#edf0f4,#293448);padding-bottom:6px;font-size:9px}.rg-audit span{color:light-dark(#7c8799,#8d9aaf)}
-    #resto-growth-demo .rg-allocate{display:grid;grid-template-columns:1fr 1fr;gap:12px}.rg-budget-row{display:grid;grid-template-columns:1.1fr .8fr .8fr .7fr;gap:7px;align-items:center;padding:8px 0;border-bottom:1px solid light-dark(#edf0f4,#293448);font-size:9px}.rg-budget-row:last-child{border:0}.rg-budget-bar{height:6px;background:light-dark(#e8edf2,#2c374a);border-radius:8px;overflow:hidden}.rg-budget-bar i{display:block;height:100%;background:#1677ff}.rg-reason{font-size:8px;color:light-dark(#7c8799,#8d9aaf);margin-top:2px}.rg-tool{display:grid;grid-template-columns:26px 1fr auto;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid light-dark(#edf0f4,#293448);font-size:9px}.rg-tool:last-child{border:0}.rg-tool-icon{width:26px;height:26px;border-radius:6px;background:light-dark(#eaf3ff,#193556);color:#1677ff;display:grid;place-items:center;font-weight:700}.rg-tool b{display:block}.rg-tool span{color:light-dark(#7c8799,#8d9aaf)}
-    #resto-growth-demo .rg-waterfall{height:220px;display:flex;align-items:flex-end;gap:10px;border-bottom:1px solid light-dark(#dfe4eb,#354157);padding:0 10px}.rg-wf{flex:1;text-align:center;font-size:8px;color:light-dark(#7c8799,#8d9aaf)}.rg-wf i{display:block;background:#1677ff;border-radius:5px 5px 0 0;margin-bottom:5px}.rg-wf.cost i{background:#f0a343}.rg-wf b{display:block;font-size:10px;color:light-dark(#1d2b3f,#e8edf5);margin-bottom:3px}.rg-summary{display:grid;gap:8px}.rg-summary-item{padding:9px;border-left:3px solid #1677ff;background:light-dark(#f5f8fc,#1a2638);font-size:9px}.rg-summary-item b{display:block;margin-bottom:3px}.rg-toast{position:absolute;right:16px;bottom:16px;background:#1677ff;color:#fff;padding:8px 11px;border-radius:7px;font-size:9px;opacity:0;transform:translateY(7px);transition:.2s;pointer-events:none}.rg-toast.show{opacity:1;transform:none}.rg-content{position:relative}
-    #resto-growth-demo .rg-modal-wrap{position:absolute;inset:0;z-index:30;background:rgba(6,14,29,.58);display:none;align-items:center;justify-content:center;padding:22px}#resto-growth-demo .rg-modal-wrap.on{display:flex}.rg-modal{width:min(760px,100%);background:light-dark(#fff,#162031);border:1px solid light-dark(#dce2ea,#344158);border-radius:10px;box-shadow:0 18px 60px rgba(0,0,0,.25);overflow:hidden}.rg-modal-head{padding:13px 16px;border-bottom:1px solid light-dark(#e6eaf0,#2d394e);display:flex;justify-content:space-between;align-items:center}.rg-modal-head h2{font-size:14px;margin:0}.rg-close{border:0;background:transparent;color:light-dark(#7e899b,#96a3b6);cursor:pointer}.rg-wizard-steps{display:grid;grid-template-columns:repeat(4,1fr);background:light-dark(#f7f9fb,#121b2b);border-bottom:1px solid light-dark(#e6eaf0,#2d394e)}.rg-wizard-step{padding:10px;text-align:center;font-size:10px;color:light-dark(#8894a6,#8795aa);border-bottom:2px solid transparent}.rg-wizard-step.on{color:#1677ff;border-bottom-color:#1677ff;font-weight:600}.rg-wizard-body{padding:18px;min-height:350px}.rg-wizard-pane{display:none}.rg-wizard-pane.on{display:block}.rg-choice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.rg-choice{border:1px solid light-dark(#dfe4eb,#354157);background:light-dark(#fff,#182335);border-radius:8px;padding:12px;text-align:left;cursor:pointer}.rg-choice.on{border-color:#1677ff;box-shadow:0 0 0 2px rgba(22,119,255,.12)}.rg-choice b{font-size:11px;display:block}.rg-choice span{font-size:9px;color:light-dark(#7d899b,#8f9db0);display:block;margin-top:5px;line-height:1.5}.rg-field-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.rg-field{margin-bottom:12px}.rg-field label{display:flex;justify-content:space-between;font-size:10px;margin-bottom:6px}.rg-field select,.rg-field input[type=text]{width:100%;border:1px solid light-dark(#d8dee7,#39465b);background:light-dark(#fff,#182335);border-radius:6px;padding:8px}.rg-field input[type=range]{width:100%;accent-color:#1677ff}.rg-guard{display:grid;grid-template-columns:1fr 1fr;gap:7px}.rg-guard label{font-size:9px}.rg-guard input{accent-color:#1677ff}.rg-feasibility{display:grid;grid-template-columns:125px 1fr;gap:15px;align-items:center}.rg-score{width:112px;height:112px;border-radius:50%;background:conic-gradient(#1677ff 0 84%,light-dark(#e7ebf1,#2c3749) 84%);display:grid;place-items:center;position:relative}.rg-score:before{content:&quot;&quot;;position:absolute;width:82px;height:82px;border-radius:50%;background:light-dark(#fff,#162031)}.rg-score b{position:relative;font-size:21px}.rg-plan-preview{margin-top:12px}.rg-review{display:grid;grid-template-columns:1fr 1fr;gap:9px}.rg-review div{padding:10px;background:light-dark(#f6f8fb,#1b2638);border-radius:7px}.rg-review span{font-size:8px;color:light-dark(#7d899b,#8f9db0);display:block}.rg-review b{font-size:11px;display:block;margin-top:4px}.rg-modal-foot{padding:11px 16px;border-top:1px solid light-dark(#e6eaf0,#2d394e);display:flex;justify-content:space-between}.rg-modal-right{display:flex;gap:7px}
-    #resto-growth-demo .rg-eco-title{margin-top:12px}.rg-eco-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.rg-eco-card{border:1px solid #dfe4eb;background:#fff;border-radius:8px;padding:10px;display:grid;grid-template-columns:28px 1fr auto;gap:8px;align-items:center}.rg-eco-card.off{background:#f7f8fa}.rg-eco-logo{width:28px;height:28px;border-radius:6px;background:#eaf3ff;color:#1677ff;display:grid;place-items:center;font-size:9px;font-weight:700}.rg-eco-card b{font-size:10px;display:block}.rg-eco-card small{font-size:8px;color:#7d899b}.rg-eco-card input{accent-color:#1677ff}.rg-eco-connect{border:0;background:transparent;color:#1677ff;font-size:9px;cursor:pointer}.rg-eco-note{font-size:8px;color:#7d899b;margin:7px 0 0}.rg-tool-matrix{margin-top:10px}.rg-decision{font-size:8px;font-weight:600}.rg-decision.up{color:#24a36a}.rg-decision.down{color:#e45e5e}.rg-decision.test{color:#d88a1e}.rg-provider{display:block;color:#7d899b;font-size:8px;margin-top:2px}.rg-wizard-body{min-height:410px}
-    @media(max-width:720px){#resto-growth-demo .rg-modules,.rg-top-tools{display:none}#resto-growth-demo .rg-body{grid-template-columns:1fr}.rg-side{display:none}#resto-growth-demo .rg-grid4,.rg-grid3,.rg-grid2,.rg-split,.rg-allocate{grid-template-columns:1fr}.rg-plan{grid-template-columns:1fr 1fr}.rg-plan&gt;*:first-child{grid-column:1/-1}.rg-funnel{grid-template-columns:1fr 1fr}.rg-formula{grid-template-columns:1fr 1fr}.rg-user{margin-left:auto}.rg-app{min-height:700px}.rg-choice-grid,.rg-field-grid,.rg-review,.rg-eco-grid{grid-template-columns:1fr}.rg-wizard-body{min-height:560px}.rg-wizard-step{font-size:8px}}
+    /* Hallmark · pre-emit critique: P5 H5 E5 S5 R4 V4
+     * macrostructure: Workbench (admin console) · genre: modern-minimal
+     * nav: N3 side-rail (grouped + collapsible) · footer: none (app shell)
+     * theme: custom · vibe: &quot;Klaviyo admin console over prospectus voice&quot;
+     *   canvas oklch(.970 .003 264) #F4F5F7 · surface oklch(1 0 0)
+     *   accent oklch(.512 .172 250) #0067C4 cool
+     *   display + body: Archivo / Noto Sans SC (grotesk-sans)
+     * axes: light-canvas / grotesk-sans / cool + semantic
+     * tone: 可核验、敛定、不喂 · enrichment: none (typography only)
+     * DNA-source: Klaviyo 后台的结构惯例 + 本仓前两轮已落地的品牌色阶。
+     *   线上 CSS 抓不到(WebFetch 剥样式、后台在登录墙后),故未标注任何&quot;精确取自 Klaviyo&quot;的色值。
+     * ============================================================================
+       会员增长经营引擎 —— 后台控制台版式 (admin console)
+       参照 Klaviyo 后台的表层语言:浅灰画布 + 白色面板 + 8px 圆角 + 一档极淡投影;
+       信息落在后台惯例里 —— 固定外壳(顶栏 / 左栏)+ 独立滚动工作区 + 页头(面包屑·标题·
+       时间范围·主操作)+ 表格工具条 + 粘性表头的密集表 + 结果计数与分页 + 空态。
+
+       语义色在本版承重:绿 = 优于基准,红 = 劣于基准,琥珀 = 在学习、还没有可归因的数,
+       蓝(标记墨)= 结构与结论,灰 = 中性。
+
+       但颜色不是唯一通道 —— 这一条不让:
+         · 涨跌一律附 ▲▼ 与显式正负号,去掉颜色仍读得出方向
+         · 状态胶囊一律「圆点 + 文字」,不靠底色认状态
+         · 数据条在同一位置附数值
+       黑白打印、红绿色盲、投影仪偏色下都不丢信息。
+       语义色实测(sRGB 内,未裁切):
+         --pos  #007A2D 对纸 5.49:1 · 对自身淡底 4.72:1
+         --neg  #D10014 对纸 5.64:1 · 对自身淡底 4.75:1
+         --warn #985E00 对纸 5.34:1 · 对自身淡底 4.63:1
+         --mark #0067C4 对纸 5.62:1 · 对自身淡底 4.88:1
+       亮档只铺填充与淡底、不承载文字,按图形边界 3:1 量:
+         --pos-bright #00A138 3.41 · --neg-bright #EF3126 4.09
+         --warn-bright #CB8000 3.17 · --mark-bright #008EFF 3.33
+       以上是 Chrome 实渲后取的像素值(oklch 出界那一档由浏览器映射回 sRGB),不是纸面换算
+       ============================================================================ */
+
+    /* 宿主契约用 !important 锁住 :root 背景,只能从它读的变量改 —— 让三层落在同一张纸上 */
+    :root{--background:#f4f5f7;--foreground:#14161f;color-scheme:light}
+    html,body{height:100%}
+
+    #growth-engine{
+      /* ---- 表面模型:画布 / 面板 / 边线。后台控制台的三层纸 ---- */
+      --canvas:oklch(.970 .003 264);            /* 页面画布 #F4F5F7 */
+      --surface:oklch(1 0 0);                   /* 面板:白 */
+      --surface-2:oklch(.982 .003 264);         /* 表头与内嵌区的次级面 */
+      --surface-3:oklch(.962 .004 264);         /* 行悬停 / 按下 */
+      --border:oklch(.900 .006 264);            /* 面板边线 #DCDEE2 */
+      --border-input:oklch(.630 .016 264);      /* 表单控件边界。3:1 要对最深的那张纸(工具条 --surface-2)成立,不是只对纯白成立 */
+      --radius-sm:4px; --radius:6px; --radius-lg:8px; --radius-pill:999px;
+      --shadow-sm:0 1px 2px oklch(.20 .04 264/.07), 0 1px 1px oklch(.20 .04 264/.04);
+      --shadow-md:0 6px 16px oklch(.20 .04 264/.10), 0 1px 3px oklch(.20 .04 264/.06);
+      --shadow-pop:0 12px 32px oklch(.20 .04 264/.16), 0 2px 6px oklch(.20 .04 264/.08);
+
+      --paper:var(--surface);
+      --ink:oklch(.195 .045 264);                                    /* 正文墨:蓝黑墨水 */
+      --mark:oklch(.512 .172 250);                                   /* 标记墨 #0067C4,白字压上去 5.62:1 */
+      --mark-deep:oklch(.325 .155 262);                              /* 渐变深端 #002881。白字 12.96:1 */
+      --mark-lift:oklch(.525 .188 250);                              /* 渐变亮端 #006AD0。白字 5.20:1 */
+      --mark-bright:oklch(.650 .215 252);                            /* 全页最亮的蓝,只铺数据条,不承载文字 */
+      --mark-bloom:oklch(.545 .175 250);                             /* 漂移光晕。@.38 压在最亮一档上,白字仍 5.12:1、次级 4.66:1 */
+
+      /* ---- 语义色:本版承重。每档分两支 —— 文字墨承载文字,亮档只铺填充;
+             wash 取亮档 14%、line 取亮档 40%,淡底比掺墨的旧法更透亮,文字墨压上去仍 ≥4.5:1 ---- */
+      --pos:oklch(.500 .155 150);   --pos-bright:oklch(.615 .190 148);
+      --neg:oklch(.540 .222 27);    --neg-bright:oklch(.618 .225 29);
+      --warn:oklch(.532 .128 73);   --warn-bright:oklch(.660 .160 74);
+      --pos-wash:color-mix(in oklab,var(--pos-bright) 14%,var(--surface));
+      --neg-wash:color-mix(in oklab,var(--neg-bright) 14%,var(--surface));
+      --warn-wash:color-mix(in oklab,var(--warn-bright) 14%,var(--surface));
+      --mark-wash:color-mix(in oklab,var(--mark-bright) 14%,var(--surface));
+      --pos-line:color-mix(in oklab,var(--pos-bright) 40%,var(--surface));
+      --neg-line:color-mix(in oklab,var(--neg-bright) 40%,var(--surface));
+      --warn-line:color-mix(in oklab,var(--warn-bright) 40%,var(--surface));
+      --mark-line:color-mix(in oklab,var(--mark-bright) 40%,var(--surface));
+
+      --ink-muted:oklch(.44 .028 264);                               /* 次级文字。对纸 7.8:1,对画布 7.1:1 */
+      --ink-40:oklch(.62 .020 264);                                  /* 只用于图形,不承载文字 */
+      --ink-08:color-mix(in oklab, var(--ink)  8%, var(--surface));
+      --ink-05:color-mix(in oklab, var(--ink)  5%, var(--surface));
+      --ink-03:color-mix(in oklab, var(--ink)  3%, var(--surface));
+      --rule:var(--border);
+      --on-mark:oklch(1 0 0);
+      --on-mark-muted:color-mix(in oklab, oklch(1 0 0) 93%, var(--mark));  /* 对渐变最亮的一档(--mark-lift)4.81:1,光晕压过去之后仍 4.66:1;92% 时后者只剩 4.5 出头,不留余量 */
+      --on-mark-rule:color-mix(in oklab, oklch(1 0 0) 44%, var(--mark));
+
+      /* 字号阶梯:9 档,全整数。取 Klaviyo「一条梯子」的规矩,档位按中文密集界面选 */
+      --fs-10:10px; --fs-11:11px; --fs-12:12px; --fs-13:13px; --fs-15:15px;
+      --fs-19:19px; --fs-28:28px; --fs-34:34px; --fs-44:44px;
+      /* 间距:4px 栅格。2px 只留给发丝线级别的微调,不作通用档位 */
+      --sp-2:2px;   --sp-4:4px;   --sp-8:8px;   --sp-12:12px; --sp-16:16px;
+      --sp-20:20px; --sp-24:24px; --sp-28:28px; --sp-32:32px; --sp-36:36px;
+      --sp-40:40px; --sp-44:44px; --sp-48:48px; --sp-56:56px;
+      /* 字重三档。规矩:&gt;=19px 的标题与结论数字用 bold,其余一律 semibold */
+      --fw-normal:400; --fw-semibold:600; --fw-bold:700;
+      /* 系列色:只区分类别(哪条策略/哪笔钱),不表示涨跌方向 —— 方向由 ▲▼ 与正负号说。
+         取自 Klaviyo 品牌色阶,亮度落在白纸上条形填充可用的一档(对纸 ≥3:1) */
+      --series-1:var(--mark);          /* 新会员复购 */
+      --series-2:oklch(.630 .210 32);  /* 沉睡召回 —— Klaviyo poppy。#ED4428 对纸 3.86 */
+      --series-3:oklch(.500 .215 350); /* 高价值提升 —— Klaviyo fig 提亮。#B00074 对纸 6.76 */
+
+      --rail:232px;                    /* 左栏宽;收起态见 .rg-app.rail */
+      --topbar:56px;
+
+      --sans:Archivo,&quot;Noto Sans SC&quot;,&quot;PingFang SC&quot;,&quot;Microsoft YaHei&quot;,sans-serif;
+      --ease:cubic-bezier(.16,1,.3,1);                                /* ease-out-expo,入场用,不回弹 */
+      --ease-amb:cubic-bezier(.45,0,.55,1);                           /* 常驻漂移用对称缓动 */
+
+      font-family:var(--sans);
+      font-variant-numeric:tabular-nums;
+      font-feature-settings:&quot;ss01&quot;;
+      color-scheme:light;color:var(--ink);background:var(--canvas);
+      display:block;height:100%;
+    }
+
+    /* 焦点环由本表保证;实心标记版上换成纸色,否则蓝环在蓝底上看不见 */
+    #growth-engine :is(button,select,input,a,label):focus-visible{outline:2px solid var(--mark);outline-offset:2px;border-radius:var(--radius-sm)}
+    #growth-engine .rg-lede :is(button,select,input,a):focus-visible{outline-color:var(--on-mark)}
+    #growth-engine :is(button,select,input,label){touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+    #growth-engine *{box-sizing:border-box}
+    #growth-engine :is(button,input,select){font:inherit}
+    :where(#growth-engine) :where(button,input,select){color:inherit}
+
+    @media (prefers-reduced-motion: reduce){
+      #growth-engine *,#growth-engine *::before,#growth-engine *::after{
+        animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+    }
+
+    /* ---- 一次性入场:数字层揭幕 + 数据条拉出。终态即自然态,动画不跑也不丢内容 ---- */
+    @keyframes rg-unveil{from{clip-path:inset(0 0 108% 0)}to{clip-path:inset(0 0 -8% 0)}}
+    @keyframes rg-grow-x{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+    @keyframes rg-grow-y{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+    @keyframes rg-rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+    @keyframes rg-drift{from{transform:translate3d(-13%,-9%,0) scale(1)}to{transform:translate3d(13%,11%,0) scale(1.22)}}
+
+    /* ============================================================================
+       外壳:固定顶栏 + 固定左栏 + 独立滚动的工作区。粘性表头靠这个结构才是真的。
+       ============================================================================ */
+    #growth-engine .rg-app{
+      height:100%;min-height:620px;position:relative;overflow:clip;
+      background:var(--canvas);display:grid;grid-template-rows:var(--topbar) minmax(0,1fr)}
+
+    /* ---- 顶栏:白面板 + 一根发丝线。搜索是真输入框,不是一个放大镜字形 ---- */
+    #growth-engine .rg-top{
+      height:var(--topbar);display:flex;align-items:center;gap:var(--sp-8);padding:0 var(--sp-16);
+      background:var(--surface);border-bottom:1px solid var(--border);z-index:5}
+    .rg-brand{display:flex;align-items:center;gap:var(--sp-8);padding-right:var(--sp-12);margin-right:var(--sp-4)}
+    .rg-brand i{
+      width:26px;height:26px;border-radius:var(--radius);background:var(--mark);color:var(--on-mark);
+      display:grid;place-items:center;font-style:normal;font-size:var(--fs-13);font-weight:var(--fw-bold)}
+    .rg-brand b{font-size:var(--fs-13);font-weight:var(--fw-semibold);letter-spacing:-.01em;white-space:nowrap}
+    .rg-modules{display:flex;align-items:center;gap:var(--sp-2)}
+    .rg-module{
+      border:0;background:transparent;padding:var(--sp-8) var(--sp-12);cursor:pointer;border-radius:var(--radius);
+      color:var(--ink-muted);font-size:var(--fs-13);white-space:nowrap;
+      transition:color .16s var(--ease),background-color .16s var(--ease)}
+    .rg-module:hover{color:var(--ink);background:var(--surface-3)}
+    .rg-module.on{color:var(--mark);background:var(--mark-wash);font-weight:var(--fw-semibold)}
+    .rg-top-tools{margin-left:auto;display:flex;align-items:center;gap:var(--sp-8)}
+    /* 顶栏搜索:后台里这是常驻控件,不是装饰 */
+    .rg-topsearch{position:relative;display:flex;align-items:center}
+    .rg-topsearch span{position:absolute;left:var(--sp-8);color:var(--ink-muted);font-size:var(--fs-13);pointer-events:none}
+    .rg-topsearch input{
+      width:196px;height:32px;padding:0 var(--sp-8) 0 var(--sp-28);border:1px solid var(--border-input);
+      border-radius:var(--radius);background:var(--surface);font-size:var(--fs-12);color:var(--ink)}
+    .rg-topsearch input::placeholder{color:var(--ink-muted)}
+    .rg-topsearch input:hover{border-color:var(--ink-40)}
+    .rg-topsearch kbd{
+      position:absolute;right:var(--sp-8);font:inherit;font-size:var(--fs-10);color:var(--ink-muted);
+      border:1px solid var(--border);border-radius:var(--radius-sm);padding:0 var(--sp-4);background:var(--surface-2)}
+    .rg-iconbtn{
+      position:relative;width:32px;height:32px;display:grid;place-items:center;cursor:pointer;
+      border:1px solid transparent;border-radius:var(--radius);background:transparent;color:var(--ink-muted);
+      font-size:var(--fs-15);transition:background-color .16s var(--ease),color .16s var(--ease)}
+    .rg-iconbtn:hover{background:var(--surface-3);color:var(--ink)}
+    /* 未读标记:圆点 + 数字,数字本身也是信息通道,不只靠红点 */
+    .rg-iconbtn b{
+      position:absolute;top:2px;right:1px;min-width:15px;height:15px;padding:0 3px;border-radius:var(--radius-pill);
+      background:var(--neg);color:oklch(1 0 0);font-size:var(--fs-10);font-weight:var(--fw-semibold);
+      line-height:15px;text-align:center;border:1.5px solid var(--surface)}
+    .rg-scope{
+      display:flex;align-items:center;gap:var(--sp-4);height:32px;padding:0 var(--sp-8);cursor:pointer;
+      border:1px solid var(--border-input);border-radius:var(--radius);background:var(--surface);
+      color:var(--ink);font-size:var(--fs-12);white-space:nowrap}
+    .rg-scope:hover{background:var(--surface-3)}
+    .rg-scope small{color:var(--ink-muted);font-size:var(--fs-10)}
+    .rg-user{display:flex;align-items:center;gap:var(--sp-8);border-left:1px solid var(--border);padding-left:var(--sp-12);margin-left:var(--sp-4)}
+    .rg-avatar{
+      width:28px;height:28px;border-radius:var(--radius-pill);display:grid;place-items:center;
+      background:var(--mark);color:var(--on-mark);font-size:var(--fs-12);font-weight:var(--fw-semibold)}
+    .rg-user b{display:block;color:var(--ink);font-size:var(--fs-12);font-weight:var(--fw-semibold);line-height:1.3}
+    .rg-user small{display:block;color:var(--ink-muted);font-size:var(--fs-10);line-height:1.3}
+
+    /* ---- 左栏:白面板 + 分组标签。当前项是一枚圆角实心块,不是整条色带 ---- */
+    #growth-engine .rg-body{display:grid;grid-template-columns:var(--rail) minmax(0,1fr);min-height:0}
+    .rg-side{
+      padding:var(--sp-12) var(--sp-8);display:flex;flex-direction:column;gap:var(--sp-2);overflow-y:auto;
+      background:var(--surface);border-right:1px solid var(--border);color:var(--ink-muted)}
+    .rg-navlabel{
+      padding:var(--sp-12) var(--sp-12) var(--sp-4);font-size:var(--fs-10);font-weight:var(--fw-semibold);
+      letter-spacing:.07em;text-transform:uppercase;color:var(--ink-muted);white-space:nowrap;overflow:hidden}
+    .rg-side button[data-page]{
+      border:0;background:transparent;color:var(--ink-muted);text-align:left;cursor:pointer;width:100%;
+      display:flex;align-items:center;gap:var(--sp-12);white-space:nowrap;overflow:hidden;
+      padding:var(--sp-8) var(--sp-12);border-radius:var(--radius);font-size:var(--fs-13);
+      transition:background-color .16s var(--ease),color .16s var(--ease)}
+    .rg-side button[data-page]:hover{background:var(--surface-3);color:var(--ink)}
+    .rg-side button[data-page].on{background:var(--mark-wash);color:var(--mark);font-weight:var(--fw-semibold)}
+    .rg-side button[data-page] span:first-child{display:inline-grid;place-items:center;width:18px;flex:none;font-size:var(--fs-13)}
+    .rg-side button[data-page] em{
+      margin-left:auto;font-style:normal;font-size:var(--fs-10);font-weight:var(--fw-semibold);
+      background:var(--ink-08);color:var(--ink-muted);border-radius:var(--radius-pill);padding:1px var(--sp-8)}
+    .rg-side button[data-page].on em{background:color-mix(in oklab,var(--mark) 18%,var(--surface));color:var(--mark)}
+    .rg-side-foot{margin-top:auto;padding-top:var(--sp-12);border-top:1px solid var(--border);display:grid;gap:var(--sp-2)}
+    .rg-side-foot button{
+      border:0;background:transparent;color:var(--ink-muted);text-align:left;cursor:pointer;width:100%;
+      display:flex;align-items:center;gap:var(--sp-12);white-space:nowrap;overflow:hidden;
+      padding:var(--sp-8) var(--sp-12);border-radius:var(--radius);font-size:var(--fs-12);
+      transition:background-color .16s var(--ease),color .16s var(--ease)}
+    .rg-side-foot button:hover{background:var(--surface-3);color:var(--ink)}
+    .rg-side-foot button span:first-child{display:inline-grid;place-items:center;width:18px;flex:none}
+    /* 收起态:只剩图标,标签与分组名让位。宽度是唯一变化,不换一套结构 */
+    #growth-engine .rg-app.rail{--rail:60px}
+    .rg-app.rail .rg-navlabel{height:1px;padding:0;margin:var(--sp-12) var(--sp-8) var(--sp-4);
+      background:var(--border);color:transparent;font-size:0}
+    .rg-app.rail .rg-side button span:not(:first-child),
+    .rg-app.rail .rg-side button em,
+    .rg-app.rail .rg-brand b{display:none}
+    .rg-app.rail .rg-side button{justify-content:center;padding-inline:var(--sp-8)}
+
+    .rg-work{min-width:0;overflow-y:auto;overflow-x:hidden;background:var(--canvas);scroll-behavior:smooth}
+    .rg-content{padding:var(--sp-20) var(--sp-24) var(--sp-32);min-width:0;position:relative;max-width:1420px}
+    .rg-page{display:none}
+    .rg-page.on{display:block}
+    .rg-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+
+    /* ============================================================================
+       页头:面包屑 → 标题 + 口径 → 右侧时间范围与主操作。截图即交付物,口径必须在框内。
+       ============================================================================ */
+    .rg-heading{
+      display:flex;align-items:flex-end;justify-content:space-between;gap:var(--sp-16);
+      padding-bottom:var(--sp-16);margin-bottom:var(--sp-16);border-bottom:1px solid var(--border)}
+    .rg-heading h2{
+      margin:0;font-size:var(--fs-28);font-weight:var(--fw-bold);letter-spacing:-.018em;
+      font-stretch:104%;text-wrap:balance;line-height:1.2}
+    .rg-heading p{margin:var(--sp-4) 0 0;font-size:var(--fs-12);color:var(--ink-muted);max-width:74ch;line-height:1.55}
+    .rg-headactions{display:flex;align-items:center;gap:var(--sp-8);flex:none}
+    .rg-breadcrumb{
+      border:0;background:transparent;color:var(--ink-muted);font-size:var(--fs-12);cursor:pointer;
+      padding:0 0 var(--sp-8);display:block;transition:color .16s var(--ease)}
+    .rg-breadcrumb:hover{color:var(--mark);text-decoration:underline;text-underline-offset:3px}
+    p.rg-breadcrumb{margin:0 0 var(--sp-8)}
+    .rg-breadcrumb b{color:var(--ink);font-weight:var(--fw-semibold)}
+    /* 时间范围:后台里它是常驻控件。口径写在标题下,范围写在这里,两者不重复 */
+    .rg-daterange{
+      display:flex;align-items:center;gap:var(--sp-8);height:32px;padding:0 var(--sp-12);cursor:pointer;
+      border:1px solid var(--border-input);border-radius:var(--radius);background:var(--surface);
+      color:var(--ink);font-size:var(--fs-12);white-space:nowrap}
+    .rg-daterange:hover{background:var(--surface-3)}
+    .rg-daterange span:first-child{color:var(--ink-muted)}
+
+    /* ---- 按钮:后台里实心即主操作,渐变留给英雄块与数据条 ---- */
+    .rg-primary,.rg-secondary{
+      height:32px;display:inline-flex;align-items:center;gap:var(--sp-4);
+      border-radius:var(--radius);padding:0 var(--sp-16);font-size:var(--fs-12);font-weight:var(--fw-semibold);
+      cursor:pointer;white-space:nowrap;
+      transition:background-color .16s var(--ease),border-color .16s var(--ease),box-shadow .16s var(--ease)}
+    .rg-primary{border:1px solid var(--mark);background:var(--mark);color:var(--on-mark);box-shadow:var(--shadow-sm)}
+    .rg-primary:hover{background:var(--mark-deep);border-color:var(--mark-deep)}
+    .rg-secondary{border:1px solid var(--border-input);background:var(--surface);color:var(--ink);box-shadow:var(--shadow-sm)}
+    .rg-secondary:hover{background:var(--surface-3)}
+    .rg-primary:active,.rg-secondary:active{box-shadow:none;transform:translateY(1px)}
+    .rg-primary:disabled{background:var(--ink-40);border-color:var(--ink-40);cursor:default;transform:none;box-shadow:none}
+    .rg-link{
+      border:0;background:transparent;color:var(--mark);font-size:var(--fs-12);font-weight:var(--fw-semibold);cursor:pointer;
+      padding:var(--sp-4) 0;transition:color .16s var(--ease)}
+    .rg-link:hover{color:var(--mark-deep);text-decoration:underline;text-underline-offset:3px}
+
+    /* ---- 标签页:后台的二级导航 ---- */
+    .rg-subnav{display:flex;gap:var(--sp-20);margin:0 0 var(--sp-16);border-bottom:1px solid var(--border)}
+    .rg-subnav button{
+      border:0;background:transparent;color:var(--ink-muted);cursor:pointer;
+      padding:var(--sp-8) 0 var(--sp-12);font-size:var(--fs-13);
+      box-shadow:inset 0 -2px 0 transparent;transition:color .16s var(--ease),box-shadow .16s var(--ease)}
+    .rg-subnav button:hover{color:var(--ink)}
+    .rg-subnav button.on{color:var(--mark);font-weight:var(--fw-semibold);box-shadow:inset 0 -2px 0 var(--mark)}
+
+    /* ---- 徽标与状态胶囊 ----
+       胶囊一律「圆点 + 文字」:底色是第二通道,不是唯一通道。
+       done  蓝  = 已验证,随机控制实验归因通过
+       ok    绿  = 运行中,数字在累积
+       test  琥珀= 在学习,还没有可归因的数
+       idle  灰  = 未启动 / 已停止 */
+    .rg-badge{
+      display:inline-flex;align-items:center;gap:var(--sp-4);
+      font-size:var(--fs-11);padding:var(--sp-4) var(--sp-8);border-radius:var(--radius-pill);
+      background:var(--mark-wash);color:var(--mark);border:1px solid var(--mark-line);
+      font-weight:var(--fw-semibold);white-space:nowrap}
+    .rg-status{
+      display:inline-flex;align-items:center;gap:var(--sp-4);justify-self:start;
+      font-size:var(--fs-11);padding:2px var(--sp-8);border-radius:var(--radius-pill);font-weight:var(--fw-semibold);
+      background:var(--pos-wash);color:var(--pos);border:1px solid var(--pos-line);white-space:nowrap}
+    .rg-status::before{content:&quot;&quot;;width:6px;height:6px;border-radius:50%;background:currentColor;flex:none}
+    .rg-status.done{background:var(--mark-wash);color:var(--mark);border-color:var(--mark-line)}
+    .rg-status.test{background:var(--warn-wash);color:var(--warn);border-color:var(--warn-line)}
+    /* 测试态的点做成空心圈 —— 单色打印下它和实心点仍分得开 */
+    .rg-status.test::before{background:transparent;box-shadow:inset 0 0 0 2px currentColor}
+    .rg-status.idle{background:var(--ink-05);color:var(--ink-muted);border-color:var(--border)}
+    .rg-status.idle::before{background:transparent;box-shadow:inset 0 0 0 2px currentColor}
+    .rg-new-plan{background:var(--mark-wash)}
+
+    /* ---- 涨跌:颜色 + 字形 + 符号三重编码。去掉颜色仍读得出方向 ---- */
+    .rg-pos,.rg-neg,.rg-flat{font-size:var(--fs-12);font-weight:var(--fw-semibold);white-space:nowrap}
+    .rg-pos{color:var(--pos)}
+    .rg-neg{color:var(--neg)}
+    .rg-flat{color:var(--ink-muted)}
+    .rg-delta{display:inline-flex;align-items:center;gap:3px;font-size:var(--fs-11);font-weight:var(--fw-semibold);white-space:nowrap}
+    .rg-delta.up{color:var(--pos)}
+    .rg-delta.down{color:var(--neg)}
+    .rg-delta.flat{color:var(--ink-muted)}
+    .rg-delta i{font-style:normal;font-size:9px;line-height:1}
+    .rg-delta small{color:var(--ink-muted);font-weight:var(--fw-normal);font-size:var(--fs-11)}
+
+    /* ============================================================================
+       英雄块:概览页的结论面板。整版实心标记墨,结论与它的推导印在同一块版上。
+       ============================================================================ */
+    .rg-lede{
+      position:relative;overflow:hidden;isolation:isolate;border-radius:var(--radius-lg);box-shadow:var(--shadow-md);
+      background:linear-gradient(146deg,var(--mark-deep) 0%,var(--mark) 48%,var(--mark-lift) 100%);
+      color:var(--on-mark);padding:var(--sp-24) var(--sp-28);
+      display:grid;grid-template-columns:minmax(0,1fr) minmax(230px,.42fr);
+      align-items:end;column-gap:var(--sp-36);row-gap:var(--sp-20)}
+    /* 光晕在自己的图层里漂,只动 transform,不碰布局属性 */
+    .rg-lede::before{
+      content:&quot;&quot;;position:absolute;inset:-45%;z-index:-1;pointer-events:none;
+      background:radial-gradient(closest-side,var(--mark-bloom),transparent 72%);
+      opacity:.38;will-change:transform;
+      animation:rg-drift 26s var(--ease-amb) infinite alternate}
+    .rg-claim-label{
+      display:block;font-size:var(--fs-11);font-weight:var(--fw-semibold);color:var(--on-mark-muted);
+      letter-spacing:.01em;margin-bottom:var(--sp-4)}
+    .rg-claim b{
+      display:block;font-size:clamp(44px,6.4vw,72px);line-height:.95;font-weight:var(--fw-bold);
+      font-stretch:112%;letter-spacing:-.032em;white-space:nowrap;
+      animation:rg-unveil 820ms var(--ease) backwards}
+    .rg-claim b em{font-style:normal;font-size:.42em;font-weight:var(--fw-semibold);letter-spacing:0;margin-left:.06em}
+    .rg-derivation{
+      margin:var(--sp-12) 0 0;padding-top:var(--sp-12);border-top:1px solid var(--on-mark-rule);
+      font-size:var(--fs-12);line-height:1.62;color:var(--on-mark);max-width:58ch}
+    .rg-derivation em{font-style:normal;color:var(--on-mark-muted)}
+    .rg-roi{border-left:1px solid var(--on-mark-rule);padding-left:var(--sp-24)}
+    .rg-roi dt{font-size:var(--fs-11);font-weight:var(--fw-semibold);color:var(--on-mark-muted);margin-bottom:var(--sp-8)}
+    .rg-roi dd{margin:0}
+    .rg-roi-eq{font-size:var(--fs-11);color:var(--on-mark-muted);line-height:1.7}
+    .rg-roi-out{
+      display:block;font-size:var(--fs-34);font-weight:var(--fw-bold);font-stretch:112%;letter-spacing:-.025em;
+      line-height:1;margin-top:var(--sp-8)}
+
+    /* ============================================================================
+       指标卡:后台的第一排。标签 → 数字 → 与基准的差 → 口径。
+       差值一律「▲/▼ + 正负号 + 数值 + 比什么」,颜色只是第四层冗余。
+       ============================================================================ */
+    #growth-engine .rg-grid4{
+      display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--sp-12)}
+    #growth-engine .rg-grid4 .rg-card{
+      background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);
+      box-shadow:var(--shadow-sm);padding:var(--sp-16)}
+    #growth-engine .rg-grid4:has(.rg-kpi-lead){grid-template-columns:repeat(5,minmax(0,1fr))}
+    .rg-kpi-lead{grid-column:span 2}
+    .rg-kpi span{display:block;font-size:var(--fs-11);color:var(--ink-muted);font-weight:var(--fw-semibold);letter-spacing:.01em}
+    .rg-kpi b{display:block;font-size:var(--fs-28);font-weight:var(--fw-bold);font-stretch:106%;letter-spacing:-.022em;margin:var(--sp-8) 0 var(--sp-4);line-height:1.1}
+    .rg-kpi small{display:block;font-size:var(--fs-11);color:var(--ink-muted);line-height:1.5}
+    .rg-kpi .rg-delta{margin-bottom:var(--sp-4)}
+    .rg-kpi-lead b{
+      font-size:clamp(40px,5.4vw,58px);line-height:1;letter-spacing:-.034em;font-stretch:112%;
+      margin:var(--sp-8) 0 var(--sp-8);font-weight:var(--fw-bold);white-space:nowrap;
+      animation:rg-unveil 760ms var(--ease) backwards}
+    .rg-grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--sp-12)}
+    .rg-grid2{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-12)}
+    .rg-split{display:grid;grid-template-columns:minmax(0,1.32fr) minmax(280px,.68fr);gap:var(--sp-16);align-items:start}
+
+    /* ---- 面板:白底 + 边线 + 8px 圆角 + 一档极淡投影 ---- */
+    .rg-card{
+      background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);
+      box-shadow:var(--shadow-sm);padding:0;overflow:clip}
+    .rg-card-title{
+      display:flex;justify-content:space-between;align-items:center;gap:var(--sp-12);
+      font-size:var(--fs-13);font-weight:var(--fw-semibold);letter-spacing:-.005em;
+      padding:var(--sp-12) var(--sp-16);border-bottom:1px solid var(--border);background:var(--surface)}
+    .rg-card-title .rg-muted{font-weight:var(--fw-normal)}
+    .rg-cardbody{padding:var(--sp-16)}
+    .rg-muted{font-size:var(--fs-12);color:var(--ink-muted)}
+
+    /* ---- 表格工具条:搜索 / 筛选片 / 结果计数 / 次级操作 ---- */
+    .rg-toolbar{
+      display:flex;align-items:center;gap:var(--sp-8);flex-wrap:wrap;
+      padding:var(--sp-8) var(--sp-16);border-bottom:1px solid var(--border);background:var(--surface-2)}
+    .rg-search{position:relative;display:flex;align-items:center}
+    .rg-search span{position:absolute;left:var(--sp-8);color:var(--ink-muted);font-size:var(--fs-12);pointer-events:none}
+    .rg-search input{
+      width:208px;height:28px;padding:0 var(--sp-8) 0 var(--sp-24);border:1px solid var(--border-input);
+      border-radius:var(--radius);background:var(--surface);font-size:var(--fs-12);color:var(--ink)}
+    .rg-search input::placeholder{color:var(--ink-muted)}
+    .rg-chip{
+      display:inline-flex;align-items:center;gap:var(--sp-4);height:28px;padding:0 var(--sp-8);cursor:pointer;
+      border:1px solid var(--border-input);border-radius:var(--radius);background:var(--surface);
+      color:var(--ink);font-size:var(--fs-12);white-space:nowrap;
+      transition:background-color .16s var(--ease),border-color .16s var(--ease)}
+    .rg-chip:hover{background:var(--surface-3)}
+    .rg-chip.on{background:var(--mark-wash);border-color:var(--mark);color:var(--mark);font-weight:var(--fw-semibold)}
+    .rg-chip small{color:var(--ink-muted);font-size:var(--fs-10)}
+    .rg-chip.on small{color:var(--mark)}
+    .rg-count{margin-left:auto;font-size:var(--fs-11);color:var(--ink-muted);white-space:nowrap}
+    .rg-count b{color:var(--ink);font-weight:var(--fw-semibold)}
+
+    /* ---- 表格:粘性表头、可排序列、数字右对齐、行操作 ---- */
+    .rg-tablewrap{min-width:0}
+    .rg-table{width:100%;border-collapse:separate;border-spacing:0;font-size:var(--fs-12)}
+    .rg-table th,.rg-table td{text-align:left;padding:var(--sp-12) var(--sp-16);border-bottom:1px solid var(--border);vertical-align:middle}
+    .rg-table thead th{
+      position:sticky;top:0;z-index:2;background:var(--surface-2);
+      font-weight:var(--fw-semibold);color:var(--ink-muted);font-size:var(--fs-11);letter-spacing:.03em;
+      text-transform:uppercase;white-space:nowrap;padding-block:var(--sp-8)}
+    .rg-table tbody tr{transition:background-color .12s var(--ease)}
+    .rg-table tbody tr:hover{background:var(--surface-3)}
+    .rg-table tbody tr:last-child td{border-bottom:0}
+    /* 数字列右对齐 —— 后台表里这一条比任何装饰都值钱 */
+    .rg-table :is(th,td).num{text-align:right;font-variant-numeric:tabular-nums}
+    .rg-table :is(th,td).act{text-align:right;width:1%;white-space:nowrap}
+    .rg-sort{
+      display:inline-flex;align-items:center;gap:var(--sp-4);border:0;background:transparent;cursor:pointer;
+      color:inherit;font:inherit;letter-spacing:inherit;text-transform:inherit;padding:0;
+      transition:color .16s var(--ease)}
+    .rg-sort:hover{color:var(--ink)}
+    .rg-sort i{font-style:normal;font-size:9px;opacity:.45;transition:opacity .16s var(--ease)}
+    th[aria-sort=&quot;ascending&quot;] .rg-sort,th[aria-sort=&quot;descending&quot;] .rg-sort{color:var(--mark)}
+    th[aria-sort=&quot;ascending&quot;] .rg-sort i,th[aria-sort=&quot;descending&quot;] .rg-sort i{opacity:1}
+    .rg-table :is(th,td).num .rg-sort{justify-content:flex-end;width:100%}
+    .rg-rowmenu{
+      width:26px;height:26px;display:inline-grid;place-items:center;border:1px solid transparent;border-radius:var(--radius);
+      background:transparent;color:var(--ink-muted);cursor:pointer;font-size:var(--fs-13);
+      transition:background-color .16s var(--ease),border-color .16s var(--ease),color .16s var(--ease)}
+    .rg-rowmenu:hover{background:var(--surface);border-color:var(--border-input);color:var(--ink)}
+    .rg-provider{display:block;color:var(--ink-muted);font-size:var(--fs-11);margin-top:2px;font-weight:var(--fw-normal)}
+    .rg-decision{
+      display:inline-flex;align-items:center;gap:var(--sp-4);font-size:var(--fs-11);font-weight:var(--fw-semibold);
+      padding:2px var(--sp-8);border-radius:var(--radius-pill);border:1px solid var(--border);background:var(--ink-05);color:var(--ink-muted)}
+    .rg-decision.up{background:var(--pos-wash);color:var(--pos);border-color:var(--pos-line)}
+    .rg-decision.down{background:var(--neg-wash);color:var(--neg);border-color:var(--neg-line)}
+    .rg-decision.test{background:var(--warn-wash);color:var(--warn);border-color:var(--warn-line)}
+    /* ---- 表脚:结果计数 + 分页。后台表不能没有这一行 ---- */
+    .rg-tablefoot b{color:var(--ink);font-weight:var(--fw-semibold)}
+    .rg-tablefoot{
+      display:flex;align-items:center;justify-content:space-between;gap:var(--sp-12);
+      padding:var(--sp-8) var(--sp-16);border-top:1px solid var(--border);background:var(--surface-2);
+      font-size:var(--fs-11);color:var(--ink-muted)}
+    .rg-pager{display:flex;align-items:center;gap:var(--sp-4)}
+    .rg-pager button{
+      min-width:26px;height:26px;padding:0 var(--sp-4);border:1px solid var(--border-input);border-radius:var(--radius);
+      background:var(--surface);color:var(--ink);font-size:var(--fs-11);cursor:pointer}
+    .rg-pager button:hover:not(:disabled){background:var(--surface-3)}
+    .rg-pager button.on{background:var(--mark);border-color:var(--mark);color:var(--on-mark);font-weight:var(--fw-semibold)}
+    .rg-pager button:disabled{color:var(--ink-40);cursor:default}
+    /* ---- 空态:搜索无命中时说清楚「搜了什么、怎么退回去」 ---- */
+    .rg-empty{display:none;padding:var(--sp-40) var(--sp-16);text-align:center}
+    .rg-empty.on{display:block}
+    .rg-empty i{
+      display:inline-grid;place-items:center;width:40px;height:40px;border-radius:var(--radius-pill);
+      background:var(--ink-05);color:var(--ink-muted);font-style:normal;font-size:var(--fs-15);margin-bottom:var(--sp-12)}
+    .rg-empty b{display:block;font-size:var(--fs-13);font-weight:var(--fw-semibold);margin-bottom:var(--sp-4)}
+    .rg-empty p{margin:0 0 var(--sp-12);font-size:var(--fs-12);color:var(--ink-muted)}
+
+    /* ---- AI 建议:整框墨线 + 实心墨方块 ---- */
+    .rg-ai{
+      margin-top:var(--sp-16);padding:var(--sp-12) var(--sp-16);border:1px solid var(--border);
+      border-radius:var(--radius-lg);background:var(--surface);box-shadow:var(--shadow-sm);
+      display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:var(--sp-12);align-items:center}
+    .rg-ai-icon{
+      width:30px;height:30px;border-radius:var(--radius);background:var(--ink);color:var(--surface);
+      display:grid;place-items:center;font-size:var(--fs-11);font-weight:var(--fw-semibold);letter-spacing:.02em}
+    .rg-ai b{font-size:var(--fs-12)}
+    .rg-ai p{font-size:var(--fs-12);color:var(--ink-muted);margin:var(--sp-4) 0 0;line-height:1.55;max-width:76ch}
+    .rg-ai strong{color:var(--ink);font-weight:var(--fw-semibold);box-shadow:inset 0 -.42em 0 var(--mark-wash)}
+
+    /* ---- 计划行:表格之外的一种密集行 ---- */
+    #growth-engine .rg-plan{
+      display:grid;grid-template-columns:minmax(0,1.3fr) .6fr .6fr .62fr .62fr auto;
+      align-items:center;gap:var(--sp-12);padding:var(--sp-12) var(--sp-16);border-bottom:1px solid var(--border);font-size:var(--fs-12);
+      transition:background-color .12s var(--ease)}
+    .rg-plan:hover{background:var(--surface-3)}
+    .rg-plan:last-child{border-bottom:0}
+    .rg-plan b{font-size:var(--fs-12);display:block;font-weight:var(--fw-semibold)}
+    .rg-plan .rg-delta,.rg-table .rg-delta{display:flex;margin-top:2px}
+    .rg-table .num .rg-delta{justify-content:flex-end}
+    .rg-metric{display:block;font-weight:var(--fw-semibold)}
+    .rg-plan.hide{display:none}
+    .rg-table tr.hide{display:none}
+    .rg-progress{height:4px;background:var(--ink-08);border-radius:var(--radius-pill);margin-top:var(--sp-8);overflow:hidden;max-width:260px}
+    .rg-progress i{display:block;height:100%;border-radius:var(--radius-pill);background:linear-gradient(90deg,var(--mark-deep),var(--mark) 62%,var(--mark-bright));transform-origin:left}
+    .rg-page.on .rg-progress i{animation:rg-grow-x 700ms var(--ease) backwards}
+
+    .rg-actions{display:flex;justify-content:flex-end;gap:var(--sp-8);margin-top:var(--sp-16)}
+
+    /* ---- 结论条 ---- */
+    .rg-opportunity{
+      margin:var(--sp-16);padding:var(--sp-12) var(--sp-16);background:var(--mark-wash);
+      border:1px solid var(--mark-line);border-radius:var(--radius);
+      font-size:var(--fs-12);line-height:1.6}
+
+    /* ---- 实验组对照:对照组空心、实验组实心标记墨 ---- */
+    .rg-bars{
+      height:238px;display:flex;align-items:flex-end;justify-content:center;gap:var(--sp-56);
+      padding:var(--sp-36) var(--sp-20) 0;border-bottom:1px solid var(--border);position:relative}
+    .rg-vbar{width:100px;text-align:center;position:relative}
+    .rg-vbar i{display:block;background:var(--ink-08);border:1px solid var(--ink-40);border-radius:var(--radius) var(--radius) 0 0;transform-origin:bottom}
+    .rg-page.on .rg-vbar i{animation:rg-grow-y 760ms var(--ease) backwards}
+    .rg-page.on .rg-vbar.test i{animation-delay:110ms}
+    .rg-vbar.test i{background:linear-gradient(180deg,var(--mark-bright),var(--mark) 50%,var(--mark-deep));border-color:var(--mark-deep)}
+    .rg-vbar b{position:absolute;top:-24px;left:0;width:100%;font-size:var(--fs-15);font-weight:var(--fw-semibold)}
+    .rg-vbar span{display:block;font-size:var(--fs-11);color:var(--ink-muted);margin-top:var(--sp-8);line-height:1.45}
+    .rg-lift{position:absolute;top:6px;left:0;width:100%;text-align:center;color:var(--pos);font-size:var(--fs-13);font-weight:var(--fw-semibold)}
+    .rg-formula{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--border)}
+    .rg-formula div{padding:var(--sp-12) var(--sp-16);border-left:1px solid var(--border)}
+    .rg-formula div:first-child{border-left:0}
+    .rg-formula span{display:block;font-size:var(--fs-11);color:var(--ink-muted)}
+    .rg-formula b{display:block;margin-top:var(--sp-4);font-size:var(--fs-13);font-weight:var(--fw-semibold)}
+    .rg-audit{display:grid;gap:0}
+    .rg-audit div{display:flex;justify-content:space-between;gap:var(--sp-12);border-bottom:1px solid var(--border);padding:var(--sp-8) var(--sp-16);font-size:var(--fs-12)}
+    .rg-audit span{color:var(--ink-muted)}
+    .rg-audit b{font-weight:var(--fw-semibold)}
+
+    /* ---- 预算分配 ---- */
+    .rg-allocate{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-16);align-items:start}
+    .rg-budget-row{
+      display:grid;grid-template-columns:minmax(0,1.1fr) .8fr .8fr .7fr;gap:var(--sp-12);align-items:center;
+      padding:var(--sp-12) var(--sp-16);border-bottom:1px solid var(--border);font-size:var(--fs-12)}
+    .rg-budget-row:last-child{border-bottom:0}
+    .rg-budget-row b{font-weight:var(--fw-semibold)}
+    .rg-budget-bar{height:5px;background:var(--ink-08);border-radius:var(--radius-pill);overflow:hidden}
+    .rg-budget-bar i{display:block;height:100%;border-radius:var(--radius-pill);background:linear-gradient(90deg,var(--mark-deep),var(--mark) 62%,var(--mark-bright));transform-origin:left}
+    .rg-page.on .rg-budget-bar i{animation:rg-grow-x 700ms var(--ease) backwards}
+    /* 同一条策略在「计划表现」和「投入构成」两个视图里是同一个颜色 —— 这是多色唯一挣到的信息。
+       系列色只区分类别,不表示方向;方向仍由 ▲▼ 与正负号说 */
+    :is(.rg-plan,.rg-budget-row)[data-series=&quot;2&quot;] :is(.rg-progress,.rg-budget-bar) i{
+      background:linear-gradient(90deg,
+        color-mix(in oklab,var(--series-2) 72%,var(--ink)),
+        var(--series-2) 62%,
+        color-mix(in oklab,var(--series-2) 88%,var(--surface)))}
+    :is(.rg-plan,.rg-budget-row)[data-series=&quot;3&quot;] :is(.rg-progress,.rg-budget-bar) i{
+      background:linear-gradient(90deg,
+        color-mix(in oklab,var(--series-3) 72%,var(--ink)),
+        var(--series-3) 62%,
+        color-mix(in oklab,var(--series-3) 88%,var(--surface)))}
+    .rg-reason{font-size:var(--fs-11);color:var(--ink-muted);margin-top:2px}
+    .rg-tool{
+      display:grid;grid-template-columns:28px minmax(0,1fr) auto;align-items:center;gap:var(--sp-12);
+      padding:var(--sp-12) var(--sp-16);border-bottom:1px solid var(--border);font-size:var(--fs-12)}
+    .rg-tool:last-child{border-bottom:0}
+    .rg-tool-icon{
+      width:28px;height:28px;border-radius:var(--radius);background:var(--ink-05);border:1px solid var(--border);
+      color:var(--ink);display:grid;place-items:center;font-weight:var(--fw-semibold);font-size:var(--fs-12)}
+    .rg-tool b{display:block;font-weight:var(--fw-semibold)}
+    .rg-tool span{color:var(--ink-muted)}
+
+    /* ---- 瀑布图 ---- */
+    .rg-waterfall{height:228px;display:flex;align-items:flex-end;gap:var(--sp-12);border-bottom:1px solid var(--border);padding:0 var(--sp-16)}
+    .rg-wf{flex:1;text-align:center;font-size:var(--fs-11);color:var(--ink-muted)}
+    .rg-wf i{display:block;border-radius:var(--radius) var(--radius) 0 0;margin-bottom:var(--sp-8);transform-origin:bottom;
+      background:linear-gradient(180deg,var(--mark-bright),var(--mark) 55%,var(--mark-deep))}
+    .rg-page.on .rg-wf i{animation:rg-grow-y 700ms var(--ease) backwards}
+    .rg-wf:nth-child(2) i{animation-delay:70ms}.rg-wf:nth-child(3) i{animation-delay:140ms}
+    .rg-wf:nth-child(4) i{animation-delay:210ms}.rg-wf:nth-child(5) i{animation-delay:280ms}
+    /* 成本柱:减项。用空心 + 负号,不靠红色说「这是减的」 */
+    .rg-wf.cost i{background:var(--ink-05);border:1px solid var(--ink-40)}
+    .rg-wf b{display:block;font-size:var(--fs-12);color:var(--ink);margin-bottom:var(--sp-4);font-weight:var(--fw-semibold)}
+
+    /* ---- 结论清单 ---- */
+    .rg-summary{display:grid;gap:0}
+    .rg-summary-item{padding:var(--sp-12) var(--sp-16);border-bottom:1px solid var(--border);font-size:var(--fs-12);line-height:1.6;color:var(--ink-muted)}
+    .rg-summary-item:last-child{border-bottom:0}
+    .rg-summary-item b{display:block;margin-bottom:2px;font-size:var(--fs-12);font-weight:var(--fw-semibold);color:var(--ink)}
+
+    .rg-toast{
+      position:fixed;right:20px;bottom:20px;z-index:40;background:var(--ink);color:var(--surface);
+      padding:var(--sp-12) var(--sp-16);border-radius:var(--radius);box-shadow:var(--shadow-pop);
+      font-size:var(--fs-12);max-width:min(360px,calc(100% - 40px));
+      opacity:0;transform:translateY(8px);transition:opacity .24s var(--ease),transform .24s var(--ease);pointer-events:none}
+    .rg-toast.show{opacity:1;transform:none}
+
+    /* ---- 向导 ---- */
+    #growth-engine .rg-modal-wrap{
+      position:absolute;inset:0;z-index:30;overscroll-behavior:contain;padding:var(--sp-24);
+      background:color-mix(in oklab, var(--ink) 55%, transparent);display:none;align-items:center;justify-content:center}
+    #growth-engine .rg-modal-wrap.on{display:flex}
+    .rg-modal{
+      width:min(780px,100%);max-height:100%;overflow:auto;background:var(--surface);
+      border:1px solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow-pop);
+      animation:rg-rise 280ms var(--ease) backwards}
+    .rg-modal-head{padding:var(--sp-16) var(--sp-20);border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+    .rg-modal-head h2{font-size:var(--fs-19);margin:0;font-weight:var(--fw-bold);letter-spacing:-.015em}
+    .rg-close{border:0;background:transparent;color:var(--ink-muted);cursor:pointer;font-size:var(--fs-15);line-height:1;padding:var(--sp-4);border-radius:var(--radius)}
+    .rg-close:hover{background:var(--surface-3);color:var(--ink)}
+    .rg-wizard-steps{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--border);background:var(--surface-2)}
+    .rg-wizard-step{
+      padding:var(--sp-12) var(--sp-8);text-align:center;font-size:var(--fs-12);color:var(--ink-muted);
+      box-shadow:inset 0 -2px 0 transparent;transition:color .2s var(--ease),box-shadow .2s var(--ease)}
+    .rg-wizard-step.on{color:var(--mark);font-weight:var(--fw-semibold);box-shadow:inset 0 -2px 0 var(--mark);background:var(--surface)}
+    .rg-wizard-body{padding:var(--sp-20);min-height:410px}
+    .rg-wizard-pane{display:none}
+    .rg-wizard-pane.on{display:block;animation:rg-rise 260ms var(--ease) backwards}
+    .rg-choice-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--sp-12)}
+    .rg-choice{
+      border:1px solid var(--border-input);background:var(--surface);border-radius:var(--radius-lg);padding:var(--sp-12);text-align:left;cursor:pointer;
+      transition:border-color .16s var(--ease),background-color .16s var(--ease),box-shadow .16s var(--ease)}
+    .rg-choice:hover{border-color:var(--ink-40);box-shadow:var(--shadow-sm)}
+    .rg-choice.on{border-color:var(--mark);background:var(--mark-wash);box-shadow:inset 0 0 0 1px var(--mark)}
+    .rg-choice b{font-size:var(--fs-13);display:block;font-weight:var(--fw-semibold)}
+    .rg-choice span{font-size:var(--fs-12);color:var(--ink-muted);display:block;margin-top:var(--sp-8);line-height:1.55}
+    .rg-field-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-16)}
+    .rg-field{margin-bottom:var(--sp-16)}
+    .rg-field label{display:flex;justify-content:space-between;gap:var(--sp-8);font-size:var(--fs-12);margin-bottom:var(--sp-8)}
+    .rg-field label b{font-weight:var(--fw-semibold)}
+    .rg-field select,.rg-field input[type=text]{
+      width:100%;border:1px solid var(--border-input);background:var(--surface);border-radius:var(--radius);
+      padding:var(--sp-8) var(--sp-12);font-size:var(--fs-12)}
+    .rg-field select:hover,.rg-field input[type=text]:hover{border-color:var(--ink-40)}
+    .rg-field input[type=range]{width:100%;accent-color:var(--mark)}
+    .rg-guard{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-8);margin-top:var(--sp-12)}
+    .rg-guard label{font-size:var(--fs-12);display:flex;align-items:center;gap:var(--sp-8)}
+    .rg-guard input{accent-color:var(--mark)}
+    .rg-feasibility{display:grid;grid-template-columns:132px minmax(0,1fr);gap:var(--sp-24);align-items:center}
+    .rg-score{
+      width:126px;height:126px;border-radius:50%;display:grid;place-items:center;position:relative;
+      background:conic-gradient(var(--mark-deep) 0%,var(--mark) 84%,var(--ink-08) 84%)}
+    .rg-score:before{content:&quot;&quot;;position:absolute;width:96px;height:96px;border-radius:50%;background:var(--surface)}
+    .rg-score b{position:relative;font-size:var(--fs-34);font-weight:var(--fw-bold);font-stretch:106%;letter-spacing:-.025em}
+    .rg-plan-preview{margin-top:var(--sp-16)}
+    .rg-review{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--border)}
+    .rg-review div{padding:var(--sp-12) var(--sp-16) var(--sp-12) 0;border-bottom:1px solid var(--border)}
+    .rg-review span{font-size:var(--fs-11);color:var(--ink-muted);display:block}
+    .rg-review b{font-size:var(--fs-13);display:block;margin-top:2px;font-weight:var(--fw-semibold)}
+    .rg-modal-foot{padding:var(--sp-12) var(--sp-20);border-top:1px solid var(--border);display:flex;justify-content:space-between;gap:var(--sp-12);background:var(--surface-2)}
+    .rg-modal-right{display:flex;gap:var(--sp-8)}
+
+    /* ---- 生态工具授权 ---- */
+    .rg-eco-title{margin-top:var(--sp-20)}
+    .rg-eco-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--sp-8);margin-top:var(--sp-12)}
+    .rg-eco-card{
+      border:1px solid var(--border-input);background:var(--surface);border-radius:var(--radius);padding:var(--sp-12);
+      display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:var(--sp-8);align-items:center;cursor:pointer;
+      transition:border-color .16s var(--ease),box-shadow .16s var(--ease)}
+    .rg-eco-card:hover{border-color:var(--ink-40);box-shadow:var(--shadow-sm)}
+    .rg-eco-card:has(input:checked){border-color:var(--mark)}
+    .rg-eco-card.off{background:var(--surface-2);cursor:default}
+    .rg-eco-logo{
+      width:30px;height:30px;border-radius:var(--radius);background:var(--ink-05);border:1px solid var(--border);
+      color:var(--ink);display:grid;place-items:center;font-size:var(--fs-10);font-weight:var(--fw-semibold)}
+    .rg-eco-card.off .rg-eco-logo{color:var(--ink-muted)}
+    .rg-eco-card b{font-size:var(--fs-12);display:block;font-weight:var(--fw-semibold)}
+    .rg-eco-card small{font-size:var(--fs-11);color:var(--ink-muted)}
+    .rg-eco-card input{accent-color:var(--mark)}
+    .rg-eco-connect{
+      border:1px solid var(--mark);background:transparent;color:var(--mark);font-size:var(--fs-11);
+      font-weight:var(--fw-semibold);cursor:pointer;padding:var(--sp-4) var(--sp-8);border-radius:var(--radius)}
+    .rg-eco-connect:hover{background:var(--mark);color:var(--on-mark)}
+    .rg-eco-note{font-size:var(--fs-11);color:var(--ink-muted);margin:var(--sp-8) 0 0;line-height:1.55}
+    .rg-tool-matrix{margin-top:var(--sp-16)}
+
+    /* ---- 窗口收窄时的兜底 ----
+       目标设备是会议室里的笔记本与投影;手机不是目标,这里不做手机版式。
+       这几段只保证窗口被拖窄时不横向裂开、大字号不溢出容器。 ---- */
+    @media(max-width:1240px){
+      #growth-engine .rg-grid4{grid-template-columns:repeat(2,minmax(0,1fr))}
+      #growth-engine .rg-grid4:has(.rg-kpi-lead){grid-template-columns:repeat(2,minmax(0,1fr))}
+      .rg-kpi-lead{grid-column:1/-1}
+      .rg-topsearch input{width:150px}
+    }
+    @media(max-width:1080px){
+      #growth-engine .rg-split,.rg-allocate{grid-template-columns:1fr}
+      .rg-lede{grid-template-columns:1fr}
+      .rg-roi{border-left:0;border-top:1px solid var(--on-mark-rule);padding:var(--sp-16) 0 0}
+      .rg-eco-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      #growth-engine .rg-app{--rail:60px}
+      .rg-app .rg-navlabel{height:1px;padding:0;margin:var(--sp-12) var(--sp-8) var(--sp-4);background:var(--border);color:transparent;font-size:0}
+      .rg-app .rg-side button span:not(:first-child),.rg-app .rg-side button em,.rg-app .rg-brand b{display:none}
+      .rg-app .rg-side button{justify-content:center;padding-inline:var(--sp-8)}
+      .rg-collapse{display:none}
+    }
+    @media(max-width:860px){
+      #growth-engine .rg-modules,.rg-topsearch,.rg-scope{display:none}
+      #growth-engine .rg-body{grid-template-columns:1fr}
+      .rg-side{display:none}
+      .rg-content{padding:var(--sp-16) var(--sp-16) var(--sp-28)}
+      .rg-heading{flex-direction:column;align-items:flex-start;gap:var(--sp-12)}
+      .rg-lede{padding:var(--sp-20)}
+      .rg-claim b{font-size:clamp(40px,11vw,56px)}
+      .rg-roi-out{font-size:var(--fs-28)}
+      #growth-engine .rg-grid4,.rg-grid3,.rg-grid2{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .rg-plan{grid-template-columns:1fr 1fr}
+      .rg-plan&gt;*:first-child{grid-column:1/-1}
+      .rg-formula{grid-template-columns:1fr 1fr}
+      .rg-formula div:nth-child(odd){border-left:0}
+      .rg-bars{gap:var(--sp-28);padding-top:var(--sp-40)}
+      .rg-vbar{width:auto;flex:1;max-width:120px}
+      .rg-user b,.rg-user small{display:none}
+      .rg-choice-grid,.rg-field-grid,.rg-review,.rg-eco-grid,.rg-guard{grid-template-columns:1fr}
+      .rg-review div{padding-right:0}
+      .rg-wizard-body{min-height:560px}
+      .rg-wizard-step{font-size:var(--fs-11);padding:var(--sp-8) var(--sp-4)}
+      .rg-feasibility{grid-template-columns:1fr;justify-items:start}
+      .rg-toolbar{gap:var(--sp-4)}
+      .rg-search input{width:140px}
+      .rg-tablewrap{overflow-x:auto}
+    }
   &lt;/style&gt;
   &lt;div class=&quot;rg-app&quot;&gt;
     &lt;header class=&quot;rg-top&quot;&gt;
-&lt;div class=&quot;rg-logo&quot;&gt;
-&lt;i class=&quot;rg-logo-mark&quot;&gt;
-&lt;/i&gt;RestoSuite&lt;/div&gt;
-&lt;div class=&quot;rg-modules&quot;&gt;
-&lt;button class=&quot;rg-module&quot;&gt;▦ 营运中心&lt;/button&gt;
-&lt;button class=&quot;rg-module on&quot;&gt;♕ 会员营销&lt;/button&gt;
-&lt;button class=&quot;rg-module&quot;&gt;♧ 供应链&lt;/button&gt;
-&lt;button class=&quot;rg-module&quot;&gt;▥ 数据洞察&lt;/button&gt;
-&lt;/div&gt;
+&lt;div class=&quot;rg-brand&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;营&lt;/i&gt;&lt;b&gt;经营套件&lt;/b&gt;&lt;/div&gt;
+&lt;nav class=&quot;rg-modules&quot; aria-label=&quot;产品模块&quot;&gt;
+&lt;button class=&quot;rg-module&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;▦&lt;/span&gt; 营运中心&lt;/button&gt;
+&lt;button class=&quot;rg-module on&quot; aria-current=&quot;page&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;♕&lt;/span&gt; 会员营销&lt;/button&gt;
+&lt;button class=&quot;rg-module&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;♧&lt;/span&gt; 供应链&lt;/button&gt;
+&lt;button class=&quot;rg-module&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;▥&lt;/span&gt; 数据洞察&lt;/button&gt;
+&lt;/nav&gt;
 &lt;div class=&quot;rg-top-tools&quot;&gt;
-&lt;span&gt;⌕&lt;/span&gt;
-&lt;span&gt;♧&lt;/span&gt;
-&lt;span&gt;◉ 简体中文&lt;/span&gt;
-&lt;span&gt;▦ resto中关村店⌄&lt;/span&gt;
+&lt;div class=&quot;rg-topsearch&quot;&gt;
+&lt;span aria-hidden=&quot;true&quot;&gt;⌕&lt;/span&gt;
+&lt;label class=&quot;rg-sr&quot; for=&quot;rg-global-search&quot;&gt;全局搜索&lt;/label&gt;
+&lt;input id=&quot;rg-global-search&quot; type=&quot;search&quot; placeholder=&quot;搜索计划、会员分群、工具&quot; autocomplete=&quot;off&quot; spellcheck=&quot;false&quot;&gt;
+&lt;kbd&gt;⌘K&lt;/kbd&gt;
 &lt;/div&gt;
+&lt;button class=&quot;rg-scope&quot; type=&quot;button&quot;&gt;▦ 中关村旗舰店 &lt;small aria-hidden=&quot;true&quot;&gt;▾&lt;/small&gt;&lt;/button&gt;
+&lt;button class=&quot;rg-iconbtn&quot; type=&quot;button&quot; aria-label=&quot;通知，3 条未读&quot;&gt;♤&lt;b&gt;3&lt;/b&gt;&lt;/button&gt;
+&lt;button class=&quot;rg-iconbtn&quot; type=&quot;button&quot; aria-label=&quot;帮助&quot;&gt;?&lt;/button&gt;
 &lt;div class=&quot;rg-user&quot;&gt;
-&lt;i class=&quot;rg-avatar&quot;&gt;I&lt;/i&gt;
+&lt;i class=&quot;rg-avatar&quot; aria-hidden=&quot;true&quot;&gt;I&lt;/i&gt;
 &lt;div&gt;
 &lt;b&gt;Initial Admin&lt;/b&gt;
-&lt;small&gt;resto中关村店&lt;/small&gt;
+&lt;small&gt;增长负责人&lt;/small&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/header&gt;
     &lt;div class=&quot;rg-body&quot;&gt;
-&lt;aside class=&quot;rg-side&quot;&gt;
-&lt;button class=&quot;on&quot; data-page=&quot;0&quot;&gt;
-&lt;span&gt;◴&lt;/span&gt;经营总览&lt;/button&gt;
+&lt;nav class=&quot;rg-side&quot; aria-label=&quot;会员营销&quot;&gt;
+&lt;div class=&quot;rg-navlabel&quot;&gt;经营&lt;/div&gt;
+&lt;button class=&quot;on&quot; data-page=&quot;0&quot; aria-current=&quot;page&quot;&gt;
+&lt;span aria-hidden=&quot;true&quot;&gt;◴&lt;/span&gt;&lt;span&gt;经营总览&lt;/span&gt;&lt;/button&gt;
+&lt;div class=&quot;rg-navlabel&quot;&gt;增长&lt;/div&gt;
 &lt;button data-page=&quot;1&quot;&gt;
-&lt;span&gt;▤&lt;/span&gt;增长计划&lt;/button&gt;
+&lt;span aria-hidden=&quot;true&quot;&gt;▤&lt;/span&gt;&lt;span&gt;增长计划&lt;/span&gt;&lt;em&gt;3&lt;/em&gt;&lt;/button&gt;
+&lt;button data-page=&quot;3&quot;&gt;
+&lt;span aria-hidden=&quot;true&quot;&gt;◫&lt;/span&gt;&lt;span&gt;效果验证&lt;/span&gt;&lt;/button&gt;
+&lt;button data-page=&quot;4&quot;&gt;
+&lt;span aria-hidden=&quot;true&quot;&gt;◑&lt;/span&gt;&lt;span&gt;预算优化&lt;/span&gt;&lt;/button&gt;
+&lt;div class=&quot;rg-navlabel&quot;&gt;复盘&lt;/div&gt;
 &lt;button data-page=&quot;5&quot;&gt;
-&lt;span&gt;▥&lt;/span&gt;经营复盘&lt;/button&gt;
-&lt;div class=&quot;rg-side-foot&quot;&gt;◉ 外观主题&lt;br&gt;
-&lt;br&gt;◧ 收起菜单&lt;/div&gt;
-&lt;/aside&gt;
+&lt;span aria-hidden=&quot;true&quot;&gt;▥&lt;/span&gt;&lt;span&gt;投资报告&lt;/span&gt;&lt;/button&gt;
+&lt;div class=&quot;rg-side-foot&quot;&gt;
+&lt;button type=&quot;button&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;◉&lt;/span&gt;&lt;span&gt;外观主题&lt;/span&gt;&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;rg-collapse&quot; data-collapse aria-expanded=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;◧&lt;/span&gt;&lt;span&gt;收起菜单&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;/nav&gt;
       &lt;div class=&quot;rg-work&quot;&gt;
 &lt;main class=&quot;rg-content&quot;&gt;
         &lt;section class=&quot;rg-page on&quot; data-screen=&quot;0&quot;&gt;
 &lt;div class=&quot;rg-heading&quot;&gt;
 &lt;div&gt;
-&lt;h1&gt;会员增长经营总览&lt;/h1&gt;
-&lt;p&gt;管理会员增长目标、预算与真实经营结果&lt;/p&gt;
+&lt;p class=&quot;rg-breadcrumb&quot; aria-hidden=&quot;true&quot;&gt;会员营销 › 经营总览&lt;/p&gt;
+&lt;h2&gt;会员增长经营总览&lt;/h2&gt;
+&lt;p&gt;口径：增量利润 = 实验组减控制组的增量收入，扣除商品、权益与触达成本&lt;/p&gt;
 &lt;/div&gt;
+&lt;div class=&quot;rg-headactions&quot;&gt;
+&lt;button class=&quot;rg-daterange&quot; type=&quot;button&quot;&gt;&lt;span&gt;期间&lt;/span&gt;2026 Q3 · 7/1–9/30&lt;span aria-hidden=&quot;true&quot;&gt;▾&lt;/span&gt;&lt;/button&gt;
+&lt;button class=&quot;rg-secondary&quot; type=&quot;button&quot;&gt;导出&lt;/button&gt;
 &lt;button class=&quot;rg-primary&quot; data-create&gt;＋ 创建增长计划&lt;/button&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-grid4&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;rg-lede&quot;&gt;
+&lt;div class=&quot;rg-claim&quot;&gt;
+&lt;span class=&quot;rg-claim-label&quot;&gt;已验证增量利润 · 本季度累计&lt;/span&gt;
+&lt;b&gt;¥164&lt;em&gt;万&lt;/em&gt;&lt;/b&gt;
+&lt;p class=&quot;rg-derivation&quot;&gt;新会员复购 ¥128万 ＋ 沉睡召回 ¥36万。&lt;em&gt;高价值提升的 ¥8万 投入仍在实验窗口内，尚未通过归因，不计入本数。&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;dl class=&quot;rg-roi&quot;&gt;
+&lt;dt&gt;组合增量 ROI&lt;/dt&gt;
+&lt;dd&gt;
+&lt;span class=&quot;rg-roi-eq&quot;&gt;已验证增量利润 ¥164万&lt;br&gt;÷ 累计已投入 ¥91万&lt;/span&gt;
+&lt;b class=&quot;rg-roi-out&quot;&gt;1.80&lt;/b&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;div class=&quot;rg-grid4&quot; style=&quot;margin-top:16px&quot;&gt;
 &lt;div class=&quot;rg-card rg-kpi&quot;&gt;
 &lt;span&gt;增长计划总预算&lt;/span&gt;
 &lt;b id=&quot;portfolio-budget&quot;&gt;¥228万&lt;/b&gt;
@@ -960,17 +1695,17 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;div class=&quot;rg-card rg-kpi&quot;&gt;
 &lt;span&gt;累计已投入&lt;/span&gt;
 &lt;b id=&quot;portfolio-spend&quot;&gt;¥91万&lt;/b&gt;
-&lt;small class=&quot;rg-muted&quot;&gt;整体预算进度 40%&lt;/small&gt;
+&lt;small class=&quot;rg-muted&quot;&gt;预算执行 40%&lt;/small&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-card rg-kpi&quot;&gt;
-&lt;span&gt;已验证增量利润&lt;/span&gt;
-&lt;b&gt;¥164万&lt;/b&gt;
-&lt;small class=&quot;rg-pos&quot;&gt;仅统计通过归因的计划&lt;/small&gt;
+&lt;span&gt;待归因投入&lt;/span&gt;
+&lt;b&gt;¥8万&lt;/b&gt;
+&lt;small class=&quot;rg-muted&quot;&gt;高价值提升 · 实验窗口内&lt;/small&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-card rg-kpi&quot;&gt;
-&lt;span&gt;组合增量 ROI&lt;/span&gt;
-&lt;b&gt;1.80&lt;/b&gt;
-&lt;small class=&quot;rg-muted&quot;&gt;增量利润 ÷ 已投入&lt;/small&gt;
+&lt;span&gt;剩余可调配预算&lt;/span&gt;
+&lt;b&gt;¥137万&lt;/b&gt;
+&lt;small class=&quot;rg-muted&quot;&gt;总预算 ¥228万 − 已投入 ¥91万&lt;/small&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-ai&quot;&gt;
@@ -981,49 +1716,46 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;/div&gt;
 &lt;button class=&quot;rg-primary&quot; data-go=&quot;4&quot;&gt;查看建议&lt;/button&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-split&quot; style=&quot;margin-top:10px&quot;&gt;
+&lt;div class=&quot;rg-split&quot; style=&quot;margin-top:16px&quot;&gt;
 &lt;div class=&quot;rg-card&quot;&gt;
-&lt;div class=&quot;rg-card-title&quot;&gt;增长计划表现 &lt;span class=&quot;rg-muted&quot;&gt;本季度&lt;/span&gt;
+&lt;div class=&quot;rg-card-title&quot;&gt;增长计划表现 &lt;span class=&quot;rg-muted&quot;&gt;本季度 · 按增量ROI 降序&lt;/span&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-plan&quot;&gt;
+&lt;div class=&quot;rg-plan&quot; data-series=&quot;1&quot;&gt;
 &lt;div&gt;
 &lt;b&gt;新会员30天复购提升&lt;/b&gt;
 &lt;div class=&quot;rg-progress&quot;&gt;
-&lt;i style=&quot;width:52%&quot;&gt;
-&lt;/i&gt;
+&lt;i style=&quot;width:52%&quot;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;span&gt;投入 ¥52万&lt;/span&gt;
 &lt;span&gt;利润 ¥128万&lt;/span&gt;
-&lt;span class=&quot;rg-pos&quot;&gt;ROI 2.46&lt;/span&gt;
+&lt;span&gt;&lt;b class=&quot;rg-metric&quot;&gt;ROI 2.46&lt;/b&gt;&lt;span class=&quot;rg-delta up&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▲&lt;/i&gt;+0.66&lt;small&gt;较组合 1.80&lt;/small&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;rg-status&quot;&gt;运行中&lt;/span&gt;
 &lt;button class=&quot;rg-link&quot; data-plan=&quot;新会员30天复购提升&quot;&gt;详情 →&lt;/button&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-plan&quot;&gt;
+&lt;div class=&quot;rg-plan&quot; data-series=&quot;2&quot;&gt;
 &lt;div&gt;
 &lt;b&gt;沉睡会员分层召回&lt;/b&gt;
 &lt;div class=&quot;rg-progress&quot;&gt;
-&lt;i style=&quot;width:38%&quot;&gt;
-&lt;/i&gt;
+&lt;i style=&quot;width:38%&quot;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;span&gt;投入 ¥31万&lt;/span&gt;
 &lt;span&gt;利润 ¥36万&lt;/span&gt;
-&lt;span&gt;ROI 1.16&lt;/span&gt;
+&lt;span&gt;&lt;b class=&quot;rg-metric&quot;&gt;ROI 1.16&lt;/b&gt;&lt;span class=&quot;rg-delta down&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▼&lt;/i&gt;−0.64&lt;small&gt;较组合 1.80&lt;/small&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;rg-status&quot;&gt;运行中&lt;/span&gt;
 &lt;button class=&quot;rg-link&quot; data-plan=&quot;沉睡会员分层召回&quot;&gt;详情 →&lt;/button&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-plan&quot;&gt;
+&lt;div class=&quot;rg-plan&quot; data-series=&quot;3&quot;&gt;
 &lt;div&gt;
 &lt;b&gt;高价值会员提升&lt;/b&gt;
 &lt;div class=&quot;rg-progress&quot;&gt;
-&lt;i style=&quot;width:16%&quot;&gt;
-&lt;/i&gt;
+&lt;i style=&quot;width:16%&quot;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;span&gt;投入 ¥8万&lt;/span&gt;
 &lt;span&gt;等待归因&lt;/span&gt;
-&lt;span&gt;—&lt;/span&gt;
+&lt;span&gt;&lt;b class=&quot;rg-metric&quot;&gt;ROI —&lt;/b&gt;&lt;span class=&quot;rg-delta flat&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;◷&lt;/i&gt;实验窗口内&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;rg-status test&quot;&gt;测试中&lt;/span&gt;
 &lt;button class=&quot;rg-link&quot; data-plan=&quot;高价值会员提升&quot;&gt;详情 →&lt;/button&gt;
 &lt;/div&gt;
@@ -1031,94 +1763,128 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;div class=&quot;rg-card&quot;&gt;
 &lt;div class=&quot;rg-card-title&quot;&gt;已投入构成 &lt;span class=&quot;rg-muted&quot;&gt;合计 ¥91万&lt;/span&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-budget-row&quot;&gt;
+&lt;div class=&quot;rg-budget-row&quot; data-series=&quot;1&quot;&gt;
 &lt;b&gt;新会员复购&lt;/b&gt;
 &lt;span&gt;57%&lt;/span&gt;
 &lt;div class=&quot;rg-budget-bar&quot;&gt;
-&lt;i style=&quot;width:57%&quot;&gt;
-&lt;/i&gt;
+&lt;i style=&quot;width:57%&quot;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;b&gt;¥52万&lt;/b&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-budget-row&quot;&gt;
+&lt;div class=&quot;rg-budget-row&quot; data-series=&quot;2&quot;&gt;
 &lt;b&gt;沉睡召回&lt;/b&gt;
 &lt;span&gt;34%&lt;/span&gt;
 &lt;div class=&quot;rg-budget-bar&quot;&gt;
-&lt;i style=&quot;width:34%&quot;&gt;
-&lt;/i&gt;
+&lt;i style=&quot;width:34%&quot;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;b&gt;¥31万&lt;/b&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-budget-row&quot;&gt;
+&lt;div class=&quot;rg-budget-row&quot; data-series=&quot;3&quot;&gt;
 &lt;b&gt;高价值提升&lt;/b&gt;
 &lt;span&gt;9%&lt;/span&gt;
 &lt;div class=&quot;rg-budget-bar&quot;&gt;
-&lt;i style=&quot;width:9%&quot;&gt;
-&lt;/i&gt;
+&lt;i style=&quot;width:9%&quot;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;b&gt;¥8万&lt;/b&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-
         &lt;section class=&quot;rg-page&quot; data-screen=&quot;1&quot;&gt;
 &lt;div class=&quot;rg-heading&quot;&gt;
 &lt;div&gt;
-&lt;h1&gt;当前增长计划&lt;/h1&gt;
-&lt;p&gt;每个计划对应一个明确的会员增长目标&lt;/p&gt;
+&lt;p class=&quot;rg-breadcrumb&quot; aria-hidden=&quot;true&quot;&gt;会员营销 › 增长计划&lt;/p&gt;
+&lt;h2&gt;当前增长计划&lt;/h2&gt;
+&lt;p&gt;每个计划对应一个明确的会员增长目标 · 口径：ROI = 已验证增量利润 ÷ 累计已投入&lt;/p&gt;
 &lt;/div&gt;
+&lt;div class=&quot;rg-headactions&quot;&gt;
+&lt;button class=&quot;rg-daterange&quot; type=&quot;button&quot;&gt;&lt;span&gt;期间&lt;/span&gt;2026 Q3 · 7/1–9/30&lt;span aria-hidden=&quot;true&quot;&gt;▾&lt;/span&gt;&lt;/button&gt;
+&lt;button class=&quot;rg-secondary&quot; type=&quot;button&quot;&gt;导出&lt;/button&gt;
 &lt;button class=&quot;rg-primary&quot; data-create&gt;＋ 创建增长计划&lt;/button&gt;
 &lt;/div&gt;
+&lt;/div&gt;
 &lt;div class=&quot;rg-card&quot;&gt;
-&lt;div class=&quot;rg-card-title&quot;&gt;计划列表 &lt;span class=&quot;rg-muted&quot; id=&quot;plan-count&quot;&gt;3个计划&lt;/span&gt;
+&lt;div class=&quot;rg-toolbar&quot;&gt;
+&lt;div class=&quot;rg-search&quot;&gt;
+&lt;span aria-hidden=&quot;true&quot;&gt;⌕&lt;/span&gt;
+&lt;label class=&quot;rg-sr&quot; for=&quot;rg-plan-search&quot;&gt;在计划中搜索&lt;/label&gt;
+&lt;input id=&quot;rg-plan-search&quot; type=&quot;search&quot; placeholder=&quot;搜索计划名称或目标&quot; autocomplete=&quot;off&quot; spellcheck=&quot;false&quot;&gt;
 &lt;/div&gt;
-&lt;div id=&quot;created-plan-slot&quot;&gt;
+&lt;button class=&quot;rg-chip on&quot; type=&quot;button&quot; data-filter=&quot;all&quot;&gt;全部 &lt;small&gt;3&lt;/small&gt;&lt;/button&gt;
+&lt;button class=&quot;rg-chip&quot; type=&quot;button&quot; data-filter=&quot;run&quot;&gt;运行中 &lt;small&gt;2&lt;/small&gt;&lt;/button&gt;
+&lt;button class=&quot;rg-chip&quot; type=&quot;button&quot; data-filter=&quot;test&quot;&gt;测试中 &lt;small&gt;1&lt;/small&gt;&lt;/button&gt;
+&lt;span class=&quot;rg-count&quot;&gt;&lt;b id=&quot;plan-count&quot;&gt;3个计划&lt;/b&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-plan&quot;&gt;
-&lt;div&gt;
+&lt;div class=&quot;rg-tablewrap&quot;&gt;
+&lt;table class=&quot;rg-table&quot; id=&quot;rg-plan-table&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope=&quot;col&quot;&gt;&lt;button class=&quot;rg-sort&quot; type=&quot;button&quot; data-sort=&quot;name&quot;&gt;计划&lt;i aria-hidden=&quot;true&quot;&gt;↕&lt;/i&gt;&lt;/button&gt;&lt;/th&gt;
+&lt;th scope=&quot;col&quot;&gt;状态&lt;/th&gt;
+&lt;th scope=&quot;col&quot; class=&quot;num&quot;&gt;&lt;button class=&quot;rg-sort&quot; type=&quot;button&quot; data-sort=&quot;budget&quot;&gt;预算&lt;i aria-hidden=&quot;true&quot;&gt;↕&lt;/i&gt;&lt;/button&gt;&lt;/th&gt;
+&lt;th scope=&quot;col&quot; class=&quot;num&quot;&gt;&lt;button class=&quot;rg-sort&quot; type=&quot;button&quot; data-sort=&quot;spend&quot;&gt;已投入&lt;i aria-hidden=&quot;true&quot;&gt;↕&lt;/i&gt;&lt;/button&gt;&lt;/th&gt;
+&lt;th scope=&quot;col&quot; class=&quot;num&quot;&gt;&lt;button class=&quot;rg-sort&quot; type=&quot;button&quot; data-sort=&quot;profit&quot;&gt;增量利润&lt;i aria-hidden=&quot;true&quot;&gt;↕&lt;/i&gt;&lt;/button&gt;&lt;/th&gt;
+&lt;th scope=&quot;col&quot; class=&quot;num&quot; aria-sort=&quot;descending&quot;&gt;&lt;button class=&quot;rg-sort&quot; type=&quot;button&quot; data-sort=&quot;roi&quot;&gt;增量ROI&lt;i aria-hidden=&quot;true&quot;&gt;↓&lt;/i&gt;&lt;/button&gt;&lt;/th&gt;
+&lt;th scope=&quot;col&quot; class=&quot;act&quot;&gt;操作&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody id=&quot;created-plan-slot&quot;&gt;&lt;/tbody&gt;
+&lt;tbody id=&quot;rg-plan-rows&quot;&gt;
+&lt;tr data-series=&quot;1&quot; data-status=&quot;run&quot; data-name=&quot;新会员30天复购提升&quot; data-goal=&quot;目标：复购率提升5个百分点&quot; data-budget=&quot;100&quot; data-spend=&quot;52&quot; data-profit=&quot;¥128万&quot; data-roi=&quot;2.46&quot;&gt;
+&lt;td&gt;
 &lt;b&gt;新会员30天复购提升&lt;/b&gt;
-&lt;span class=&quot;rg-muted&quot;&gt;目标：复购率提升5个百分点&lt;/span&gt;
-&lt;div class=&quot;rg-progress&quot;&gt;
-&lt;i style=&quot;width:52%&quot;&gt;
-&lt;/i&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;span&gt;预算 ¥100万&lt;/span&gt;
-&lt;span&gt;投入 ¥52万&lt;/span&gt;
-&lt;span class=&quot;rg-pos&quot;&gt;利润 ¥128万&lt;/span&gt;
-&lt;span class=&quot;rg-status&quot;&gt;运行中&lt;/span&gt;
-&lt;button class=&quot;rg-link&quot; data-plan=&quot;新会员30天复购提升&quot;&gt;进入计划 →&lt;/button&gt;
-&lt;/div&gt;
-&lt;div class=&quot;rg-plan&quot;&gt;
-&lt;div&gt;
+&lt;span class=&quot;rg-provider&quot;&gt;目标：复购率提升5个百分点&lt;/span&gt;
+&lt;div class=&quot;rg-progress&quot;&gt;&lt;i style=&quot;width:52%&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;&lt;span class=&quot;rg-status&quot;&gt;运行中&lt;/span&gt;&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;¥100万&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;¥52万&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;¥128万&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;&lt;b class=&quot;rg-metric&quot;&gt;2.46&lt;/b&gt;&lt;span class=&quot;rg-delta up&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▲&lt;/i&gt;+0.66&lt;small&gt;较组合 1.80&lt;/small&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;td class=&quot;act&quot;&gt;&lt;button class=&quot;rg-link&quot; data-plan=&quot;新会员30天复购提升&quot;&gt;进入计划 →&lt;/button&gt;&lt;button class=&quot;rg-rowmenu&quot; type=&quot;button&quot; aria-label=&quot;新会员30天复购提升 的更多操作&quot;&gt;⋯&lt;/button&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr data-series=&quot;2&quot; data-status=&quot;run&quot; data-name=&quot;沉睡会员分层召回&quot; data-goal=&quot;目标：90天沉睡唤醒率提升3个百分点&quot; data-budget=&quot;80&quot; data-spend=&quot;31&quot; data-profit=&quot;¥36万&quot; data-roi=&quot;1.16&quot;&gt;
+&lt;td&gt;
 &lt;b&gt;沉睡会员分层召回&lt;/b&gt;
-&lt;span class=&quot;rg-muted&quot;&gt;目标：90天沉睡唤醒率提升3个百分点&lt;/span&gt;
-&lt;div class=&quot;rg-progress&quot;&gt;
-&lt;i style=&quot;width:38%&quot;&gt;
-&lt;/i&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;span&gt;预算 ¥80万&lt;/span&gt;
-&lt;span&gt;投入 ¥31万&lt;/span&gt;
-&lt;span&gt;利润 ¥36万&lt;/span&gt;
-&lt;span class=&quot;rg-status&quot;&gt;运行中&lt;/span&gt;
-&lt;button class=&quot;rg-link&quot; data-plan=&quot;沉睡会员分层召回&quot;&gt;进入计划 →&lt;/button&gt;
-&lt;/div&gt;
-&lt;div class=&quot;rg-plan&quot;&gt;
-&lt;div&gt;
+&lt;span class=&quot;rg-provider&quot;&gt;目标：90天沉睡唤醒率提升3个百分点&lt;/span&gt;
+&lt;div class=&quot;rg-progress&quot;&gt;&lt;i style=&quot;width:38%&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;&lt;span class=&quot;rg-status&quot;&gt;运行中&lt;/span&gt;&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;¥80万&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;¥31万&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;¥36万&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;&lt;b class=&quot;rg-metric&quot;&gt;1.16&lt;/b&gt;&lt;span class=&quot;rg-delta down&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▼&lt;/i&gt;−0.64&lt;small&gt;较组合 1.80&lt;/small&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;td class=&quot;act&quot;&gt;&lt;button class=&quot;rg-link&quot; data-plan=&quot;沉睡会员分层召回&quot;&gt;进入计划 →&lt;/button&gt;&lt;button class=&quot;rg-rowmenu&quot; type=&quot;button&quot; aria-label=&quot;沉睡会员分层召回 的更多操作&quot;&gt;⋯&lt;/button&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr data-series=&quot;3&quot; data-status=&quot;test&quot; data-name=&quot;高价值会员提升&quot; data-goal=&quot;目标：高价值会员客单提升8%&quot; data-budget=&quot;48&quot; data-spend=&quot;8&quot; data-profit=&quot;等待归因&quot; data-roi=&quot;-1&quot;&gt;
+&lt;td&gt;
 &lt;b&gt;高价值会员提升&lt;/b&gt;
-&lt;span class=&quot;rg-muted&quot;&gt;目标：高价值会员客单提升8%&lt;/span&gt;
-&lt;div class=&quot;rg-progress&quot;&gt;
-&lt;i style=&quot;width:16%&quot;&gt;
-&lt;/i&gt;
+&lt;span class=&quot;rg-provider&quot;&gt;目标：高价值会员客单提升8%&lt;/span&gt;
+&lt;div class=&quot;rg-progress&quot;&gt;&lt;i style=&quot;width:16%&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;&lt;span class=&quot;rg-status test&quot;&gt;测试中&lt;/span&gt;&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;¥48万&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;¥8万&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;等待归因&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;&lt;b class=&quot;rg-metric&quot;&gt;—&lt;/b&gt;&lt;span class=&quot;rg-delta flat&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;◷&lt;/i&gt;实验窗口内&lt;/span&gt;&lt;/td&gt;
+&lt;td class=&quot;act&quot;&gt;&lt;button class=&quot;rg-link&quot; data-plan=&quot;高价值会员提升&quot;&gt;进入计划 →&lt;/button&gt;&lt;button class=&quot;rg-rowmenu&quot; type=&quot;button&quot; aria-label=&quot;高价值会员提升 的更多操作&quot;&gt;⋯&lt;/button&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;/div&gt;
+&lt;div class=&quot;rg-empty&quot; id=&quot;rg-plan-empty&quot;&gt;
+&lt;i aria-hidden=&quot;true&quot;&gt;⌕&lt;/i&gt;
+&lt;b&gt;没有匹配的增长计划&lt;/b&gt;
+&lt;p&gt;换一个关键词，或把筛选条件放回「全部」。&lt;/p&gt;
+&lt;button class=&quot;rg-secondary&quot; type=&quot;button&quot; data-reset-plans&gt;清除筛选&lt;/button&gt;
 &lt;/div&gt;
-&lt;span&gt;预算 ¥48万&lt;/span&gt;
-&lt;span&gt;投入 ¥8万&lt;/span&gt;
-&lt;span&gt;等待归因&lt;/span&gt;
-&lt;span class=&quot;rg-status test&quot;&gt;测试中&lt;/span&gt;
-&lt;button class=&quot;rg-link&quot; data-plan=&quot;高价值会员提升&quot;&gt;进入计划 →&lt;/button&gt;
+&lt;div class=&quot;rg-tablefoot&quot;&gt;
+&lt;span&gt;显示 &lt;b id=&quot;rg-plan-shown&quot;&gt;3&lt;/b&gt; / &lt;b id=&quot;rg-plan-total&quot;&gt;3&lt;/b&gt; 个计划&lt;/span&gt;
+&lt;div class=&quot;rg-pager&quot;&gt;
+&lt;button type=&quot;button&quot; disabled aria-label=&quot;上一页&quot;&gt;‹&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;on&quot; aria-current=&quot;page&quot;&gt;1&lt;/button&gt;
+&lt;button type=&quot;button&quot; disabled aria-label=&quot;下一页&quot;&gt;›&lt;/button&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-ai&quot;&gt;
@@ -1134,15 +1900,19 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;section class=&quot;rg-page&quot; data-screen=&quot;2&quot;&gt;
 &lt;div class=&quot;rg-heading&quot;&gt;
 &lt;div&gt;
-&lt;button class=&quot;rg-breadcrumb&quot; data-go=&quot;1&quot;&gt;‹ 返回增长计划&lt;/button&gt;
-&lt;h1 id=&quot;detail-plan-name&quot;&gt;新会员30天复购提升&lt;/h1&gt;
+&lt;button class=&quot;rg-breadcrumb&quot; data-go=&quot;1&quot;&gt;会员营销 › 增长计划 › &lt;b&gt;计划详情&lt;/b&gt;&lt;/button&gt;
+&lt;h2 id=&quot;detail-plan-name&quot;&gt;新会员30天复购提升&lt;/h2&gt;
 &lt;p id=&quot;detail-plan-meta&quot;&gt;预算 ¥100万 · 当前运行第47天 · 目标提升5个百分点&lt;/p&gt;
 &lt;/div&gt;
-&lt;span class=&quot;rg-badge&quot;&gt;运行中&lt;/span&gt;
+&lt;div class=&quot;rg-headactions&quot;&gt;
+&lt;span class=&quot;rg-status&quot;&gt;运行中&lt;/span&gt;
+&lt;button class=&quot;rg-secondary&quot; type=&quot;button&quot;&gt;导出&lt;/button&gt;
+&lt;button class=&quot;rg-primary&quot; data-go=&quot;3&quot;&gt;查看真实增量&lt;/button&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-subnav&quot;&gt;&lt;button class=&quot;on&quot; data-go=&quot;2&quot;&gt;计划概览&lt;/button&gt;&lt;button data-go=&quot;3&quot;&gt;效果验证&lt;/button&gt;&lt;button data-go=&quot;4&quot;&gt;预算优化&lt;/button&gt;&lt;/div&gt;
 &lt;div class=&quot;rg-grid4&quot;&gt;
-&lt;div class=&quot;rg-card rg-kpi&quot;&gt;
+&lt;div class=&quot;rg-card rg-kpi rg-kpi-lead&quot;&gt;
 &lt;span&gt;目标会员&lt;/span&gt;
 &lt;b&gt;38万&lt;/b&gt;
 &lt;small class=&quot;rg-muted&quot;&gt;近90天首购会员&lt;/small&gt;
@@ -1160,21 +1930,28 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;div class=&quot;rg-card rg-kpi&quot;&gt;
 &lt;span&gt;增长空间&lt;/span&gt;
 &lt;b&gt;+9%&lt;/b&gt;
-&lt;small class=&quot;rg-pos&quot;&gt;季度机会约 ¥216万&lt;/small&gt;
+&lt;small class=&quot;rg-muted&quot;&gt;季度机会约 ¥216万&lt;/small&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-card&quot; style=&quot;margin-top:10px&quot;&gt;
+&lt;div class=&quot;rg-card&quot; style=&quot;margin-top:16px&quot;&gt;
 &lt;div class=&quot;rg-card-title&quot;&gt;AI 增长投资方案 &lt;span class=&quot;rg-badge&quot;&gt;预计组合 ROI 2.8&lt;/span&gt;
 &lt;/div&gt;
+&lt;div class=&quot;rg-toolbar&quot;&gt;
+&lt;button class=&quot;rg-chip on&quot; type=&quot;button&quot;&gt;全部方案 &lt;small&gt;3&lt;/small&gt;&lt;/button&gt;
+&lt;button class=&quot;rg-chip&quot; type=&quot;button&quot;&gt;仅运行中 &lt;small&gt;2&lt;/small&gt;&lt;/button&gt;
+&lt;span class=&quot;rg-count&quot;&gt;3 条方案 · 按预算降序 · 口径：预计ROI = 预计增量利润 ÷ 方案预算&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;rg-tablewrap&quot;&gt;
 &lt;table class=&quot;rg-table&quot;&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;增长方案&lt;/th&gt;
-&lt;th&gt;执行工具&lt;/th&gt;
-&lt;th&gt;服务商&lt;/th&gt;
-&lt;th&gt;预算&lt;/th&gt;
-&lt;th&gt;预计ROI&lt;/th&gt;
-&lt;th&gt;状态&lt;/th&gt;
+&lt;th scope=&quot;col&quot;&gt;增长方案&lt;/th&gt;
+&lt;th scope=&quot;col&quot;&gt;执行工具&lt;/th&gt;
+&lt;th scope=&quot;col&quot;&gt;服务商&lt;/th&gt;
+&lt;th scope=&quot;col&quot; class=&quot;num&quot; aria-sort=&quot;descending&quot;&gt;&lt;button class=&quot;rg-sort&quot; type=&quot;button&quot;&gt;预算&lt;i aria-hidden=&quot;true&quot;&gt;↓&lt;/i&gt;&lt;/button&gt;&lt;/th&gt;
+&lt;th scope=&quot;col&quot; class=&quot;num&quot;&gt;&lt;button class=&quot;rg-sort&quot; type=&quot;button&quot;&gt;预计ROI&lt;i aria-hidden=&quot;true&quot;&gt;↕&lt;/i&gt;&lt;/button&gt;&lt;/th&gt;
+&lt;th scope=&quot;col&quot;&gt;状态&lt;/th&gt;
+&lt;th scope=&quot;col&quot; class=&quot;act&quot;&gt;操作&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
@@ -1185,11 +1962,10 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;/td&gt;
 &lt;td&gt;EDM + 会员权益&lt;/td&gt;
 &lt;td&gt;Mailchimp + CRM券中心&lt;/td&gt;
-&lt;td&gt;¥50万&lt;/td&gt;
-&lt;td class=&quot;rg-pos&quot;&gt;3.5&lt;/td&gt;
-&lt;td&gt;
-&lt;span class=&quot;rg-status&quot;&gt;运行&lt;/span&gt;
-&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;¥50万&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;&lt;b class=&quot;rg-metric&quot;&gt;3.5&lt;/b&gt;&lt;span class=&quot;rg-delta up&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▲&lt;/i&gt;+0.7&lt;small&gt;较组合 2.8&lt;/small&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&quot;rg-status&quot;&gt;运行&lt;/span&gt;&lt;/td&gt;
+&lt;td class=&quot;act&quot;&gt;&lt;button class=&quot;rg-rowmenu&quot; type=&quot;button&quot; aria-label=&quot;7天二次消费激励 的更多操作&quot;&gt;⋯&lt;/button&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;
@@ -1198,11 +1974,10 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;/td&gt;
 &lt;td&gt;短信 + 会员权益&lt;/td&gt;
 &lt;td&gt;服务商A + CRM券中心&lt;/td&gt;
-&lt;td&gt;¥30万&lt;/td&gt;
-&lt;td&gt;2.1&lt;/td&gt;
-&lt;td&gt;
-&lt;span class=&quot;rg-status&quot;&gt;运行&lt;/span&gt;
-&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;¥30万&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;&lt;b class=&quot;rg-metric&quot;&gt;2.1&lt;/b&gt;&lt;span class=&quot;rg-delta down&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▼&lt;/i&gt;−0.7&lt;small&gt;较组合 2.8&lt;/small&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&quot;rg-status&quot;&gt;运行&lt;/span&gt;&lt;/td&gt;
+&lt;td class=&quot;act&quot;&gt;&lt;button class=&quot;rg-rowmenu&quot; type=&quot;button&quot; aria-label=&quot;14天召回 的更多操作&quot;&gt;⋯&lt;/button&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;
@@ -1211,25 +1986,45 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;/td&gt;
 &lt;td&gt;WhatsApp互动&lt;/td&gt;
 &lt;td&gt;三方服务商B&lt;/td&gt;
-&lt;td&gt;¥20万&lt;/td&gt;
-&lt;td&gt;待验证&lt;/td&gt;
-&lt;td&gt;
-&lt;span class=&quot;rg-status test&quot;&gt;测试&lt;/span&gt;
-&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;¥20万&lt;/td&gt;
+&lt;td class=&quot;num&quot;&gt;&lt;b class=&quot;rg-metric&quot;&gt;待验证&lt;/b&gt;&lt;span class=&quot;rg-delta flat&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;◷&lt;/i&gt;实验窗口内&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&quot;rg-status test&quot;&gt;测试&lt;/span&gt;&lt;/td&gt;
+&lt;td class=&quot;act&quot;&gt;&lt;button class=&quot;rg-rowmenu&quot; type=&quot;button&quot; aria-label=&quot;探索策略 的更多操作&quot;&gt;⋯&lt;/button&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
+&lt;div class=&quot;rg-tablefoot&quot;&gt;
+&lt;span&gt;显示 &lt;b&gt;3&lt;/b&gt; / &lt;b&gt;3&lt;/b&gt; 条方案 · 预算合计 ¥100万&lt;/span&gt;
+&lt;div class=&quot;rg-pager&quot;&gt;
+&lt;button type=&quot;button&quot; disabled aria-label=&quot;上一页&quot;&gt;‹&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;on&quot; aria-current=&quot;page&quot;&gt;1&lt;/button&gt;
+&lt;button type=&quot;button&quot; disabled aria-label=&quot;下一页&quot;&gt;›&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class=&quot;rg-card rg-tool-matrix&quot;&gt;
 &lt;div class=&quot;rg-card-title&quot;&gt;工具竞争与预算调度 &lt;span class=&quot;rg-muted&quot;&gt;同一增长目标下按真实增量效果竞争预算&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;rg-toolbar&quot;&gt;
+&lt;span class=&quot;rg-count&quot;&gt;3 个执行工具 · 按增量ROI 降序 · 口径：增量ROI = 增量利润 ÷ 已投入&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;rg-tablewrap&quot;&gt;
 &lt;table class=&quot;rg-table&quot;&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;执行工具&lt;/th&gt;&lt;th&gt;服务商&lt;/th&gt;&lt;th&gt;已投入&lt;/th&gt;&lt;th&gt;增量利润&lt;/th&gt;&lt;th&gt;增量ROI&lt;/th&gt;&lt;th&gt;系统决策&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;thead&gt;&lt;tr&gt;
+&lt;th scope=&quot;col&quot;&gt;执行工具&lt;/th&gt;
+&lt;th scope=&quot;col&quot;&gt;服务商&lt;/th&gt;
+&lt;th scope=&quot;col&quot; class=&quot;num&quot;&gt;&lt;button class=&quot;rg-sort&quot; type=&quot;button&quot;&gt;已投入&lt;i aria-hidden=&quot;true&quot;&gt;↕&lt;/i&gt;&lt;/button&gt;&lt;/th&gt;
+&lt;th scope=&quot;col&quot; class=&quot;num&quot;&gt;&lt;button class=&quot;rg-sort&quot; type=&quot;button&quot;&gt;增量利润&lt;i aria-hidden=&quot;true&quot;&gt;↕&lt;/i&gt;&lt;/button&gt;&lt;/th&gt;
+&lt;th scope=&quot;col&quot; class=&quot;num&quot; aria-sort=&quot;descending&quot;&gt;&lt;button class=&quot;rg-sort&quot; type=&quot;button&quot;&gt;增量ROI&lt;i aria-hidden=&quot;true&quot;&gt;↓&lt;/i&gt;&lt;/button&gt;&lt;/th&gt;
+&lt;th scope=&quot;col&quot;&gt;系统决策&lt;/th&gt;
+&lt;/tr&gt;&lt;/thead&gt;
 &lt;tbody&gt;
-&lt;tr&gt;&lt;td&gt;&lt;b&gt;EDM + 会员权益&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Mailchimp + CRM券中心&lt;/td&gt;&lt;td&gt;¥8万&lt;/td&gt;&lt;td&gt;¥24万&lt;/td&gt;&lt;td class=&quot;rg-pos&quot;&gt;3.00&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;rg-decision up&quot;&gt;加仓 +¥5万&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;&lt;b&gt;短信 + 会员权益&lt;/b&gt;&lt;/td&gt;&lt;td&gt;服务商A + CRM券中心&lt;/td&gt;&lt;td&gt;¥12万&lt;/td&gt;&lt;td&gt;¥18万&lt;/td&gt;&lt;td&gt;1.50&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;rg-decision down&quot;&gt;减仓 −¥3万&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr id=&quot;rg-wa-result&quot;&gt;&lt;td&gt;&lt;b&gt;WhatsApp互动召回&lt;/b&gt;&lt;/td&gt;&lt;td&gt;三方服务商B&lt;/td&gt;&lt;td&gt;¥3万&lt;/td&gt;&lt;td&gt;等待归因&lt;/td&gt;&lt;td&gt;—&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;rg-decision test&quot;&gt;探索 ¥2万&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;EDM + 会员权益&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Mailchimp + CRM券中心&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;¥8万&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;¥24万&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;&lt;b class=&quot;rg-metric&quot;&gt;3.00&lt;/b&gt;&lt;span class=&quot;rg-delta up&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▲&lt;/i&gt;+0.20&lt;small&gt;较组合 2.8&lt;/small&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;rg-decision up&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▲&lt;/i&gt;加仓 +¥5万&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;短信 + 会员权益&lt;/b&gt;&lt;/td&gt;&lt;td&gt;服务商A + CRM券中心&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;¥12万&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;¥18万&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;&lt;b class=&quot;rg-metric&quot;&gt;1.50&lt;/b&gt;&lt;span class=&quot;rg-delta down&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▼&lt;/i&gt;−1.30&lt;small&gt;较组合 2.8&lt;/small&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;rg-decision down&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▼&lt;/i&gt;减仓 −¥3万&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr id=&quot;rg-wa-result&quot;&gt;&lt;td&gt;&lt;b&gt;WhatsApp互动召回&lt;/b&gt;&lt;/td&gt;&lt;td&gt;三方服务商B&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;¥3万&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;等待归因&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;&lt;b class=&quot;rg-metric&quot;&gt;—&lt;/b&gt;&lt;span class=&quot;rg-delta flat&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;◷&lt;/i&gt;实验窗口内&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;rg-decision test&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;◷&lt;/i&gt;探索 ¥2万&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;/div&gt;
 &lt;div class=&quot;rg-opportunity&quot;&gt;&lt;b&gt;AI建议：&lt;/b&gt;EDM边际ROI更高，下一批会员预算增加5万元；短信减少3万元；保留2万元探索WhatsApp。预算只在商家已授权工具之间流动。&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-ai&quot;&gt;
@@ -1249,18 +2044,22 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;section class=&quot;rg-page&quot; data-screen=&quot;3&quot;&gt;
 &lt;div class=&quot;rg-heading&quot;&gt;
 &lt;div&gt;
-&lt;button class=&quot;rg-breadcrumb&quot; data-go=&quot;1&quot;&gt;‹ 返回增长计划&lt;/button&gt;
-&lt;h1&gt;效果验证&lt;/h1&gt;
+&lt;button class=&quot;rg-breadcrumb&quot; data-go=&quot;1&quot;&gt;会员营销 › 增长计划 › &lt;b&gt;效果验证&lt;/b&gt;&lt;/button&gt;
+&lt;h2&gt;效果验证&lt;/h2&gt;
 &lt;p id=&quot;validation-plan-name&quot;&gt;新会员30天复购提升 · 通过随机控制实验判断增长是否真正由方案带来&lt;/p&gt;
 &lt;/div&gt;
+&lt;div class=&quot;rg-headactions&quot;&gt;
 &lt;span class=&quot;rg-badge&quot;&gt;可信度 94%&lt;/span&gt;
+&lt;button class=&quot;rg-secondary&quot; type=&quot;button&quot;&gt;导出&lt;/button&gt;
+&lt;button class=&quot;rg-primary&quot; data-go=&quot;4&quot;&gt;基于结果优化预算&lt;/button&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-subnav&quot;&gt;&lt;button data-go=&quot;2&quot;&gt;计划概览&lt;/button&gt;&lt;button class=&quot;on&quot; data-go=&quot;3&quot;&gt;效果验证&lt;/button&gt;&lt;button data-go=&quot;4&quot;&gt;预算优化&lt;/button&gt;&lt;/div&gt;
 &lt;div class=&quot;rg-grid4&quot;&gt;
 &lt;div class=&quot;rg-card rg-kpi&quot;&gt;
 &lt;span&gt;真实增量&lt;/span&gt;
 &lt;b&gt;+5.0%&lt;/b&gt;
-&lt;small class=&quot;rg-pos&quot;&gt;实验组 − 控制组&lt;/small&gt;
+&lt;small class=&quot;rg-muted&quot;&gt;实验组 28% − 控制组 23%&lt;/small&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-card rg-kpi&quot;&gt;
 &lt;span&gt;新增订单&lt;/span&gt;
@@ -1275,10 +2074,10 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;div class=&quot;rg-card rg-kpi&quot;&gt;
 &lt;span&gt;增量 ROI&lt;/span&gt;
 &lt;b&gt;3.20&lt;/b&gt;
-&lt;small class=&quot;rg-pos&quot;&gt;结果显著&lt;/small&gt;
+&lt;small class=&quot;rg-muted&quot;&gt;p = 0.003 · 结果显著&lt;/small&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-split&quot; style=&quot;margin-top:10px&quot;&gt;
+&lt;div class=&quot;rg-split&quot; style=&quot;margin-top:16px&quot;&gt;
 &lt;div class=&quot;rg-card&quot;&gt;
 &lt;div class=&quot;rg-card-title&quot;&gt;实验组 vs 控制组 &lt;span class=&quot;rg-muted&quot;&gt;30天复购率&lt;/span&gt;
 &lt;/div&gt;
@@ -1317,7 +2116,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-card&quot;&gt;
-&lt;div class=&quot;rg-card-title&quot;&gt;归因依据 &lt;span class=&quot;rg-status&quot;&gt;验证通过&lt;/span&gt;
+&lt;div class=&quot;rg-card-title&quot;&gt;归因依据 &lt;span class=&quot;rg-status done&quot;&gt;验证通过&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-audit&quot;&gt;
 &lt;div&gt;
@@ -1342,7 +2141,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;/div&gt;
 &lt;div&gt;
 &lt;span&gt;实验污染&lt;/span&gt;
-&lt;b class=&quot;rg-pos&quot;&gt;未发现&lt;/b&gt;
+&lt;b class=&quot;rg-pos&quot;&gt;✓ 未发现&lt;/b&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-opportunity&quot;&gt;
@@ -1358,15 +2157,18 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;section class=&quot;rg-page&quot; data-screen=&quot;4&quot;&gt;
 &lt;div class=&quot;rg-heading&quot;&gt;
 &lt;div&gt;
-&lt;button class=&quot;rg-breadcrumb&quot; data-go=&quot;1&quot;&gt;‹ 返回增长计划&lt;/button&gt;
-&lt;h1&gt;预算优化&lt;/h1&gt;
+&lt;button class=&quot;rg-breadcrumb&quot; data-go=&quot;1&quot;&gt;会员营销 › 增长计划 › &lt;b&gt;预算优化&lt;/b&gt;&lt;/button&gt;
+&lt;h2&gt;预算优化&lt;/h2&gt;
 &lt;p id=&quot;optimization-plan-name&quot;&gt;新会员30天复购提升 · AI根据可信增量ROI重新配置剩余预算&lt;/p&gt;
 &lt;/div&gt;
+&lt;div class=&quot;rg-headactions&quot;&gt;
+&lt;button class=&quot;rg-secondary&quot; data-go=&quot;3&quot;&gt;查看验证依据&lt;/button&gt;
 &lt;button class=&quot;rg-primary&quot; id=&quot;approve&quot;&gt;批准执行建议&lt;/button&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-subnav&quot;&gt;&lt;button data-go=&quot;2&quot;&gt;计划概览&lt;/button&gt;&lt;button data-go=&quot;3&quot;&gt;效果验证&lt;/button&gt;&lt;button class=&quot;on&quot; data-go=&quot;4&quot;&gt;预算优化&lt;/button&gt;&lt;/div&gt;
 &lt;div class=&quot;rg-grid4&quot;&gt;
-&lt;div class=&quot;rg-card rg-kpi&quot;&gt;
+&lt;div class=&quot;rg-card rg-kpi rg-kpi-lead&quot;&gt;
 &lt;span&gt;总预算&lt;/span&gt;
 &lt;b&gt;¥100万&lt;/b&gt;
 &lt;small class=&quot;rg-muted&quot;&gt;本季度&lt;/small&gt;
@@ -1379,12 +2181,12 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;div class=&quot;rg-card rg-kpi&quot;&gt;
 &lt;span&gt;优化后预计利润&lt;/span&gt;
 &lt;b&gt;¥188万&lt;/b&gt;
-&lt;small class=&quot;rg-pos&quot;&gt;新增 ¥60万&lt;/small&gt;
+&lt;span class=&quot;rg-delta up&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▲&lt;/i&gt;+¥60万&lt;small&gt;较当前预计 ¥128万&lt;/small&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-card rg-kpi&quot;&gt;
 &lt;span&gt;预计最终ROI&lt;/span&gt;
 &lt;b&gt;2.68&lt;/b&gt;
-&lt;small class=&quot;rg-pos&quot;&gt;原计划 2.31&lt;/small&gt;
+&lt;span class=&quot;rg-delta up&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▲&lt;/i&gt;+0.37&lt;small&gt;原计划 2.31&lt;/small&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-ai&quot;&gt;
@@ -1395,11 +2197,11 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;/div&gt;
 &lt;span class=&quot;rg-badge&quot;&gt;预计多赚 ¥60万&lt;/span&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-allocate&quot; style=&quot;margin-top:10px&quot;&gt;
+&lt;div class=&quot;rg-allocate&quot; style=&quot;margin-top:16px&quot;&gt;
 &lt;div class=&quot;rg-card&quot;&gt;
 &lt;div class=&quot;rg-card-title&quot;&gt;预算调整 &lt;span class=&quot;rg-muted&quot;&gt;未来30天&lt;/span&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-budget-row&quot;&gt;
+&lt;div class=&quot;rg-budget-row&quot; data-series=&quot;1&quot;&gt;
 &lt;div&gt;
 &lt;b&gt;新会员复购&lt;/b&gt;
 &lt;div class=&quot;rg-reason&quot;&gt;ROI 3.2，持续显著&lt;/div&gt;
@@ -1411,7 +2213,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;/div&gt;
 &lt;b class=&quot;rg-pos&quot;&gt;+¥20万&lt;/b&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-budget-row&quot;&gt;
+&lt;div class=&quot;rg-budget-row&quot; data-series=&quot;2&quot;&gt;
 &lt;div&gt;
 &lt;b&gt;沉睡会员召回&lt;/b&gt;
 &lt;div class=&quot;rg-reason&quot;&gt;ROI降至0.8&lt;/div&gt;
@@ -1423,7 +2225,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;/div&gt;
 &lt;b class=&quot;rg-neg&quot;&gt;−¥10万&lt;/b&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-budget-row&quot;&gt;
+&lt;div class=&quot;rg-budget-row&quot; data-series=&quot;3&quot;&gt;
 &lt;div&gt;
 &lt;b&gt;探索预算&lt;/b&gt;
 &lt;div class=&quot;rg-reason&quot;&gt;验证新品与低峰场景&lt;/div&gt;
@@ -1445,7 +2247,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;b&gt;扩大目标人群&lt;/b&gt;
 &lt;span&gt;新增高潜新会员18,600人&lt;/span&gt;
 &lt;/div&gt;
-&lt;b class=&quot;rg-pos&quot;&gt;扩量&lt;/b&gt;
+&lt;span class=&quot;rg-decision up&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▲&lt;/i&gt;扩量&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-tool&quot;&gt;
 &lt;i class=&quot;rg-tool-icon&quot;&gt;券&lt;/i&gt;
@@ -1453,7 +2255,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;b&gt;优化投资方式&lt;/b&gt;
 &lt;span&gt;偏好权益替代通用折扣&lt;/span&gt;
 &lt;/div&gt;
-&lt;b class=&quot;rg-pos&quot;&gt;替换&lt;/b&gt;
+&lt;span class=&quot;rg-decision&quot;&gt;替换&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-tool&quot;&gt;
 &lt;i class=&quot;rg-tool-icon&quot;&gt;时&lt;/i&gt;
@@ -1461,7 +2263,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;b&gt;调整经营时机&lt;/b&gt;
 &lt;span&gt;触发窗口前移至首购后7天&lt;/span&gt;
 &lt;/div&gt;
-&lt;b class=&quot;rg-pos&quot;&gt;提前&lt;/b&gt;
+&lt;span class=&quot;rg-decision&quot;&gt;提前&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-tool&quot;&gt;
 &lt;i class=&quot;rg-tool-icon&quot;&gt;验&lt;/i&gt;
@@ -1469,7 +2271,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;b&gt;持续效果验证&lt;/b&gt;
 &lt;span&gt;保留10%随机控制组&lt;/span&gt;
 &lt;/div&gt;
-&lt;b&gt;保持&lt;/b&gt;
+&lt;span class=&quot;rg-decision&quot;&gt;保持&lt;/span&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1482,10 +2284,15 @@ html&gt;body{padding:0}&lt;/style&gt;
         &lt;section class=&quot;rg-page&quot; data-screen=&quot;5&quot;&gt;
 &lt;div class=&quot;rg-heading&quot;&gt;
 &lt;div&gt;
-&lt;h1&gt;会员增长投资报告&lt;/h1&gt;
-&lt;p&gt;2026年第三季度 · 新会员30天复购提升计划&lt;/p&gt;
+&lt;p class=&quot;rg-breadcrumb&quot; aria-hidden=&quot;true&quot;&gt;会员营销 › 复盘 › 投资报告&lt;/p&gt;
+&lt;h2&gt;会员增长投资报告&lt;/h2&gt;
+&lt;p&gt;新会员30天复购提升计划 · 口径：增量利润 = 增量收入 − 商品成本 − 权益成本 − 触达成本&lt;/p&gt;
 &lt;/div&gt;
+&lt;div class=&quot;rg-headactions&quot;&gt;
 &lt;span class=&quot;rg-badge&quot;&gt;目标达成 121%&lt;/span&gt;
+&lt;button class=&quot;rg-daterange&quot; type=&quot;button&quot;&gt;&lt;span&gt;期间&lt;/span&gt;2026 Q3 · 7/1–9/30&lt;span aria-hidden=&quot;true&quot;&gt;▾&lt;/span&gt;&lt;/button&gt;
+&lt;button class=&quot;rg-secondary&quot; type=&quot;button&quot;&gt;导出&lt;/button&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-grid4&quot;&gt;
 &lt;div class=&quot;rg-card rg-kpi&quot;&gt;
@@ -1496,20 +2303,20 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;div class=&quot;rg-card rg-kpi&quot;&gt;
 &lt;span&gt;增量收入&lt;/span&gt;
 &lt;b&gt;¥650万&lt;/b&gt;
-&lt;small class=&quot;rg-pos&quot;&gt;排除自然增长&lt;/small&gt;
+&lt;small class=&quot;rg-muted&quot;&gt;排除自然增长&lt;/small&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-card rg-kpi&quot;&gt;
 &lt;span&gt;增量利润&lt;/span&gt;
 &lt;b&gt;¥280万&lt;/b&gt;
-&lt;small class=&quot;rg-pos&quot;&gt;目标 ¥230万&lt;/small&gt;
+&lt;span class=&quot;rg-delta up&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▲&lt;/i&gt;+¥50万&lt;small&gt;目标 ¥230万&lt;/small&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-card rg-kpi&quot;&gt;
 &lt;span&gt;最终增量ROI&lt;/span&gt;
 &lt;b&gt;2.80&lt;/b&gt;
-&lt;small class=&quot;rg-pos&quot;&gt;较人工方案 +41%&lt;/small&gt;
+&lt;span class=&quot;rg-delta up&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;▲&lt;/i&gt;+41%&lt;small&gt;较人工方案&lt;/small&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-split&quot; style=&quot;margin-top:10px&quot;&gt;
+&lt;div class=&quot;rg-split&quot; style=&quot;margin-top:16px&quot;&gt;
 &lt;div class=&quot;rg-card&quot;&gt;
 &lt;div class=&quot;rg-card-title&quot;&gt;增量价值构成&lt;/div&gt;
 &lt;div class=&quot;rg-waterfall&quot;&gt;
@@ -1554,7 +2361,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;button class=&quot;rg-primary&quot; data-create&gt;创建下一季度计划&lt;/button&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-        &lt;div class=&quot;rg-toast&quot; id=&quot;rg-toast&quot;&gt;预算调整已批准，将从下一批会员开始执行&lt;/div&gt;
+        &lt;div class=&quot;rg-toast&quot; id=&quot;rg-toast&quot; role=&quot;status&quot; aria-live=&quot;polite&quot;&gt;预算调整已批准，将从下一批会员开始执行&lt;/div&gt;
       &lt;/main&gt;
 &lt;/div&gt;
     &lt;/div&gt;
@@ -1588,11 +2395,11 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-field&quot; style=&quot;margin-top:14px&quot;&gt;
-&lt;label&gt;计划名称&lt;/label&gt;
-&lt;input id=&quot;rg-plan-name-input&quot; type=&quot;text&quot; value=&quot;新会员30天复购提升&quot;&gt;
+&lt;label for=&quot;rg-plan-name-input&quot;&gt;计划名称&lt;/label&gt;
+&lt;input id=&quot;rg-plan-name-input&quot; type=&quot;text&quot; autocomplete=&quot;off&quot; spellcheck=&quot;false&quot; value=&quot;新会员30天复购提升&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-field&quot;&gt;
-&lt;label&gt;计划周期&lt;/label&gt;
+&lt;label for=&quot;rg-cycle-input&quot;&gt;计划周期&lt;/label&gt;
 &lt;select id=&quot;rg-cycle-input&quot;&gt;
 &lt;option&gt;90天&lt;/option&gt;
 &lt;option&gt;60天&lt;/option&gt;
@@ -1603,35 +2410,35 @@ html&gt;body{padding:0}&lt;/style&gt;
           &lt;section class=&quot;rg-wizard-pane&quot;&gt;
 &lt;div class=&quot;rg-field-grid&quot;&gt;
 &lt;div class=&quot;rg-field&quot;&gt;
-&lt;label&gt;总预算 &lt;b id=&quot;rg-budget-out&quot;&gt;¥100万&lt;/b&gt;
+&lt;label for=&quot;rg-budget-input&quot;&gt;总预算 &lt;b id=&quot;rg-budget-out&quot;&gt;¥100万&lt;/b&gt;
 &lt;/label&gt;
 &lt;input id=&quot;rg-budget-input&quot; type=&quot;range&quot; min=&quot;50&quot; max=&quot;200&quot; step=&quot;10&quot; value=&quot;100&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-field&quot;&gt;
-&lt;label&gt;目标提升 &lt;b id=&quot;rg-target-out&quot;&gt;+5.0%&lt;/b&gt;
+&lt;label for=&quot;rg-target-input&quot;&gt;目标提升 &lt;b id=&quot;rg-target-out&quot;&gt;+5.0%&lt;/b&gt;
 &lt;/label&gt;
 &lt;input id=&quot;rg-target-input&quot; type=&quot;range&quot; min=&quot;2&quot; max=&quot;10&quot; step=&quot;.5&quot; value=&quot;5&quot;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-field-grid&quot;&gt;
 &lt;div class=&quot;rg-field&quot;&gt;
-&lt;label&gt;优化指标&lt;/label&gt;
-&lt;select&gt;
+&lt;label for=&quot;rg-metric-input&quot;&gt;优化指标&lt;/label&gt;
+&lt;select id=&quot;rg-metric-input&quot;&gt;
 &lt;option&gt;增量利润&lt;/option&gt;
 &lt;option&gt;增量复购率&lt;/option&gt;
 &lt;option&gt;会员LTV&lt;/option&gt;
 &lt;/select&gt;
 &lt;/div&gt;
 &lt;div class=&quot;rg-field&quot;&gt;
-&lt;label&gt;期望回本周期&lt;/label&gt;
-&lt;select&gt;
+&lt;label for=&quot;rg-payback-input&quot;&gt;期望回本周期&lt;/label&gt;
+&lt;select id=&quot;rg-payback-input&quot;&gt;
 &lt;option&gt;90天内&lt;/option&gt;
 &lt;option&gt;60天内&lt;/option&gt;
 &lt;option&gt;不限定&lt;/option&gt;
 &lt;/select&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;rg-card-title&quot;&gt;归因准备与经营边界 &lt;span class=&quot;rg-status&quot;&gt;数据就绪&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;rg-card-title&quot;&gt;归因准备与经营边界 &lt;span class=&quot;rg-status done&quot;&gt;数据就绪&lt;/span&gt;&lt;/div&gt;
 &lt;div class=&quot;rg-guard&quot;&gt;
 &lt;label&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 交易与会员ID已打通&lt;/label&gt;
 &lt;label&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 历史自然基线可计算&lt;/label&gt;
@@ -1661,7 +2468,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;div&gt;
 &lt;div class=&quot;rg-card-title&quot;&gt;目标合理，建议启动&lt;/div&gt;
 &lt;p class=&quot;rg-muted&quot; id=&quot;rg-feasibility-copy&quot;&gt;基于近90天38万新会员数据，预计30天复购可提升4.2～5.6个百分点；预计36天回本。&lt;/p&gt;
-&lt;div class=&quot;rg-review&quot; style=&quot;margin-top:10px&quot;&gt;
+&lt;div class=&quot;rg-review&quot; style=&quot;margin-top:16px&quot;&gt;
 &lt;div&gt;
 &lt;span&gt;预计增量利润&lt;/span&gt;
 &lt;b id=&quot;rg-profit-out&quot;&gt;¥162万&lt;/b&gt;
@@ -1771,7 +2578,7 @@ html&gt;body{padding:0}&lt;/style&gt;
   &lt;/div&gt;
   &lt;script&gt;
     (()=&gt;{
-      const root=document.getElementById(&#x27;resto-growth-demo&#x27;);if(!root)return;
+      const root=document.getElementById(&#x27;growth-engine&#x27;);if(!root)return;
       const pages=[...root.querySelectorAll(&#x27;.rg-page&#x27;)],nav=[...root.querySelectorAll(&#x27;.rg-side button[data-page]&#x27;)],modal=root.querySelector(&#x27;#rg-create-modal&#x27;),wizardPanes=[...root.querySelectorAll(&#x27;.rg-wizard-pane&#x27;)],wizardSteps=[...root.querySelectorAll(&#x27;.rg-wizard-step&#x27;)];
       const goals={
         new:{label:&#x27;新会员复购&#x27;,name:&#x27;新会员30天复购提升&#x27;,members:&#x27;38万&#x27;,baseline:&#x27;21%&#x27;,benchmark:&#x27;30%&#x27;,space:&#x27;+9%&#x27;,copy:&#x27;近90天首购会员&#x27;,strategies:[&#x27;7天二次消费激励&#x27;,&#x27;14天召回&#x27;,&#x27;探索策略池&#x27;],baseRoi:1.78,feasibility:&#x27;基于近90天38万新会员数据，预计30天复购可提升目标区间；历史基线与随机控制组均已就绪。&#x27;},
@@ -1782,7 +2589,16 @@ html&gt;body{padding:0}&lt;/style&gt;
       let wizard=0,selectedGoal=&#x27;new&#x27;,created=false;
       const budget=root.querySelector(&#x27;#rg-budget-input&#x27;),target=root.querySelector(&#x27;#rg-target-input&#x27;),nameInput=root.querySelector(&#x27;#rg-plan-name-input&#x27;),cycleInput=root.querySelector(&#x27;#rg-cycle-input&#x27;);
       function toast(msg){const t=root.querySelector(&#x27;#rg-toast&#x27;);t.textContent=msg;t.classList.add(&#x27;show&#x27;);setTimeout(()=&gt;t.classList.remove(&#x27;show&#x27;),2400)}
-      function go(n){const p=Math.max(0,Math.min(5,+n));pages.forEach(x=&gt;x.classList.toggle(&#x27;on&#x27;,+x.dataset.screen===p));nav.forEach(x=&gt;x.classList.toggle(&#x27;on&#x27;,+x.dataset.page===(p===0?0:p===5?5:1)));root.scrollIntoView({behavior:&#x27;smooth&#x27;,block:&#x27;nearest&#x27;});}
+      const work=root.querySelector(&#x27;.rg-work&#x27;);
+      function go(n){
+        const p=Math.max(0,Math.min(5,+n));
+        pages.forEach(x=&gt;x.classList.toggle(&#x27;on&#x27;,+x.dataset.screen===p));
+        // 左栏有这一页的入口就精确高亮它;没有(如计划详情)才回退到「增长计划」
+        const exact=nav.some(x=&gt;+x.dataset.page===p),target=exact?p:(p===0?0:p===5?5:1);
+        nav.forEach(x=&gt;{const on=+x.dataset.page===target;x.classList.toggle(&#x27;on&#x27;,on);
+          if(on)x.setAttribute(&#x27;aria-current&#x27;,&#x27;page&#x27;);else x.removeAttribute(&#x27;aria-current&#x27;)});
+        if(work)work.scrollTop=0;
+      }
       function wizardShow(n){wizard=Math.max(0,Math.min(3,n));wizardPanes.forEach((x,i)=&gt;x.classList.toggle(&#x27;on&#x27;,i===wizard));wizardSteps.forEach((x,i)=&gt;x.classList.toggle(&#x27;on&#x27;,i===wizard));root.querySelector(&#x27;#rg-wizard-back&#x27;).style.visibility=wizard===0?&#x27;hidden&#x27;:&#x27;visible&#x27;;root.querySelector(&#x27;#rg-wizard-next&#x27;).textContent=wizard===3?&#x27;启动计划&#x27;:&#x27;下一步&#x27;;if(wizard&gt;=2)updateInputs();}
       function openModal(){wizardShow(0);modal.classList.add(&#x27;on&#x27;);}
       function closeModal(){modal.classList.remove(&#x27;on&#x27;);}
@@ -1793,13 +2609,102 @@ html&gt;body{padding:0}&lt;/style&gt;
         const g=goals[selectedGoal],b=+budget.value,tg=+target.value,tools=selectedTools(),score=Math.max(48,Math.min(94,Math.round(94-tg*3+b*.07))),toolBoost=Math.max(-.18,(tools.length-2)*.04),roi=Math.max(.65,g.baseRoi-(tg-5)*.08+(b-100)*.0015+toolBoost),profit=Math.round(b*roi),parts=[Math.round(b*.5),Math.round(b*.3)];parts.push(b-parts[0]-parts[1]);
         const primary=tools.includes(&#x27;edm&#x27;)?&#x27;edm&#x27;:tools[0],secondary=tools.includes(&#x27;sms&#x27;)?&#x27;sms&#x27;:tools[1]||primary,incentive=tools.includes(&#x27;coupon&#x27;)?&#x27;coupon&#x27;:null,explore=tools.includes(&#x27;wa&#x27;)?&#x27;wa&#x27;:tools.find(x=&gt;x!==primary&amp;&amp;x!==secondary)||primary;
         const combo=k=&gt;k?(toolLabels[k]+(incentive&amp;&amp;k!==incentive?&#x27; + 会员权益&#x27;:&#x27;&#x27;)):&#x27;无可用工具&#x27;,providers=k=&gt;k?(providerLabels[k]+(incentive&amp;&amp;k!==incentive?&#x27; + CRM券中心&#x27;:&#x27;&#x27;)):&#x27;—&#x27;;
-        root.querySelector(&#x27;#rg-budget-out&#x27;).textContent=`¥${b}万`;root.querySelector(&#x27;#rg-target-out&#x27;).textContent=`+${tg.toFixed(1)}%`;root.querySelector(&#x27;#rg-review-budget&#x27;).textContent=`¥${b}万`;root.querySelector(&#x27;#rg-review-target&#x27;).textContent=`+${tg.toFixed(1)}%`;root.querySelector(&#x27;#rg-review-name&#x27;).textContent=nameInput.value||g.name;root.querySelector(&#x27;#rg-review-cycle&#x27;).textContent=cycleInput.value;root.querySelector(&#x27;#rg-review-tools&#x27;).textContent=tools.length?tools.map(x=&gt;toolLabels[x]).join(&#x27;、&#x27;):&#x27;未授权执行工具&#x27;;root.querySelector(&#x27;#rg-score-out&#x27;).textContent=`${score}%`;root.querySelector(&#x27;.rg-score&#x27;).style.background=`conic-gradient(#1677ff 0 ${score}%,#e7ebf1 ${score}%)`;root.querySelector(&#x27;#rg-profit-out&#x27;).textContent=`¥${profit}万`;root.querySelector(&#x27;#rg-review-profit&#x27;).textContent=`¥${profit}万`;root.querySelector(&#x27;#rg-roi-out&#x27;).textContent=roi.toFixed(2);root.querySelector(&#x27;#rg-feasibility-copy&#x27;).textContent=g.feasibility;g.strategies.forEach((s,i)=&gt;{root.querySelector(`#rg-strategy-${i+1}`).textContent=s;root.querySelector(`#rg-budget-${i+1}`).textContent=`¥${parts[i]}万`;});[[primary,1],[secondary,2],[explore,3]].forEach(([k,i])=&gt;{root.querySelector(`#rg-tools-${i}`).textContent=combo(k);root.querySelector(`#rg-provider-${i}`).textContent=providers(k)});
+        root.querySelector(&#x27;#rg-budget-out&#x27;).textContent=`¥${b}万`;root.querySelector(&#x27;#rg-target-out&#x27;).textContent=`+${tg.toFixed(1)}%`;root.querySelector(&#x27;#rg-review-budget&#x27;).textContent=`¥${b}万`;root.querySelector(&#x27;#rg-review-target&#x27;).textContent=`+${tg.toFixed(1)}%`;root.querySelector(&#x27;#rg-review-name&#x27;).textContent=nameInput.value||g.name;root.querySelector(&#x27;#rg-review-cycle&#x27;).textContent=cycleInput.value;root.querySelector(&#x27;#rg-review-tools&#x27;).textContent=tools.length?tools.map(x=&gt;toolLabels[x]).join(&#x27;、&#x27;):&#x27;未授权执行工具&#x27;;root.querySelector(&#x27;#rg-score-out&#x27;).textContent=`${score}%`;root.querySelector(&#x27;.rg-score&#x27;).style.background=`conic-gradient(var(--mark-deep) 0%,var(--mark) ${score}%,var(--ink-08) ${score}%)`;root.querySelector(&#x27;#rg-profit-out&#x27;).textContent=`¥${profit}万`;root.querySelector(&#x27;#rg-review-profit&#x27;).textContent=`¥${profit}万`;root.querySelector(&#x27;#rg-roi-out&#x27;).textContent=roi.toFixed(2);root.querySelector(&#x27;#rg-feasibility-copy&#x27;).textContent=g.feasibility;g.strategies.forEach((s,i)=&gt;{root.querySelector(`#rg-strategy-${i+1}`).textContent=s;root.querySelector(`#rg-budget-${i+1}`).textContent=`¥${parts[i]}万`;});[[primary,1],[secondary,2],[explore,3]].forEach(([k,i])=&gt;{root.querySelector(`#rg-tools-${i}`).textContent=combo(k);root.querySelector(`#rg-provider-${i}`).textContent=providers(k)});
       }
       function openPlan(name){const entry=Object.values(goals).find(x=&gt;x.name===name)||goals.new;root.querySelector(&#x27;#detail-plan-name&#x27;).textContent=name;root.querySelector(&#x27;#detail-plan-meta&#x27;).textContent=`预算 ¥${name===goals.new.name?100:name===goals.sleep.name?80:48}万 · 当前运行中 · 目标由随机控制实验验证`;root.querySelector(&#x27;#validation-plan-name&#x27;).textContent=`${name} · 通过随机控制实验判断增长是否真正由方案带来`;root.querySelector(&#x27;#optimization-plan-name&#x27;).textContent=`${name} · AI根据可信增量ROI重新配置剩余预算`;const vals=root.querySelectorAll(&#x27;[data-screen=&quot;2&quot;] .rg-kpi b&#x27;);[entry.members,entry.baseline,entry.benchmark,entry.space].forEach((v,i)=&gt;vals[i].textContent=v);go(2);}
       function createPlan(){
-        const g=goals[selectedGoal],b=+budget.value,tg=+target.value,name=nameInput.value||g.name,toolCount=selectedTools().length,slot=root.querySelector(&#x27;#created-plan-slot&#x27;);slot.innerHTML=`&lt;div class=&quot;rg-plan rg-new-plan&quot;&gt;&lt;div&gt;&lt;b&gt;${name}&lt;/b&gt;&lt;span class=&quot;rg-muted&quot;&gt;目标：核心指标提升${tg.toFixed(1)}个百分点 · 已授权${toolCount}个工具&lt;/span&gt;&lt;div class=&quot;rg-progress&quot;&gt;&lt;i style=&quot;width:4%&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;预算 ¥${b}万&lt;/span&gt;&lt;span&gt;投入 ¥0万&lt;/span&gt;&lt;span&gt;等待首批数据&lt;/span&gt;&lt;span class=&quot;rg-status&quot;&gt;准备实验&lt;/span&gt;&lt;button class=&quot;rg-link&quot; data-plan=&quot;${name}&quot;&gt;进入计划 →&lt;/button&gt;&lt;/div&gt;`;root.querySelector(&#x27;#plan-count&#x27;).textContent=&#x27;4个计划&#x27;;created=true;closeModal();go(1);toast(&#x27;增长计划已创建，正在编排工具并准备首批实验&#x27;);
+        const g=goals[selectedGoal],b=+budget.value,tg=+target.value,name=nameInput.value||g.name,toolCount=selectedTools().length,slot=root.querySelector(&#x27;#created-plan-slot&#x27;);slot.innerHTML=`&lt;tr class=&quot;rg-new-plan&quot; data-status=&quot;test&quot; data-name=&quot;${name}&quot; data-goal=&quot;核心指标提升${tg.toFixed(1)}个百分点&quot; data-budget=&quot;${b}&quot; data-spend=&quot;0&quot; data-profit=&quot;0&quot; data-roi=&quot;-1&quot;&gt;&lt;td&gt;&lt;b&gt;${name}&lt;/b&gt;&lt;span class=&quot;rg-provider&quot;&gt;目标：核心指标提升${tg.toFixed(1)}个百分点 · 已授权${toolCount}个工具&lt;/span&gt;&lt;div class=&quot;rg-progress&quot;&gt;&lt;i style=&quot;width:4%&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;rg-status test&quot;&gt;准备实验&lt;/span&gt;&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;¥${b}万&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;¥0万&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;等待首批数据&lt;/td&gt;&lt;td class=&quot;num&quot;&gt;&lt;b class=&quot;rg-metric&quot;&gt;—&lt;/b&gt;&lt;span class=&quot;rg-delta flat&quot;&gt;&lt;i aria-hidden=&quot;true&quot;&gt;◷&lt;/i&gt;未开始&lt;/span&gt;&lt;/td&gt;&lt;td class=&quot;act&quot;&gt;&lt;button class=&quot;rg-link&quot; data-plan=&quot;${name}&quot;&gt;进入计划 →&lt;/button&gt;&lt;button class=&quot;rg-rowmenu&quot; type=&quot;button&quot; aria-label=&quot;${name} 的更多操作&quot;&gt;⋯&lt;/button&gt;&lt;/td&gt;&lt;/tr&gt;`;created=true;applyPlanFilter();closeModal();go(1);toast(&#x27;增长计划已创建，正在编排工具并准备首批实验&#x27;);
       }
-      nav.forEach(b=&gt;b.addEventListener(&#x27;click&#x27;,()=&gt;go(b.dataset.page)));root.addEventListener(&#x27;click&#x27;,e=&gt;{const goBtn=e.target.closest(&#x27;[data-go]&#x27;),planBtn=e.target.closest(&#x27;[data-plan]&#x27;),createBtn=e.target.closest(&#x27;[data-create]&#x27;),connectBtn=e.target.closest(&#x27;[data-connect-tool]&#x27;);if(goBtn)go(goBtn.dataset.go);if(planBtn)openPlan(planBtn.dataset.plan);if(createBtn)openModal();if(connectBtn)connectWhatsApp();});root.querySelectorAll(&#x27;[data-close]&#x27;).forEach(b=&gt;b.addEventListener(&#x27;click&#x27;,closeModal));root.querySelectorAll(&#x27;.rg-choice&#x27;).forEach(b=&gt;b.addEventListener(&#x27;click&#x27;,()=&gt;selectGoal(b.dataset.goal)));root.querySelector(&#x27;#rg-wizard-back&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;wizardShow(wizard-1));root.querySelector(&#x27;#rg-wizard-next&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;wizard&lt;3?wizardShow(wizard+1):createPlan());[budget,target].forEach(x=&gt;x.addEventListener(&#x27;input&#x27;,updateInputs));[nameInput,cycleInput].forEach(x=&gt;x.addEventListener(&#x27;input&#x27;,updateInputs));root.querySelectorAll(&#x27;[data-tool]&#x27;).forEach(x=&gt;x.addEventListener(&#x27;change&#x27;,updateInputs));root.querySelector(&#x27;#approve&#x27;).addEventListener(&#x27;click&#x27;,e=&gt;{e.currentTarget.textContent=&#x27;已批准&#x27;;e.currentTarget.disabled=true;toast(&#x27;预算调整已批准，将从下一批会员开始执行&#x27;)});selectGoal(&#x27;new&#x27;);wizardShow(0);go(0);
+      /* ---- 表格排序:对任何一张 .rg-table 通用。读单元格里的 .rg-metric,没有就读整格。
+             读不出数值的行(「等待归因」「—」)恒排末尾,不跟着方向翻 —— 空值不是最小值。 ---- */
+      function cellNum(tr,idx){
+        const cell=tr.children[idx];if(!cell)return NaN;
+        const t=((cell.querySelector(&#x27;.rg-metric&#x27;)||cell).textContent||&#x27;&#x27;).trim();
+        return parseFloat(t.replace(/−/g,&#x27;-&#x27;).replace(/[^0-9.\-]/g,&#x27;&#x27;));
+      }
+      function cellText(tr,idx){
+        const cell=tr.children[idx];return cell?(cell.querySelector(&#x27;b&#x27;)||cell).textContent.trim():&#x27;&#x27;;
+      }
+      function sortTable(btn){
+        const th=btn.closest(&#x27;th&#x27;),head=th.parentNode,table=th.closest(&#x27;table&#x27;);
+        const tbody=[...table.tBodies].pop();if(!tbody)return;
+        const idx=[...head.children].indexOf(th);
+        const dir=th.getAttribute(&#x27;aria-sort&#x27;)===&#x27;descending&#x27;?&#x27;ascending&#x27;:&#x27;descending&#x27;;
+        [...head.children].forEach(x=&gt;{x.removeAttribute(&#x27;aria-sort&#x27;);
+          const g=x.querySelector(&#x27;.rg-sort i&#x27;);if(g)g.textContent=&#x27;↕&#x27;});
+        th.setAttribute(&#x27;aria-sort&#x27;,dir);
+        const glyph=th.querySelector(&#x27;.rg-sort i&#x27;);if(glyph)glyph.textContent=dir===&#x27;ascending&#x27;?&#x27;↑&#x27;:&#x27;↓&#x27;;
+        const rows=[...tbody.rows],num=[],rest=[];
+        rows.forEach(r=&gt;isNaN(cellNum(r,idx))?rest.push(r):num.push(r));
+        num.sort((a,b)=&gt;cellNum(a,idx)-cellNum(b,idx));
+        if(dir===&#x27;descending&#x27;)num.reverse();
+        rest.sort((a,b)=&gt;cellText(a,idx).localeCompare(cellText(b,idx),&#x27;zh&#x27;));
+        [...num,...rest].forEach(r=&gt;tbody.appendChild(r));
+      }
+
+      /* ---- 计划表:搜索 + 状态筛选 + 计数 + 空态 ---- */
+      const planSearch=root.querySelector(&#x27;#rg-plan-search&#x27;),planEmpty=root.querySelector(&#x27;#rg-plan-empty&#x27;);
+      let planFilter=&#x27;all&#x27;;
+      function planRows(){return [...root.querySelectorAll(&#x27;#rg-plan-table tbody tr&#x27;)]}
+      function applyPlanFilter(){
+        const q=(planSearch&amp;&amp;planSearch.value||&#x27;&#x27;).trim().toLowerCase();
+        const all=planRows();let shown=0;
+        all.forEach(tr=&gt;{
+          const hay=((tr.dataset.name||&#x27;&#x27;)+&#x27; &#x27;+(tr.dataset.goal||&#x27;&#x27;)).toLowerCase();
+          const hit=(planFilter===&#x27;all&#x27;||tr.dataset.status===planFilter)&amp;&amp;(!q||hay.includes(q));
+          tr.classList.toggle(&#x27;hide&#x27;,!hit);if(hit)shown++;
+        });
+        const set=(id,v)=&gt;{const el=root.querySelector(id);if(el)el.textContent=v};
+        set(&#x27;#rg-plan-shown&#x27;,shown);set(&#x27;#rg-plan-total&#x27;,all.length);
+        set(&#x27;#plan-count&#x27;,all.length+&#x27;个计划&#x27;);
+        root.querySelectorAll(&#x27;.rg-chip[data-filter]&#x27;).forEach(c=&gt;{
+          const f=c.dataset.filter,n=f===&#x27;all&#x27;?all.length:all.filter(r=&gt;r.dataset.status===f).length;
+          const small=c.querySelector(&#x27;small&#x27;);if(small)small.textContent=n;
+          c.classList.toggle(&#x27;on&#x27;,f===planFilter);
+          c.setAttribute(&#x27;aria-pressed&#x27;,String(f===planFilter));
+        });
+        if(planEmpty)planEmpty.classList.toggle(&#x27;on&#x27;,shown===0);
+        const wrap=root.querySelector(&#x27;#rg-plan-table&#x27;).closest(&#x27;.rg-tablewrap&#x27;);
+        if(wrap)wrap.style.display=shown===0?&#x27;none&#x27;:&#x27;&#x27;;
+      }
+      function resetPlanFilter(){planFilter=&#x27;all&#x27;;if(planSearch)planSearch.value=&#x27;&#x27;;applyPlanFilter()}
+      if(planSearch)planSearch.addEventListener(&#x27;input&#x27;,applyPlanFilter);
+
+      /* ---- 左栏收起 ---- */
+      const app=root.querySelector(&#x27;.rg-app&#x27;);
+      function toggleRail(btn){
+        const railed=app.classList.toggle(&#x27;rail&#x27;);
+        btn.setAttribute(&#x27;aria-expanded&#x27;,String(!railed));
+        const label=btn.querySelector(&#x27;span:not(:first-child)&#x27;);
+        if(label)label.textContent=railed?&#x27;展开菜单&#x27;:&#x27;收起菜单&#x27;;
+        btn.title=railed?&#x27;展开菜单&#x27;:&#x27;收起菜单&#x27;;
+      }
+
+      /* ---- 顶栏全局搜索:回车带着关键词落到计划表 ---- */
+      const globalSearch=root.querySelector(&#x27;#rg-global-search&#x27;);
+      if(globalSearch){
+        globalSearch.addEventListener(&#x27;keydown&#x27;,e=&gt;{
+          if(e.key!==&#x27;Enter&#x27;)return;
+          const q=globalSearch.value.trim();
+          go(1);
+          if(planSearch){planSearch.value=q;planFilter=&#x27;all&#x27;;applyPlanFilter()}
+          if(q)toast(`在增长计划中搜索「${q}」`);
+        });
+        root.ownerDocument.addEventListener(&#x27;keydown&#x27;,e=&gt;{
+          if((e.metaKey||e.ctrlKey)&amp;&amp;e.key.toLowerCase()===&#x27;k&#x27;){e.preventDefault();globalSearch.focus();globalSearch.select()}
+        });
+      }
+
+      nav.forEach(b=&gt;b.addEventListener(&#x27;click&#x27;,()=&gt;go(b.dataset.page)));root.addEventListener(&#x27;click&#x27;,e=&gt;{
+        const goBtn=e.target.closest(&#x27;[data-go]&#x27;),planBtn=e.target.closest(&#x27;[data-plan]&#x27;),createBtn=e.target.closest(&#x27;[data-create]&#x27;),connectBtn=e.target.closest(&#x27;[data-connect-tool]&#x27;),
+              sortBtn=e.target.closest(&#x27;.rg-sort&#x27;),chip=e.target.closest(&#x27;.rg-chip[data-filter]&#x27;),rail=e.target.closest(&#x27;[data-collapse]&#x27;),
+              reset=e.target.closest(&#x27;[data-reset-plans]&#x27;),rowMenu=e.target.closest(&#x27;.rg-rowmenu&#x27;);
+        if(sortBtn){sortTable(sortBtn);return}
+        if(chip){planFilter=chip.dataset.filter;applyPlanFilter();return}
+        if(reset){resetPlanFilter();return}
+        if(rail){toggleRail(rail);return}
+        if(rowMenu){const tr=rowMenu.closest(&#x27;tr&#x27;);toast(`${(tr&amp;&amp;tr.dataset.name)||&#x27;该行&#x27;}：复制、归档、导出口径`);return}
+        if(goBtn)go(goBtn.dataset.go);if(planBtn)openPlan(planBtn.dataset.plan);if(createBtn)openModal();if(connectBtn)connectWhatsApp();});root.querySelectorAll(&#x27;[data-close]&#x27;).forEach(b=&gt;b.addEventListener(&#x27;click&#x27;,closeModal));root.querySelectorAll(&#x27;.rg-choice&#x27;).forEach(b=&gt;b.addEventListener(&#x27;click&#x27;,()=&gt;selectGoal(b.dataset.goal)));root.querySelector(&#x27;#rg-wizard-back&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;wizardShow(wizard-1));root.querySelector(&#x27;#rg-wizard-next&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;wizard&lt;3?wizardShow(wizard+1):createPlan());[budget,target].forEach(x=&gt;x.addEventListener(&#x27;input&#x27;,updateInputs));[nameInput,cycleInput].forEach(x=&gt;x.addEventListener(&#x27;input&#x27;,updateInputs));root.querySelectorAll(&#x27;[data-tool]&#x27;).forEach(x=&gt;x.addEventListener(&#x27;change&#x27;,updateInputs));root.querySelector(&#x27;#approve&#x27;).addEventListener(&#x27;click&#x27;,e=&gt;{e.currentTarget.textContent=&#x27;已批准&#x27;;e.currentTarget.disabled=true;toast(&#x27;预算调整已批准，将从下一批会员开始执行&#x27;)});selectGoal(&#x27;new&#x27;);wizardShow(0);applyPlanFilter();go(0);
     })();
   &lt;/script&gt;
 &lt;/div&gt;
